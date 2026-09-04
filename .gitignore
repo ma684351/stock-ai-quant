@@ -12,8 +12,11 @@ __pycache__/
 # Hugging Face / Model Cache
 .cache/
 
-# Output plots / data
-output_*.png
-feature_importance_comparison.png
-*.csv
+# Environment & Secrets
+.env
+*.env
+.env.*
+!.env.example
+
+
 

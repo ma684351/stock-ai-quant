@@ -1,106 +1,131 @@
-# 米国株AI投資判断パイプライン: Apple (AAPL) / NVIDIA (NVDA) / Alphabet (GOOGL) 専用
+# 米国株AI投資判断システム (Stock AI Quant Pipeline)
 
-金融感情分析モデル（FinBERT）、マクロ経済指標（S&P 500、ドル円、日経平均）、テクニカル指標、およびYahoo!ファイナンスのファンダメンタルズ財務データを組み合わせ、LightGBMで**20営業日後（約1ヶ月後）の株価トレンド（上昇 / 下落）を予測**し、**最新営業日の投資判断（【買い】または【見送り】）**を自動判定するAI機械学習パイプラインです。
+金融感情分析モデル（FinBERT）、マクロ経済指標（S&P 500、ドル円、日経平均）、テクニカル指標、およびYahoo!ファイナンスのファンダメンタルズ財務データを統合し、各銘柄に個別最適化したLightGBMモデルで**今後1ヶ月（20営業日）の株価トレンド（上昇 / 下落）を予測**し、**最新営業日の投資判断（【買い】または【見送り】）**を自動判定する汎用AIクオンツシステムです。
 
 ---
 
-## 📁 ファイル構成
+## 📁 ディレクトリ構成 (Pattern A: モジュール設計)
 
 ```text
 fin-sentiment-lgbm-pipeline/
-├── apple_stock_ai_pipeline.ipynb       # Apple (AAPL) 専用 Google Colabノートブック
-├── nvidia_stock_ai_pipeline.ipynb      # NVIDIA (NVDA) 専用 Google Colabノートブック
-├── alphabet_stock_ai_pipeline.ipynb    # Alphabet Class A (GOOGL) 専用 Google Colabノートブック
-├── requirements.txt                    # 依存ライブラリ一覧
-├── feature_importance_comparison.png   # 特徴量重要度グラフ（実行時生成）
-├── .gitignore                          # venvやキャッシュ、生成画像の除外設定
-└── README.md                           # 本ドキュメント
+├── stock_ai.py                 # 【メインCLI】全銘柄対応の分析・比較スクリプト
+│
+├── core/                       # コアロジック・パッケージ
+│   ├── __init__.py
+│   ├── research_agent.py       # 【Antigravity SDK】新銘柄のカタリスト自律リサーチ
+│   ├── data_loader.py          # yfinance (株価・マクロ3指標・四半期財務) の自動取得
+│   ├── sentiment.py            # リアルタイムRSS収集 & FinBERT感情分析
+│   ├── features.py             # 4大カテゴリ（テクニカル×マクロ×感情×財務）の特徴量生成
+│   └── model.py                # LightGBM個別学習、最適閾値探索、本日の投資判断推論
+│
+├── data/                       # データのキャッシュ・蓄積
+│   ├── catalysts/              # 各銘柄の過去2年カタリスト (AAPL.json, NVDA.json, GOOGL.json...)
+│   └── fundamentals/           # 四半期財務データ (AAPL.json, NVDA.json, GOOGL.json...)
+│
+├── notebooks/                  # Google Colab用個別ノートブック
+│   ├── apple_stock_ai_pipeline.ipynb       # Apple (AAPL) 専用ノートブック
+│   ├── nvidia_stock_ai_pipeline.ipynb      # NVIDIA (NVDA) 専用ノートブック
+│   └── alphabet_stock_ai_pipeline.ipynb    # Alphabet (GOOGL) 専用ノートブック
+│
+├── .venv/                      # 独立仮想環境 (Python 3)
+├── requirements.txt            # 依存パッケージ一覧
+├── .gitignore                  # 除外設定
+└── README.md                   # 本ドキュメント
 ```
 
 ---
 
-## 🚀 実行方法（Google Colab）
+## 🚀 実行方法（ローカル venv環境）
 
-Google Colab を使用することで、ローカル環境を汚さずにブラウザだけで即座に実行・最新シグナルを確認できます。
+ローカルのグローバル環境を一切汚さずに、独立した仮想環境（`.venv`）で実行します。
 
-1. [Google Colab](https://colab.research.google.com/) をブラウザで開きます。
-2. ポップアップ画面の「**アップロード**」タブを選択します（またはメニューの `ファイル` -> `ノートブックをアップロード`）。
-3. 診断したい銘柄のノートブック（**[`apple_stock_ai_pipeline.ipynb`](file:///Users/masami/project/fin-sentiment-lgbm-pipeline/apple_stock_ai_pipeline.ipynb)**、**[`nvidia_stock_ai_pipeline.ipynb`](file:///Users/masami/project/fin-sentiment-lgbm-pipeline/nvidia_stock_ai_pipeline.ipynb)**、**[`alphabet_stock_ai_pipeline.ipynb`](file:///Users/masami/project/fin-sentiment-lgbm-pipeline/alphabet_stock_ai_pipeline.ipynb)**）をドラッグ＆ドロップします。
-4. ノートブックが開いたら、上部メニューの **`ランタイム` -> `すべてのセルを実行`**（Ctrl+F9 / ⌘+F9）をクリックします。
-   - ※ 無料CPUでも数分で動作しますが、`ランタイム` -> `ランタイムのタイプを変更` で「T4 GPU」を選択するとFinBERT推論がさらに高速化します。
-5. 最下部の **Step 8** で、直近の最新データに基づいた **【 買い (BUY) 】** または **【 見送り・様子見 (HOLD) 】** が出力されます。
+### 1. 仮想環境の有効化
+
+```bash
+# プロジェクトフォルダへ移動
+cd /Users/masami/project/fin-sentiment-lgbm-pipeline
+
+# 仮想環境を有効化 (macOS / Linux)
+source .venv/bin/activate
+# ※ Windows (PowerShell) の場合: .venv\Scripts\Activate.ps1
+```
+
+### 2. コマンドライン実行
+
+#### ① 単一銘柄の分析・最新シグナル診断
+```bash
+# 好きな銘柄のティッカーを指定（例: Apple, NVIDIA, Alphabet, Microsoft, Tesla など）
+python stock_ai.py AAPL
+python stock_ai.py NVDA
+python stock_ai.py GOOGL
+python stock_ai.py MSFT
+python stock_ai.py TSLA
+```
+
+#### ② 複数銘柄の一括比較 ＆ ランキング一覧表示（★おすすめ）
+気になる複数銘柄を順番に自動学習・推論し、**「今買うべき株ランキング一覧表」** を出力します。
+```bash
+python stock_ai.py --compare AAPL NVDA GOOGL MSFT TSLA AMZN META
+```
+
+出力例:
+```text
+========================================================================================
+【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】
+========================================================================================
+順位  銘柄    現在株価    動的PER   14日RSI   20日乖離    1ヶ月上昇確率   判定結果
+----------------------------------------------------------------------------------------
+ 1位  GOOGL  $338.67    33.7倍      44.5     -1.4%           64.9%   ★【 買い (BUY) 】
+ 2位  AAPL   $320.70    39.5倍      64.5     +2.4%           53.8%   ◇【 見送り (HOLD) 】
+ 3位  NVDA   $231.17    49.2倍      54.2     +5.0%           30.3%   ◇【 見送り (HOLD) 】
+========================================================================================
+```
+
+#### ③ Antigravity 自律ディープリサーチ (`--deep-research` / `--force`)
+新しい銘柄や未登録銘柄で過去の確定イベント・決算カタリストを自律調査させたい場合：
+```bash
+# ローカル環境では API キー設定不要！Antigravity の既存ログインセッションを使って自動実行されます
+python stock_ai.py TSLA --deep-research
+
+# 既存キャッシュを無視して最新情報で再リサーチしたい場合
+python stock_ai.py TSLA --deep-research --force
+
+# （※CIやクラウド環境等で API キーを使用する場合は GEMINI_API_KEY を設定可能）
+# export GEMINI_API_KEY="your-gemini-api-key"
+```
+* **ローカルログインセッション自動連携**: ローカル環境（Antigravity CLI / IDE）でログイン済みのセッションを自動認識し、APIキーなしで即座に自律ディープリサーチを実行します。
+* **高可用性フォールバック**:
+  1. ローカル Antigravity ログインセッション (`agy`)
+  2. Antigravity Python SDK (`google-antigravity` + `GEMINI_API_KEY`)
+  3. yfinance 財務開示自動抽出エンジン (オフライン/財務開示フォールバック)
+* 調査された確定カタリストは `data/catalysts/{TICKER}.json` に自動保存され、2回目以降はキャッシュから高速ロードされてLightGBMとFinBERTの特徴量生成に即座に活用されます。
+
+#### ④ 引数なしの対話型モード
+```bash
+python stock_ai.py
+# プロンプトが表示されます:
+# 分析したいティッカーシンボルを入力してください (例: AAPL, NVDA, TSLA または複数カンマ区切り):
+```
 
 ---
 
-## 🧠 パイプラインのアーキテクチャ
+## 🌐 Google Colab で実行する場合
 
-1. **Step 1: データ取得 (`yfinance`)**
-   - 個別株: `AAPL`（過去2年分）
-   - マクロ指標:
-     - `^GSPC`: S&P 500（米国市場の全体地合い）
-     - `JPY=X`: ドル円為替レート（グローバルな為替動向・リスクオン/オフ）
-     - `^N225`: 日経平均株価（米国市場より先に取引終了するため、時差を利用した先行指標）
-   - 各市場のタイムゾーン差を吸収し、`YYYY-MM-DD` 形式に正規化。
+ブラウザ上でGPUを使って動かしたい場合は、`notebooks/` フォルダ内の各ノートブックをそのままドラッグ＆ドロップして「すべてのセルを実行」してください。
 
-2. **Step 1.5: ファンダメンタルズ財務データ取得 (`yfinance` & 四半期決算ヒストリカル)**
-   - Yahoo!ファイナンスから最新財務スナップショット（PER、PBR、純利益率等）を取得。
-   - 過去2年間の四半期決算発表日に合わせて、直近4四半期累積EPS（TTM）、売上高前年同期比成長率、純利益率、アナリスト予想超えEPSサプライズ率をマージ。
-   - 情報リーク（未来予測の先回り）を防ぐため、決算発表日以降に新しい数値を反映し、次の四半期まで前方補完（`ffill`）。
-
-3. **Step 0 & 2: リアル金融ニュース取得 & AI Deep Research カタリスト統合 & FinBERT感情分析**
-   - **AI Deep Research 確定ヒストリカル・カタリスト**: 過去2年間の確定した歴史的事実（四半期決算実績・EPS、史上最大の1,100億ドル自社株買い、WWDCでのApple Intelligence発表、M4/M5新製品発表、DOJ独禁法提訴、EU制裁金・税金裁定、バフェット氏の持ち株半減売却、ティム・クックからジョン・ターナスへのCEO交代など67件）を網羅。
-   - **休場日・週末ローリング処理**: 土日や祝日に発表されたニュース・カタリスト（バフェット氏の週末13F開示など）は直後の市場オープン営業日（月曜等）へ自動ローリング反映。
-   - **最新リアルRSSニュース**: Google News RSS および Yahoo Finance RSS から最新のリアルタイム金融ニュース見出し（~110件超）を自動取得。
-   - **市場連動サプリメント**: カタリスト・RSS未カバーの取引日に対して日次相場動向（リターン）と連動したヘッドラインを補完。
-   - **FinBERT感情分析**: Hugging Faceの金融特化モデル `ProsusAI/finbert` を使用して各ニュースの確率を取得。
-   - スコア計算式: $\text{Sentiment Score} = P(\text{Positive}) - P(\text{Negative}) \in [-1.0, +1.0]$
-   - `torch.no_grad()` によるメモリ効率化とバッチ推論。
-   - 同一日に複数ニュースがある場合は日次平均値を算出。
-
-4. **Step 3 & 4: マージ & 特徴量エンジニアリング**
-   - 個別株の取引日を主軸とし、マクロ指標の祝日・時差欠損を直前営業日データ（`ffill`）で安全に前方補完。
-   - **個別株特徴量**: 1日変化率、5日変化率、出来高変化率、5日/20日移動平均乖離率、20日ボラティリティ、14日RSI。
-   - **マクロ特徴量**: 各指標の1日変化率、5日変化率。
-   - **ニュース特徴量**: 当日感情スコア、過去3日移動平均（ラグ効果）、前日感情スコア。
-   - **感情×テクニカル複合特徴量（好材料出尽くし・逆張り検知）**:
-     - `News_Sentiment_x_RSI`: 感情スコア × RSI（買われすぎ圏での好材料による「Sell the News（利食い売り反落）」を検知）。
-     - `News_Sentiment_x_Return5d`: 感情スコア × 過去5日リターン（急騰後の好材料による上値の重さ・反落リスクを検知）。
-     - `News_Sentiment_Surprise`: 感情モメンタム急変度（直近3日平均からのポジティブ/ネガティブサプライズを検知）。
-   - **ファンダメンタルズ財務特徴量**:
-     - `Fund_Dynamic_PE`: 日々の株価変動に応じた動的PER（リアルタイム割高・割安倍率）。
-     - `Fund_Earnings_Yield`: 株式益回り (1 / PER) - 企業の本質的な稼ぐ力。
-     - `Fund_Rev_Growth_YoY`: 四半期売上高前年同期比成長率。
-     - `Fund_Net_Margin`: 四半期純利益率（高付加価値体質の維持度）。
-     - `Fund_Earnings_Surprise`: 決算発表時のアナリスト予想超え度合い。
-
-5. **Step 5: ターゲット定義（20営業日後 / 約1ヶ月後 株価の2値分類）**
-   - 20営業日後（約1ヶ月後）の終値が当日の終値より高いか否か（1: 上昇, 0: 下落・保ち合い）。
-   - 四半期決算や企業業績（ファンダメンタルズ）とマクロ環境が株価に本格反映されるスイングトレード・ポジショントレードに最も適した時間軸。
-
-6. **Step 6: 時系列分割 & LightGBM学習（特徴量サンプリング・正則化 & 均衡閾値探索）**
-   - 未来情報のリークを防ぐため、シャッフルせずに時系列順で分割（過去80%を学習、直近20%をテスト）。
-   - **過学習抑制 & 特徴量サンプリング**: `feature_fraction: 0.65` で木ごとに特徴量をサンプリングし、ファンダメンタルズの独占を防ぎFinBERTやテクニカルの参加を促進。`max_depth: 4`, `num_leaves: 12`, `reg_alpha: 0.1`, `reg_lambda: 1.0` を設定。
-   - **クラス不均衡補正**: 訓練データの比率に応じた `scale_pos_weight` を設定。
-   - **実戦的判定閾値の探索**: 極端な全押し（TN=0 または TP=0）を防ぐため、上昇・下落双方の再現率20%以上を担保した上でBalanced Accuracy（均衡正解率）を最大化する閾値を探索。
-
-7. **Step 7: 最適閾値による評価 & 特徴量重要度の可視化 & テキスト出力**
-   - 最適判定閾値を適用して正解率（Accuracy）、F1スコア、ROC-AUC、混同行列を出力（下落もしっかり判定）。
-   - 特徴量重要度（Gain）のランキングおよびカテゴリ別寄与度シェアを**コンソールにテキスト形式で出力**（そのままコピーしてChatGPT / Claude / Gemini等のAIに渡して分析可能）。
-   - 「個別株テクニカル指標」「マクロ指標」「FinBERT感情スコア」「ファンダメンタルズ財務」の4大系統を色分けした重要度グラフを生成・保存 (`feature_importance_comparison.png`)。
-
-8. **Step 8: 直近（最新営業日）のAI投資シグナル判定**
-   - 学習済みモデルに、直近営業日（現在）の最新特徴量（PER、売上高成長率、移動平均乖離率、ニュース感情スコア等）を入力。
-   - 今後20営業日（約1ヶ月後）の上昇確率を算出し、最適閾値に基づいて **【 買い (BUY) 】** または **【 見送り・様子見 (HOLD) 】** をリアルタイム出力。
+* [**`apple_stock_ai_pipeline.ipynb`**](notebooks/apple_stock_ai_pipeline.ipynb)
+* [**`nvidia_stock_ai_pipeline.ipynb`**](notebooks/nvidia_stock_ai_pipeline.ipynb)
+* [**`alphabet_stock_ai_pipeline.ipynb`**](notebooks/alphabet_stock_ai_pipeline.ipynb)
 
 ---
 
-## 🤖 AI（ChatGPT / Claude / Gemini）への結果受け渡し
+## 🧠 アーキテクチャの4本柱
 
-コンソールに出力されたテキスト（評価指標・混同行列・特徴量重要度ランキング・カテゴリ寄与度）をそのままAIにコピー＆ペーストすることで、以下のような高度な分析やフィードバックを簡単に受け取ることができます：
-
-- **モデル評価**: 多数派クラス（ベースライン）と比較した予測精度の客観的評価や過学習の有無。
-- **リスク分析**: 混同行列から見る偽陽性（下落局面での誤エントリー）と偽陰性（買い逃し）のバランス。
-- **市場メカニズムの解釈**: 個別株テクニカル、マクロ指標（S&P500、ドル円、日経平均）、FinBERT感情スコアの寄与バランス。
-- **改善提案**: 追加すべきテクニカル指標やマクロ・オルタナティブデータ、ハイパーパラメータ調整のアドバイス。
-
-
+1. **個別株テクニカル指標 (`core/features.py`)**:
+   - 1日・5日リターン、出来高変化率、5日・20日移動平均乖離率、20日ボラティリティ、14日RSI。
+2. **マクロ経済指標 (`core/data_loader.py`)**:
+   - 米国市場の地合い（S&P 500: `^GSPC`）、グローバル為替（ドル円: `JPY=X`）、時差先行指標（日経平均: `^N225`）。
+3. **ニュース感情分析 (`core/sentiment.py`)**:
+   - 確定ヒストリカル・カタリスト ＋ リアルタイム金融RSS（Google News & Yahoo Finance）を `ProsusAI/finbert` で分析。
+4. **ファンダメンタルズ財務指標 (`core/data_loader.py`)**:
+   - 動的PER（リアルタイム割高・割安倍率）、株式益回り（1/PER）、四半期売上高成長率（YoY）、四半期純利益率、決算サプライズ率。

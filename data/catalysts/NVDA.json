@@ -1,0 +1,182 @@
+[
+  [
+    "2024-01-08",
+    "NVIDIA announces GeForce RTX 40 Super Series graphics cards at CES 2024, emphasizing generative AI processing on local PCs."
+  ],
+  [
+    "2024-01-18",
+    "Wall Street analysts elevate NVIDIA price targets as hyperscalers signal surging enterprise demand for H100 and H200 AI GPUs."
+  ],
+  [
+    "2024-02-14",
+    "NVIDIA market capitalization surpasses Alphabet and Amazon, becoming the third-most valuable US company behind Microsoft and Apple."
+  ],
+  [
+    "2024-02-21",
+    "NVIDIA reports blowout Q4 FY24 revenue up 265% year-over-year to $22.1B and EPS of $5.16, exceeding all Wall Street forecasts."
+  ],
+  [
+    "2024-02-22",
+    "NVIDIA shares surge 16.4% in a single trading session, adding an unprecedented $277 billion in market cap in historic Wall Street rally."
+  ],
+  [
+    "2024-03-01",
+    "NVIDIA closes above $2 trillion market valuation for the first time as artificial intelligence momentum accelerates globally."
+  ],
+  [
+    "2024-03-18",
+    "Jensen Huang kicks off GTC 2024 'AI Woodstock', unveiling flagship Blackwell B200 GPU and GB200 NVL72 liquid-cooled superchip architecture."
+  ],
+  [
+    "2024-03-19",
+    "NVIDIA announces Project GR00T foundation model for humanoid robots and expands healthcare and autonomous driving enterprise partnerships."
+  ],
+  [
+    "2024-04-16",
+    "Wall Street investment banks reiterate Strong Buy ratings on NVIDIA as Microsoft, Meta, and Google reaffirm multi-billion AI infrastructure capex."
+  ],
+  [
+    "2024-04-24",
+    "NVIDIA acquires Run:ai to enhance AI workload orchestration and optimize enterprise GPU cluster utilization efficiency."
+  ],
+  [
+    "2024-05-06",
+    "Goldman Sachs raises NVIDIA target to $1,100, citing enduring competitive moat in CUDA software stack and networking fabric."
+  ],
+  [
+    "2024-05-22",
+    "NVIDIA reports Q1 FY25 revenue of $26.0B (up 262% YoY) and EPS of $0.612 post-split, announcing a 10-for-1 forward stock split and 150% dividend hike."
+  ],
+  [
+    "2024-05-23",
+    "NVIDIA shares break above $1,000 for the first time pre-split as analysts praise insatiable demand for accelerated computing."
+  ],
+  [
+    "2024-06-02",
+    "Jensen Huang delivers Computex 2024 keynote in Taipei, detailing annual product release cadence: Blackwell in 2024 and Rubin in 2026."
+  ],
+  [
+    "2024-06-05",
+    "NVIDIA market cap crosses $3 trillion for the first time, surpassing Apple as the second-most valuable publicly traded corporation."
+  ],
+  [
+    "2024-06-07",
+    "NVIDIA executes 10-for-1 forward stock split, opening trading on a split-adjusted basis around $120 per share on June 10."
+  ],
+  [
+    "2024-06-18",
+    "NVIDIA stock hits all-time high of $135.58, briefly becoming the world's most valuable company with a $3.34 trillion market cap."
+  ],
+  [
+    "2024-06-20",
+    "NVIDIA faces short-term multiple compression and consolidation following scheduled Rule 10b5-1 executive share sales."
+  ],
+  [
+    "2024-07-10",
+    "Broad tech rotation out of mega-cap semiconductor equities into small-cap stocks triggers pullback across semiconductor sector."
+  ],
+  [
+    "2024-08-02",
+    "Reports regarding potential packaging redesign in Blackwell B200 chips create temporary market uncertainty regarding delivery timelines."
+  ],
+  [
+    "2024-08-05",
+    "Global equity carry-trade unwind triggers sharp semiconductor sell-off; institutional dip-buyers aggressively absorb NVIDIA volume."
+  ],
+  [
+    "2024-08-14",
+    "Jensen Huang clarifies Blackwell production ramp is on schedule for Q4 and engineering customer samples are shipping broadly."
+  ],
+  [
+    "2024-08-28",
+    "NVIDIA reports Q2 FY25 revenue of $30.04B (up 122% YoY) and EPS of $0.68, beating estimates, and authorizes a new $50 billion share repurchase program."
+  ],
+  [
+    "2024-09-03",
+    "Reports emerge regarding DOJ preliminary inquiries into AI chip industry; NVIDIA confirms no formal subpoena was received."
+  ],
+  [
+    "2024-09-11",
+    "Jensen Huang speaks at Goldman Sachs Communacopia Conference, emphasizing that customer demand for Blackwell is 'so great, everyone wants to be first'."
+  ],
+  [
+    "2024-09-18",
+    "Federal Reserve cuts benchmark interest rate by 50 basis points, easing financial conditions and fueling renewed semiconductor appetite."
+  ],
+  [
+    "2024-10-02",
+    "Jensen Huang tells CNBC that Blackwell is in full production and demand for the next-generation AI architecture is 'insane'."
+  ],
+  [
+    "2024-10-23",
+    "Hyperscalers report massive quarterly capex commitments for AI infrastructure, confirming sustained multi-year compute demand."
+  ],
+  [
+    "2024-11-01",
+    "S&P Dow Jones Indices announces NVIDIA will officially join the Dow Jones Industrial Average (DJIA), replacing Intel after 25 years."
+  ],
+  [
+    "2024-11-08",
+    "NVIDIA officially joins the Dow Jones Industrial Average as the premier global semiconductor benchmark."
+  ],
+  [
+    "2024-11-20",
+    "NVIDIA reports Q3 FY25 revenue of $35.08B (up 94% YoY) and EPS of $0.81, guiding Q4 revenue to $37.5B, beating consensus expectations."
+  ],
+  [
+    "2024-12-04",
+    "AWS re:Invent showcases massive production deployments of liquid-cooled NVIDIA GB200 NVL72 racks for foundation model scaling."
+  ],
+  [
+    "2025-01-06",
+    "Jensen Huang CES 2025 keynote unveils GeForce RTX 50 Blackwell gaming GPUs and announces major autonomous driving partnership with Toyota."
+  ],
+  [
+    "2025-01-27",
+    "DeepSeek R1 model release sparks discussions on AI training efficiency, before analysts conclude complex reasoning models require exponential inference compute."
+  ],
+  [
+    "2025-02-05",
+    "Meta, Microsoft, and Alphabet increase 2025 capital expenditure guidance to all-time highs, securing large-scale Blackwell allocations."
+  ],
+  [
+    "2025-02-26",
+    "NVIDIA reports Q4 FY25 revenue of $39.5B and EPS of $0.89, confirming Blackwell mass deliveries commenced with industry-leading gross margins."
+  ],
+  [
+    "2025-03-17",
+    "GTC 2025 showcases worldwide enterprise adoption of GB200 NVL72 clusters and unveils architectural roadmap for 2026 Vera Rubin GPUs."
+  ],
+  [
+    "2025-04-15",
+    "US Commerce Department reviews AI chip export guidelines; NVIDIA affirms robust global demand outside restricted regions drives ongoing backlog growth."
+  ],
+  [
+    "2025-05-21",
+    "NVIDIA reports Q1 FY26 revenue of $43.8B, driven by Blackwell mass shipments and expanding sovereign AI data center deployments globally."
+  ],
+  [
+    "2025-06-10",
+    "Leading AI labs announce multi-gigawatt compute clusters powered exclusively by NVIDIA GB200 and Quantum-X800 InfiniBand networking."
+  ],
+  [
+    "2025-08-27",
+    "NVIDIA reports Q2 FY26 revenue of $47.5B, sustaining gross margins above 73% amidst unprecedented generative AI deployment scale."
+  ],
+  [
+    "2025-10-22",
+    "Major cloud service providers reaffirm multi-year accelerated computing capex commitments, citing sustained enterprise AI ROI."
+  ],
+  [
+    "2025-11-19",
+    "NVIDIA reports Q3 FY26 earnings surpassing estimates, driven by physical AI, humanoid robotics, and industrial digital twin adoption."
+  ],
+  [
+    "2026-01-07",
+    "Jensen Huang CES 2026 keynote introduces next-generation hybrid quantum computing platform and Thor automotive supercomputers."
+  ],
+  [
+    "2026-02-25",
+    "NVIDIA reports record full-year FY26 financial results, cementing accelerated computing as the foundational architecture of the modern datacenter."
+  ]
+]
