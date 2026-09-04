@@ -1,0 +1,19 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.ipynb_checkpoints/
+
+# Hugging Face / Model Cache
+.cache/
+
+# Output plots / data
+output_*.png
+feature_importance_comparison.png
+*.csv
+
