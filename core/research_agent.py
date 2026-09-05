@@ -349,21 +349,19 @@ def run_deep_research(ticker: str) -> List[Tuple[str, str]]:
     return []
 
 def get_ticker_catalysts(ticker: str, enable_deep_research: bool = False, force_refresh: bool = False) -> List[Tuple[str, str]]:
-    """キャッシュまたはディープリサーチからカタリストを取得する"""
+    """キャッシュまたはディープリサーチからカタリストを取得する
+    enable_deep_research=True の場合はキャッシュの有無に関わらず問答無用で自律ディープリサーチを実行する
+    """
     ticker = ticker.upper().strip()
+    
+    # --deep-research 指定時は問答無用でリサーチを実行
+    if enable_deep_research or force_refresh:
+        return run_deep_research(ticker)
+
     existing = load_catalysts(ticker)
-    
-    if force_refresh:
-        return run_deep_research(ticker)
-
     if existing:
-        if enable_deep_research:
-            print(f"[{ticker}] 既存の確定カタリスト ({len(existing)} 件) を使用します (再調査時は --force を指定)")
         return existing
-
-    if enable_deep_research:
-        return run_deep_research(ticker)
     
-    # ディープリサーチ未指定でもキャッシュがない場合は案内
+    # ディープリサーチ未指定かつキャッシュがない場合の案内
     print(f"[{ticker}] 確定カタリストキャッシュがありません ('--deep-research' を指定すると自律AIリサーチが実行されます)")
     return []
