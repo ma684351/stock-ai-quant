@@ -74,7 +74,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
 
     # 2. 市場データ・マクロ指標の取得
     df_stock = fetch_market_data(ticker, period="2y")
-    df_sp500, df_usdjpy, df_nikkei = fetch_macro_data(period="2y")
+    df_sp500, df_usdjpy, df_nikkei, df_tnx = fetch_macro_data(period="2y")
 
     # 3. ファンダメンタルズ財務データの取得
     df_fund = fetch_fundamentals_data(ticker)
@@ -103,6 +103,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         target_horizon=20,
         df_attention=df_attention,
         df_jobs=df_jobs,
+        df_tnx=df_tnx,
     )
 
     # 7. LightGBMモデル学習 & 閾値探索
@@ -113,6 +114,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
     # 7. 直近営業日の売買シグナル判定
     latest_res = predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, threshold=best_thresh)
     latest_res["metrics"] = metrics
+    latest_res["tnx_close"] = float(df_tnx["Close"].iloc[-1]) if not df_tnx.empty else None
 
     if verbose:
         print("\n" + "=" * 60)
@@ -137,6 +139,8 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         print(f"【Step 8: 直近（最新営業日: {latest_res['date']}）のAI投資シグナル判定】")
         print("=" * 60)
         print(f"  ・{ticker} 直近終値          : {format_price(ticker, latest_res['close'])}")
+        if latest_res.get("tnx_close") is not None:
+            print(f"  ・米10年債利回り (雇用・金利指標) : {latest_res['tnx_close']:.3f}%")
         if latest_res["dynamic_pe"]:
             print(f"  ・動的 PER (バリュエーション) : {latest_res['dynamic_pe']:.1f} 倍")
         if latest_res["rev_growth"] is not None:

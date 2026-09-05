@@ -22,5 +22,9 @@
   "GTLB": {
     "platform": "greenhouse",
     "token": "gitlab"
+  },
+  "NVDA": {
+    "platform": "workday",
+    "url": "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs"
   }
 }
