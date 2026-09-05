@@ -304,7 +304,7 @@ def main():
         print(f"\n以下の {len(tickers)} 銘柄を順番に診断します: {', '.join(tickers)}")
         for t in tickers:
             try:
-                res = analyze_single_stock(t, enable_deep_research=False, verbose=False)
+                res = analyze_single_stock(t, verbose=False)
                 results.append(res)
                 print(
                     f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
@@ -314,7 +314,7 @@ def main():
         if results:
             print_comparison_table(results)
     else:
-        analyze_single_stock(user_input, enable_deep_research=False, verbose=True)
+        analyze_single_stock(user_input, verbose=True)
 
 
 if __name__ == "__main__":

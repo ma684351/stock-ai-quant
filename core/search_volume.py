@@ -123,21 +123,26 @@ def get_search_volume_series(
 
     raw_items = None
 
-    # 1. キャッシュの確認
+    # 1. キャッシュの確認と鮮度チェック (TTL: 最新データが株価末尾より2日以上古ければ更新)
     if os.path.exists(cache_path):
         try:
             with open(cache_path, "r", encoding="utf-8") as f:
-                raw_items = json.load(f)
-            if verbose:
-                print(f"  ・[{ticker}] 検索ボリュームキャッシュをロードしました ({len(raw_items)}日分)")
+                cached_items = json.load(f)
+            if cached_items:
+                last_ts = str(cached_items[-1].get("timestamp", ""))[:8]
+                # 最新日付が end_str より2日以内であれば有効
+                if last_ts and (datetime.strptime(end_str, "%Y%m%d") - datetime.strptime(last_ts, "%Y%m%d")).days <= 2:
+                    raw_items = cached_items
+                    if verbose:
+                        print(f"  ・[{ticker}] 検索ボリュームキャッシュをロードしました ({len(raw_items)}日分)")
         except Exception:
             raw_items = None
 
-    # 2. キャッシュがない場合、APIから取得
+    # 2. キャッシュがない場合、または古い場合、APIから最新取得
     if raw_items is None:
         lang, article = resolve_wikipedia_article(ticker, mapping_file=mapping_file)
         if verbose:
-            print(f"  ・[{ticker}] Wikimedia Pageviews APIからアクセス数取得中 ({lang}:{article})...")
+            print(f"  ・[{ticker}] Wikimedia Pageviews APIから最新アクセス数取得中 ({lang}:{article})...")
 
         res_data = fetch_wikimedia_pageviews(lang, article, start_str, end_str)
         if res_data and "items" in res_data:
@@ -166,9 +171,9 @@ def get_search_volume_series(
             df_pv = pd.DataFrame(records).set_index("Date").sort_index()
             # 重複日付の排除
             df_pv = df_pv[~df_pv.index.duplicated(keep="last")]
-            # 株価データのインデックスに合わせて再インデックス & 前方補完
+            # 株価データのインデックスに合わせて再インデックス & 前方補完 (過去へのbfillは行わずfillna(0.0))
             if not df_stock.empty:
-                s_pv = df_pv["Attention_Volume"].reindex(df_stock.index).ffill().bfill().fillna(0.0)
+                s_pv = df_pv["Attention_Volume"].reindex(df_stock.index).ffill().fillna(0.0)
                 return s_pv
             return df_pv["Attention_Volume"]
 

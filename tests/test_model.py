@@ -43,3 +43,27 @@ def test_train_stock_model_and_signal_prediction(dummy_market_data):
     assert 0.0 <= latest_res["prob"] <= 1.0
     assert "price_guide" in latest_res
     assert latest_res["price_guide"]["type"] == latest_res["decision"]
+
+
+def test_train_stock_model_with_purging(dummy_market_data):
+    import numpy as np
+    import pandas as pd
+
+    # 合成データでパージングの動作を確認
+    n_samples = 120
+    dates = pd.date_range("2024-01-01", periods=n_samples, freq="B")
+    feature_cols = ["Feat1", "Feat2"]
+    df = pd.DataFrame(
+        {
+            "Feat1": np.random.randn(n_samples),
+            "Feat2": np.random.randn(n_samples),
+            "Target": np.random.choice([0, 1], size=n_samples),
+        },
+        index=dates,
+    )
+
+    model, metrics, thresh, df_imp = train_stock_model(
+        df, feature_cols, ticker="TEST_PURGE", train_ratio=0.8, target_horizon=15
+    )
+    assert model is not None
+    assert metrics["test_count"] == n_samples - int(n_samples * 0.8)

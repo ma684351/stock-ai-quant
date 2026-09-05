@@ -150,19 +150,23 @@ def generate_news_dataset(
             f"{ticker} submits standard regulatory disclosures with the SEC regarding corporate governance.",
         ]
 
-    returns = df_stock["Close"].pct_change()
+    # 再現性を保証するためローカル乱数ジェネレータを使用
+    rng = random.Random(42)
+
+    # 当日株価との循環リークを排除するため、前日までの直近リターン (shift 1) を参照
+    lagged_returns = df_stock["Close"].pct_change().shift(1)
     k = min(n_supplementary, len(uncovered_dates))
-    sampled_dates = random.sample(uncovered_dates, k=k) if k > 0 else []
+    sampled_dates = rng.sample(uncovered_dates, k=k) if k > 0 else []
 
     supp_count = 0
     for d in sampled_dates:
-        ret = returns.loc[d] if d in returns.index else 0.0
-        if random.random() < 0.80:
-            headline = random.choice(
+        ret = lagged_returns.loc[d] if d in lagged_returns.index else 0.0
+        if rng.random() < 0.80:
+            headline = rng.choice(
                 pos_templates if ret > 0.005 else (neg_templates if ret < -0.005 else neu_templates)
             )
         else:
-            headline = random.choice(pos_templates if ret < 0 else neg_templates)
+            headline = rng.choice(pos_templates if ret < 0 else neg_templates)
 
         if (d, headline) not in seen:
             seen.add((d, headline))

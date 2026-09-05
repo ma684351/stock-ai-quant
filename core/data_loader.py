@@ -44,15 +44,23 @@ def fetch_market_data(ticker: str, period: str = "2y") -> pd.DataFrame:
     return df
 
 
+_MACRO_CACHE = {}
+
+
 def fetch_macro_data(
     period: str = "2y",
 ) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """4大マクロ経済指標（S&P 500, ドル円為替, 日経平均, 米10年債利回り TNX）を取得する"""
+    """4大マクロ経済指標（S&P 500, ドル円為替, 日経平均, 米10年債利回り TNX）を取得する（プロセス内キャッシュ対応）"""
+    global _MACRO_CACHE
+    if period in _MACRO_CACHE:
+        return _MACRO_CACHE[period]
+
     print("  ・マクロ経済指標を取得中 (S&P 500, USD/JPY, 日経225, 米10年債利回り)...")
     df_sp500 = fetch_market_data("^GSPC", period=period)
     df_usdjpy = fetch_market_data("JPY=X", period=period)
     df_nikkei = fetch_market_data("^N225", period=period)
     df_tnx = fetch_market_data("^TNX", period=period)
+    _MACRO_CACHE[period] = (df_sp500, df_usdjpy, df_nikkei, df_tnx)
     return df_sp500, df_usdjpy, df_nikkei, df_tnx
 
 
@@ -140,8 +148,8 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
                 )
 
             df_ann = pd.DataFrame(ann_records).sort_values("Date").set_index("Date")
-            # 四半期末リサンプリングと線形補間
-            df_q = df_ann.resample("QE").interpolate(method="linear").ffill().bfill()
+            # 四半期末リサンプリングと前方補完 (ffill: 将来データの先読み漏洩を防止)
+            df_q = df_ann.resample("QE").ffill().bfill()
 
             for i, (dt, row) in enumerate(df_q.iterrows()):
                 rev = row["Rev"]

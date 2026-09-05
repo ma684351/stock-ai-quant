@@ -1,3 +1,6 @@
+import pandas as pd
+
+from core import data_loader
 from core.data_loader import clean_ticker_name, is_japanese_ticker, normalize_ticker
 
 
@@ -38,3 +41,26 @@ def test_clean_ticker_name():
     assert clean_ticker_name("7203.T") == "7203_T"
     assert clean_ticker_name("BRK-B") == "BRK_B"
     assert clean_ticker_name("aapl") == "AAPL"
+
+
+def test_fetch_macro_data_caching(monkeypatch):
+    call_count = 0
+
+    def mock_fetch_market_data(ticker, period="2y"):
+        nonlocal call_count
+        call_count += 1
+        dates = pd.date_range("2024-01-01", periods=10, freq="D")
+        return pd.DataFrame({"Close": [100.0] * 10}, index=dates)
+
+    monkeypatch.setattr(data_loader, "fetch_market_data", mock_fetch_market_data)
+    data_loader._MACRO_CACHE.clear()
+
+    # 1回目の取得（4回ダウンロードされる）
+    res1 = data_loader.fetch_macro_data(period="2y")
+    assert call_count == 4
+    assert len(res1) == 4
+
+    # 2回目の取得（キャッシュが効いてダウンロードは増えない）
+    res2 = data_loader.fetch_macro_data(period="2y")
+    assert call_count == 4
+    assert res1[0] is res2[0]

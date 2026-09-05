@@ -6,18 +6,22 @@ from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, precisio
 from core.data_loader import clean_ticker_name
 
 
-def train_stock_model(df_features, feature_cols, ticker="AAPL", train_ratio=0.8):
+def train_stock_model(df_features, feature_cols, ticker="AAPL", train_ratio=0.8, target_horizon=20):
     """
-    指定ティッカーのデータを用いて、時系列分割・クラス不均衡補正・正則化を行い
+    指定ティッカーのデータを用いて、時系列分割・Purging（ラベル重複パージ）・クラス不均衡補正・正則化を行い
     最適な判定閾値を自動探索して LightGBM モデルを学習する
     """
     split_idx = int(len(df_features) * train_ratio)
-    df_train_full = df_features.iloc[:split_idx]
+    # テスト期間との目的変数重複（Overlapping Windows）を防ぐため、訓練期間末尾から target_horizon 日分をパージ (Purging)
+    purge_train_end = max(10, split_idx - target_horizon)
+    df_train_full = df_features.iloc[:purge_train_end]
     df_test = df_features.iloc[split_idx:]
 
     # 訓練データをさらに学習(80%)と検証(20%)に時系列分割し、テストデータのリークや早期終了誤爆を防止
     val_idx = int(len(df_train_full) * 0.80)
-    df_tr = df_train_full.iloc[:val_idx]
+    # 検証期間との目的変数重複を防ぐため、内部訓練期間末尾もパージ
+    purge_tr_end = max(10, val_idx - target_horizon)
+    df_tr = df_train_full.iloc[:purge_tr_end]
     df_val = df_train_full.iloc[val_idx:]
 
     neg_train = int(np.sum(df_tr["Target"] == 0))

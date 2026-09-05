@@ -18,5 +18,5 @@ __pycache__/
 .env.*
 !.env.example
 
-
-
+# Data & Caches
+data/
