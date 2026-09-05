@@ -151,7 +151,7 @@ def print_comparison_table(results):
         rsi_str = f"{r['rsi14']:.1f}" if r['rsi14'] else "N/A"
         ma_str = f"{r['ma20_ratio']*100:+.1f}%" if r['ma20_ratio'] is not None else "N/A"
         prob_str = f"{r['prob']*100:.1f}%"
-        auc_val = r.get('metrics', {}).get('roc_auc')
+        auc_val = r.get('metrics', {}).get('auc')
         auc_str = f"{auc_val:.3f}" if auc_val is not None else "N/A"
         decision = r.get('decision_label', '★【 買い (BUY) 】' if r.get('is_buy') else '◇【 様子見 (HOLD) 】')
         
