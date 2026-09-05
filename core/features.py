@@ -14,11 +14,13 @@ def build_features_and_target(
     ticker="AAPL",
     target_horizon=20,
     df_attention=None,
+    df_jobs=None,
+    df_tnx=None,
 ):
     """
-    個別株テクニカル、マクロ指標、ニュース感情スコア、ファンダメンタルズ財務、
-    検索・アクセスボリューム(Investor Attention)の5大柱からなる特徴量を構築し、
-    20営業日後（約1ヶ月後）の正解ラベルを生成する
+    個別株テクニカル、マクロ指標（S&P500/為替/日経/米10年債利回り）、ニュース感情スコア、ファンダメンタルズ財務、
+    検索・アクセスボリューム(Investor Attention)、および求人数(Hiring Data)からなる
+    特徴量を構築し、20営業日後（約1ヶ月後）の正解ラベルを生成する
     """
     t_prefix = clean_ticker_name(ticker)
     base_df = pd.DataFrame(index=df_stock.index)
@@ -35,6 +37,14 @@ def build_features_and_target(
     base_df = base_df.merge(
         df_nikkei[["Close"]].rename(columns={"Close": "Nikkei_Close"}), left_index=True, right_index=True, how="left"
     )
+    if df_tnx is not None and not df_tnx.empty:
+        base_df = base_df.merge(
+            df_tnx[["Close"]].rename(columns={"Close": "TNX_Close"}), left_index=True, right_index=True, how="left"
+        )
+        base_df["TNX_Close"] = base_df["TNX_Close"].ffill().bfill().fillna(0.0)
+    else:
+        base_df["TNX_Close"] = 0.0
+
     base_df["SP500_Close"] = base_df["SP500_Close"].ffill()
     base_df["USDJPY_Close"] = base_df["USDJPY_Close"].ffill()
     base_df["Nikkei_Close"] = base_df["Nikkei_Close"].ffill()
@@ -48,6 +58,12 @@ def build_features_and_target(
         base_df["Attention_Volume"] = df_attention.reindex(base_df.index).ffill().bfill().fillna(0.0)
     else:
         base_df["Attention_Volume"] = 0.0
+
+    # 求人数（Hiring Data）のマージ
+    if df_jobs is not None and not df_jobs.empty:
+        base_df["Job_Openings"] = df_jobs.reindex(base_df.index).ffill().bfill().fillna(0.0)
+    else:
+        base_df["Job_Openings"] = 0.0
 
     # ファンダメンタルズ財務データの前方補完 (ffill)
     base_df = base_df.merge(df_fund.set_index("Date"), left_index=True, right_index=True, how="left")
@@ -80,6 +96,10 @@ def build_features_and_target(
     feats["USDJPY_Return_5d"] = base_df["USDJPY_Close"].pct_change(5)
     feats["Nikkei_Return_1d"] = base_df["Nikkei_Close"].pct_change(1)
     feats["Nikkei_Return_5d"] = base_df["Nikkei_Close"].pct_change(5)
+    feats["TNX_Return_1d"] = base_df["TNX_Close"].pct_change(1).fillna(0.0)
+    feats["TNX_Return_5d"] = base_df["TNX_Close"].pct_change(5).fillna(0.0)
+    tnx_ma20 = base_df["TNX_Close"].rolling(20, min_periods=5).mean() + 1e-6
+    feats["TNX_MA20_Ratio"] = ((base_df["TNX_Close"] - tnx_ma20) / tnx_ma20).fillna(0.0)
 
     # [3] ニュース感情スコア
     feats["News_Sentiment_Score"] = base_df["Sentiment_Score"]
@@ -102,7 +122,17 @@ def build_features_and_target(
     feats["Attention_x_Sentiment"] = feats["Attention_Surprise_20d"] * base_df["Sentiment_Score"]
     feats["Attention_x_RSI"] = feats["Attention_ZScore_60d"] * ((feats[f"{t_prefix}_RSI_14"] - 50.0) / 25.0)
 
-    # [6] ファンダメンタルズ財務
+    # [6] 求人数・採用モメンタム (Hiring / Alternative Data)
+    job_cnt = base_df["Job_Openings"]
+    feats["Job_Openings_Count"] = job_cnt
+    vol_ma20 = base_df["Volume"].rolling(20, min_periods=5).mean() + 1.0
+    feats["Job_to_Volume_Ratio"] = (job_cnt / (vol_ma20 / 10000.0 + 1.0)).fillna(0.0)
+    feats["Job_x_Rev_Growth"] = job_cnt * base_df["Fund_Rev_Growth_YoY"]
+    feats["Job_x_RSI"] = (job_cnt / (job_cnt.rolling(60, min_periods=5).mean() + 1.0)) * (
+        (feats[f"{t_prefix}_RSI_14"] - 50.0) / 25.0
+    )
+
+    # [7] ファンダメンタルズ財務
     feats["Fund_Dynamic_PE"] = base_df["Close"] / (base_df["TTM_EPS"] + 1e-9)
     feats["Fund_Earnings_Yield"] = (base_df["TTM_EPS"] + 1e-9) / base_df["Close"]
     pe_ma200 = feats["Fund_Dynamic_PE"].rolling(200, min_periods=20).mean()

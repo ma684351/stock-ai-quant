@@ -1,0 +1,12 @@
+{
+  "ticker": "NVDA",
+  "count": 2000,
+  "platform": "Workday",
+  "last_updated": "2026-09-05",
+  "history": [
+    {
+      "date": "2026-09-05",
+      "count": 2000
+    }
+  ]
+}

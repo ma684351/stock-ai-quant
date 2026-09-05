@@ -41,6 +41,11 @@ def test_build_features_and_target(dummy_market_data):
     assert "SP500_Return_1d" in clean_df.columns
     assert "USDJPY_Return_5d" in clean_df.columns
     assert "Nikkei_Return_1d" in clean_df.columns
+    assert "TNX_Return_1d" in clean_df.columns
+    assert "TNX_MA20_Ratio" in clean_df.columns
+    # [採用・求人 (Hiring)]
+    assert "Job_Openings_Count" in clean_df.columns
+    assert "Job_to_Volume_Ratio" in clean_df.columns
     # [感情]
     assert "News_Sentiment_Score" in clean_df.columns
     assert "News_Sentiment_Surprise" in clean_df.columns
