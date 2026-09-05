@@ -8,7 +8,7 @@ description: >-
 
 # 日米株AI投資診断スキル (Stock AI Analysis)
 
-このスキルは、Antigravityエージェント自身の強力な調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](file:///Users/masami/project/fin-sentiment-lgbm-pipeline/stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
+このスキルは、Antigravityエージェント自身の強力な調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
 
 ---
 
@@ -46,7 +46,7 @@ description: >-
 リサーチが完了したら（または既存キャッシュを使用する場合）、仮想環境 Python で実行します。
 
 ```bash
-cd /Users/masami/project/fin-sentiment-lgbm-pipeline
+cd fin-sentiment-lgbm-pipeline
 
 # 単一銘柄のAI投資診断（日本株は4桁または .T、米国株はシンボル）
 .venv/bin/python stock_ai.py 7203
