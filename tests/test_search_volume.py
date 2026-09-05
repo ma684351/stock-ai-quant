@@ -11,7 +11,7 @@ from core.search_volume import (
 
 
 def test_resolve_wikipedia_article():
-    # 既知の米国株
+    # 外部マッピングファイル (data/wikipedia_mapping.json) からの解決テスト
     lang_aapl, title_aapl = resolve_wikipedia_article("AAPL")
     assert lang_aapl == "en"
     assert title_aapl == "Apple_Inc."
@@ -20,7 +20,6 @@ def test_resolve_wikipedia_article():
     assert lang_glw == "en"
     assert title_glw == "Corning_Inc."
 
-    # 既知の日本株
     lang_7203, title_7203 = resolve_wikipedia_article("7203")
     assert lang_7203 == "ja"
     assert title_7203 == "トヨタ自動車"
@@ -28,6 +27,27 @@ def test_resolve_wikipedia_article():
     lang_6758, title_6758 = resolve_wikipedia_article("6758.T")
     assert lang_6758 == "ja"
     assert title_6758 == "ソニーグループ"
+
+
+def test_resolve_wikipedia_article_custom_mapping():
+    # 一時的なカスタムJSONマッピングによる動的解決テスト
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+        f.write('{"TEST": ["en", "Test_Article"], "9999": ["ja", "テスト株式会社"]}')
+        temp_mapping = f.name
+
+    try:
+        lang, title = resolve_wikipedia_article("TEST", mapping_file=temp_mapping)
+        assert lang == "en"
+        assert title == "Test_Article"
+
+        lang_jp, title_jp = resolve_wikipedia_article("9999.T", mapping_file=temp_mapping)
+        assert lang_jp == "ja"
+        assert title_jp == "テスト株式会社"
+    finally:
+        import os
+
+        if os.path.exists(temp_mapping):
+            os.remove(temp_mapping)
 
 
 def test_fetch_wikimedia_pageviews_real():

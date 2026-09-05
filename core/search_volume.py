@@ -11,56 +11,35 @@ import yfinance as yf
 
 from core.data_loader import clean_ticker_name, is_japanese_ticker, normalize_ticker
 
-# 日米主要銘柄の Wikipedia 記事名マッピング辞書 (lang, article_title)
-KNOWN_WIKIPEDIA_PAGES = {
-    # 米国株 (en.wikipedia.org)
-    "AAPL": ("en", "Apple_Inc."),
-    "NVDA": ("en", "Nvidia"),
-    "GOOGL": ("en", "Alphabet_Inc."),
-    "GOOG": ("en", "Alphabet_Inc."),
-    "MSFT": ("en", "Microsoft"),
-    "AMZN": ("en", "Amazon_(company)"),
-    "TSLA": ("en", "Tesla,_Inc."),
-    "META": ("en", "Meta_Platforms"),
-    "GLW": ("en", "Corning_Inc."),
-    "INTC": ("en", "Intel"),
-    "AMD": ("en", "AMD"),
-    "NFLX": ("en", "Netflix"),
-    # 日本株 (ja.wikipedia.org)
-    "7203": ("ja", "トヨタ自動車"),
-    "7203.T": ("ja", "トヨタ自動車"),
-    "6758": ("ja", "ソニーグループ"),
-    "6758.T": ("ja", "ソニーグループ"),
-    "7974": ("ja", "任天堂"),
-    "7974.T": ("ja", "任天堂"),
-    "3436": ("ja", "SUMCO"),
-    "3436.T": ("ja", "SUMCO"),
-    "4385": ("ja", "メルカリ_(企業)"),
-    "4385.T": ("ja", "メルカリ_(企業)"),
-    "6367": ("ja", "ダイキン工業"),
-    "6367.T": ("ja", "ダイキン工業"),
-    "6521": ("ja", "オキサイド_(企業)"),
-    "6521.T": ("ja", "オキサイド_(企業)"),
-    "6981": ("ja", "村田製作所"),
-    "6981.T": ("ja", "村田製作所"),
-    "9984": ("ja", "ソフトバンクグループ"),
-    "9984.T": ("ja", "ソフトバンクグループ"),
-    "6857": ("ja", "アドバンテスト"),
-    "6857.T": ("ja", "アドバンテスト"),
-    "8035": ("ja", "東京エレクトロン"),
-    "8035.T": ("ja", "東京エレクトロン"),
-}
+DEFAULT_MAPPING_FILE = "data/wikipedia_mapping.json"
 
 
-def resolve_wikipedia_article(ticker: str) -> Tuple[str, str]:
+def load_wikipedia_mappings(mapping_file: str = DEFAULT_MAPPING_FILE) -> dict:
+    """外部のWikipedia記事名マッピングJSONを読み込む"""
+    if os.path.exists(mapping_file):
+        try:
+            with open(mapping_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def resolve_wikipedia_article(
+    ticker: str,
+    mapping_file: str = DEFAULT_MAPPING_FILE,
+) -> Tuple[str, str]:
     """ティッカーシンボルから対応する Wikipedia 言語コードと記事名を解決する"""
     norm_t = normalize_ticker(ticker)
     clean_t = norm_t.replace(".T", "")
 
-    if norm_t in KNOWN_WIKIPEDIA_PAGES:
-        return KNOWN_WIKIPEDIA_PAGES[norm_t]
-    if clean_t in KNOWN_WIKIPEDIA_PAGES:
-        return KNOWN_WIKIPEDIA_PAGES[clean_t]
+    mappings = load_wikipedia_mappings(mapping_file)
+    if norm_t in mappings:
+        val = mappings[norm_t]
+        return str(val[0]), str(val[1])
+    if clean_t in mappings:
+        val = mappings[clean_t]
+        return str(val[0]), str(val[1])
 
     is_jp = is_japanese_ticker(norm_t)
     lang = "ja" if is_jp else "en"
@@ -120,6 +99,7 @@ def get_search_volume_series(
     ticker: str,
     df_stock: pd.DataFrame,
     cache_dir: str = "data/attention",
+    mapping_file: str = DEFAULT_MAPPING_FILE,
     verbose: bool = True,
 ) -> pd.Series:
     """
@@ -155,7 +135,7 @@ def get_search_volume_series(
 
     # 2. キャッシュがない場合、APIから取得
     if raw_items is None:
-        lang, article = resolve_wikipedia_article(ticker)
+        lang, article = resolve_wikipedia_article(ticker, mapping_file=mapping_file)
         if verbose:
             print(f"  ・[{ticker}] Wikimedia Pageviews APIからアクセス数取得中 ({lang}:{article})...")
 
