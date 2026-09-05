@@ -1,0 +1,7112 @@
+[
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6756
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8008
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8366
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8303
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8051
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7059
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6307
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5860
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6751
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6965
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8771
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8201
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7446
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7436
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6963
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8135
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8424
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9327
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9365
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7011
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6261
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5543
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7052
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7310
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7967
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7684
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8951
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7208
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7364
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11068
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10090
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7902
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7297
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5986
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5215
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5347
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7266
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7312
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7780
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7421
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7174
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5888
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6016
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6947
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7224
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6847
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6560
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6667
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6087
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6212
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7911
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12603
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 29367
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 27221
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13016
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9571
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8129
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8026
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9365
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 17278
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11841
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8894
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6763
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7173
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024090900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7811
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7763
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8027
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9438
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8202
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6650
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6682
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7528
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7394
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7315
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024091900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6997
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7083
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6575
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6770
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8462
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7636
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7908
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7233
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7297
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5829
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024092900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6429
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024093000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6681
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6422
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6476
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6829
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6433
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5471
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5354
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7153
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7456
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024100900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7236
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6511
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6663
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5679
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5762
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7840
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9330
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8382
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8843
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7883
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024101900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6190
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5769
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7177
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7810
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7988
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13575
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 17765
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 17728
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13366
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12063
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024102900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9628
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024103000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9122
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024103100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7831
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7803
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9039
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7641
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9233
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9705
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12987
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11164
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024110900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9124
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8663
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10269
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10702
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10839
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10637
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10179
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8472
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8175
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10004
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024111900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10063
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 16923
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 19978
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12265
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9530
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8674
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9829
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9704
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8975
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8024
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024112900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8198
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024113000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6937
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7485
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9355
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11047
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10123
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9980
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10784
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8962
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8100
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024120900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12681
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12442
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9952
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9435
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8905
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7736
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6974
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8152
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8807
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9440
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024121900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8503
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7712
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6796
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6353
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7086
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6823
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6878
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7135
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7001
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6975
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024122900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6600
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024123000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10824
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2024123100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7804
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7290
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8318
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8219
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8073
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8014
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10558
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 26028
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20722
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025010900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15756
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11851
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9294
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8384
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11017
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10856
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10027
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10387
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9807
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8263
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025011900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8212
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9943
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11747
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11347
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9987
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8763
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8728
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 38395
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 71293
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025012900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 38932
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025013000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24068
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025013100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 19327
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14184
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12082
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13524
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10931
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10114
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9598
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8848
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7304
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025020900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6595
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7690
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7740
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7309
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7601
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7227
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6159
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6278
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6973
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7094
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025021900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7234
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6540
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5933
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5874
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7330
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8113
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10773
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13390
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025022800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9075
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7386
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6896
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8385
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9594
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8674
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7665
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7382
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5892
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025030900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6578
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7563
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7636
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7412
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6618
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6411
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5917
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5362
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6079
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7874
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025031900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8811
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10458
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8332
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5749
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5275
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6139
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6458
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6379
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22496
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5357
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025032900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6044
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025033000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4723
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025033100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5491
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6808
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8005
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8425
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7050
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6669
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9438
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8354
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025040900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9209
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9082
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6442
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5349
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5215
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9063
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10826
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 16925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12994
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9628
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025041900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7498
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6288
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7222
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7464
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7181
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9167
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8048
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5300
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5455
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6525
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025042900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6143
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025043000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8271
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11107
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7205
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4853
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4745
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5649
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6066
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4959
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4811
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025050900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4832
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3963
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4664
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4760
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6850
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7622
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6323
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6327
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4878
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4741
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025051900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7078
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6498
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6369
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5740
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5543
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5202
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5206
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5457
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5853
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8551
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025052900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10345
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025053000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6571
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025053100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5125
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4983
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5328
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6041
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6702
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5962
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5061
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4418
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4426
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025060900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5241
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5147
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5839
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6258
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5209
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4318
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4274
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4752
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4999
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4560
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025061900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4607
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4478
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4057
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3824
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4380
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4735
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5252
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7141
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5699
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5079
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025062900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5012
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025063000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5390
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5093
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4735
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5571
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5519
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5364
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5500
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5442
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5794
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 27988
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 36159
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20758
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12049
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12050
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11028
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13739
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12052
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9970
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7996
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6727
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8324
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8710
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10228
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10910
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11202
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9518
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7764
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8825
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9080
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9396
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11430
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9379
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6853
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6544
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7639
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8064
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8405
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9817
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9045
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7464
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11293
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14504
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12212
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11021
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11582
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8744
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6776
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7215
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7966
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8192
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7833
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7698
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8344
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7896
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6522
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8101
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12993
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15449
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8443
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6625
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6318
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6515
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7155
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6963
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7093
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8344
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7670
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7505
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7640
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025090900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7528
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7142
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7205
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5856
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5048
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5287
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8681
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8542
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13697
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 16823
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025091900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11513
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8716
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7365
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9966
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11348
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8742
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7939
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8313
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7289
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6634
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025092900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7437
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025093000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7854
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8600
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8114
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7808
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7207
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6733
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8711
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8474
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9893
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025100900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10918
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9252
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7818
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7261
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8896
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9833
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9212
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8720
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8972
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7980
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025101900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8438
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8961
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8253
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8333
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8080
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7451
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6404
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6535
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7611
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11951
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025102900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 46990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025103000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 46614
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025103100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 30825
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22688
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22500
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20045
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 17213
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14667
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15181
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14773
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10981
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025110900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10527
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11192
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11867
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12141
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10589
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10575
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8868
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8940
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13101
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15610
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025111900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 27791
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 36959
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 18422
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12613
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11269
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11865
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12985
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12364
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11468
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9972
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025112900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8868
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025113000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8484
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9411
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9702
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10666
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15301
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13115
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10204
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10431
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11899
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025120900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15128
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11957
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10363
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9080
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8194
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7403
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7981
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8157
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8780
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10403
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025121900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9208
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8063
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7730
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8190
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7950
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7871
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8154
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8443
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8552
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8460
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025122900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9079
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025123000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8722
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2025123100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8333
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7690
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9806
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8073
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7796
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9296
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11956
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10912
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10362
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026010900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9346
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8536
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8432
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8374
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9158
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9549
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9299
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8445
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7573
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7431
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026011900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8088
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8331
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9289
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9170
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8373
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6943
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6816
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7749
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8164
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8724
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026012900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8730
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026013000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8007
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026013100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6958
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7033
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7577
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7999
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8261
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9402
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9215
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8836
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8126
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026020900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9007
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8162
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7224
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8046
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7128
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6024
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5889
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6254
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7184
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7358
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026021900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7288
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6875
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6092
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5809
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7179
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7968
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14938
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9427
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026022800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6719
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6166
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7073
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6992
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6652
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6834
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5963
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5777
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5438
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026030900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6176
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6863
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6835
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7467
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6248
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5260
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5114
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7152
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11020
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9703
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026031900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8356
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8593
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6778
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6880
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7452
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8616
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8092
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7354
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6461
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5856
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026032900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5408
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026033000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6478
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026033100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7449
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7145
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6308
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5013
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6698
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5847
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6131
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026040900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6125
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6871
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5470
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5686
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6191
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6866
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6491
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7009
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6979
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5948
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026041900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5845
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6752
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7187
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6644
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6427
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7608
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6966
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7311
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9242
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7975
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026042900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6955
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026043000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6765
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6369
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6417
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5810
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6301
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7075
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7274
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7211
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7177
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026050900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6527
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6869
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7758
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7761
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 14930
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20729
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25809
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22102
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13443
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12118
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026051900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11765
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13711
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15692
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10418
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9121
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8524
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9172
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11096
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11819
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10292
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026052900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10042
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026053000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8615
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026053100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8320
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12596
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12510
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11398
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10558
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10619
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9536
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8817
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9736
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026060900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9717
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10348
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10292
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9888
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8827
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7734
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8180
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9376
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8714
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7818
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026061900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7323
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6291
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5850
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7325
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6831
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6435
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6376
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6645
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5588
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5616
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026062900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5923
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026063000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5845
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6540
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5994
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5236
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5055
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5987
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5883
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7493
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6658
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5873
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5191
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5613
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6332
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6554
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8162
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8517
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7740
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6270
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6105
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6588
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6916
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6995
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8856
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7025
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5914
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6101
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7807
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10615
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9773
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8620
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9142
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6364
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5801
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6125
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6090
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5506
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5460
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5179
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4651
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5086
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5984
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6583
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6242
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7536
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9093
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6120
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5501
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7371
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7378
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6315
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9305
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5775
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5135
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5577
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9129
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8793
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9487
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 13055
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 11224
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6628
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9600
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7871
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8354
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8993
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9715
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Nvidia",
+    "granularity": "daily",
+    "timestamp": "2026090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9389
+  }
+]
