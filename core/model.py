@@ -122,13 +122,31 @@ def train_stock_model(df_features, feature_cols, ticker="AAPL", train_ratio=0.8)
     return model, metrics, best_thresh, df_imp
 
 def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, threshold=0.50):
-    """最新営業日（直近）のデータに対して今後1ヶ月の上昇確率と投資判断を判定する"""
+    """最新営業日（直近）のデータに対して今後1ヶ月の上昇・下落確率と3段階投資判断（BUY/HOLD/SELL）を判定する"""
     latest_feat = df_latest[feature_cols].iloc[[-1]]
     latest_date = latest_feat.index[0]
     latest_feat_arr = np.ascontiguousarray(latest_feat.values, dtype=np.float32)
     
     prob = float(model.predict(latest_feat_arr)[0])
-    is_buy = prob >= threshold
+    down_prob = 1.0 - prob
+    
+    buy_threshold = float(threshold)
+    # 中立帯（HOLD）を適正に確保した売り閾値（下落確率が十分高い領域を検出）
+    sell_threshold = min(buy_threshold - 0.08, round(1.0 - buy_threshold, 4))
+    sell_threshold = max(0.35, min(0.46, sell_threshold))
+    
+    if prob >= buy_threshold:
+        decision = "BUY"
+        decision_label = "★【 買い (BUY) 】"
+        action_desc = "上昇トレンド予測シグナル点灯！"
+    elif prob <= sell_threshold:
+        decision = "SELL"
+        decision_label = "▼【 売り (SELL) 】"
+        action_desc = "下落リスク警戒シグナル点灯！（利益確定・損切り、または空売り検討）"
+    else:
+        decision = "HOLD"
+        decision_label = "◇【 様子見 (HOLD) 】"
+        action_desc = "方向感に乏しく様子見推奨（中立レンジ）"
     
     latest_close = float(df_stock.loc[latest_date, 'Close']) if latest_date in df_stock.index else 0.0
     dynamic_pe = float(df_latest['Fund_Dynamic_PE'].iloc[-1]) if 'Fund_Dynamic_PE' in df_latest.columns else None
@@ -151,6 +169,14 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
         'rsi14': rsi14,
         'sentiment': sentiment,
         'prob': prob,
-        'threshold': threshold,
-        'is_buy': is_buy
+        'down_prob': down_prob,
+        'threshold': buy_threshold,
+        'sell_threshold': sell_threshold,
+        'decision': decision,
+        'decision_label': decision_label,
+        'action_desc': action_desc,
+        'is_buy': (decision == "BUY"),
+        'is_sell': (decision == "SELL"),
+        'is_hold': (decision == "HOLD")
     }
+

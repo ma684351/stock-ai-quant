@@ -125,12 +125,10 @@ def analyze_single_stock(ticker: str, enable_deep_research: bool = False, force_
             sentiment_model_name = "日本語金融BERT" if is_japanese_ticker(ticker) else "FinBERT"
             print(f"  ・ニュース感情スコア({sentiment_model_name}): {latest_res['sentiment']:+.3f}")
         print("  " + "-" * 56)
-        print(f"  ・今後20営業日(約1ヶ月)上昇予測確率: {latest_res['prob']*100:.2f}% (判定閾値: {latest_res['threshold']*100:.1f}%)")
+        print(f"  ・今後20営業日(約1ヶ月)予測確率: 上昇 {latest_res['prob']*100:.2f}% / 下落 {latest_res['down_prob']*100:.2f}%")
+        print(f"    (判定基準: 上昇 {latest_res['threshold']*100:.1f}% 以上で買い、下落 {(1.0-latest_res['sell_threshold'])*100:.1f}% 以上で売り)")
         print("  " + "-" * 56)
-        if latest_res['is_buy']:
-            print("  ★ 判定結果: 【 買い (BUY) 】 ★ 上昇トレンド予測シグナル点灯！")
-        else:
-            print("  ◇ 判定結果: 【 見送り・様子見 (HOLD / WAIT) 】")
+        print(f"  {latest_res['decision_label']} {latest_res['action_desc']}")
         print("=" * 60 + "\n")
         
     return latest_res
@@ -139,12 +137,12 @@ def print_comparison_table(results):
     """複数銘柄の診断結果をランキング一覧表として出力する"""
     sorted_res = sorted(results, key=lambda x: x['prob'], reverse=True)
     
-    print("\n" + "=" * 96)
+    print("\n" + "=" * 98)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
-    print("=" * 96)
-    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'判定結果':<16}"
+    print("=" * 98)
+    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'AI投資シグナル':<18}"
     print(header)
-    print("-" * 96)
+    print("-" * 98)
     
     for i, r in enumerate(sorted_res):
         t = r['ticker']
@@ -153,11 +151,11 @@ def print_comparison_table(results):
         rsi_str = f"{r['rsi14']:.1f}" if r['rsi14'] else "N/A"
         ma_str = f"{r['ma20_ratio']*100:+.1f}%" if r['ma20_ratio'] is not None else "N/A"
         prob_str = f"{r['prob']*100:.1f}%"
-        decision = "★【 買い (BUY) 】" if r['is_buy'] else "◇【 見送り (HOLD) 】"
+        decision = r.get('decision_label', '★【 買い (BUY) 】' if r.get('is_buy') else '◇【 様子見 (HOLD) 】')
         
-        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {decision:<16}"
+        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {decision:<18}"
         print(row)
-    print("=" * 96 + "\n")
+    print("=" * 98 + "\n")
 
 def main():
     parser = argparse.ArgumentParser(description="日米株AI投資判断パイプライン (日本語金融BERT/FinBERT + LightGBM)")
@@ -177,7 +175,7 @@ def main():
             try:
                 res = analyze_single_stock(t, enable_deep_research=args.deep_research, force_refresh=args.force, verbose=False)
                 results.append(res)
-                print(f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob']*100:.1f}%, 判定: {'買い' if res['is_buy'] else '見送り'})")
+                print(f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob']*100:.1f}%, 判定: {res['decision_label']})")
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー発生: {e}")
                 
@@ -208,7 +206,7 @@ def main():
             try:
                 res = analyze_single_stock(t, enable_deep_research=False, verbose=False)
                 results.append(res)
-                print(f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob']*100:.1f}%, 判定: {'買い' if res['is_buy'] else '見送り'})")
+                print(f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob']*100:.1f}%, 判定: {res['decision_label']})")
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー: {e}")
         if results:
