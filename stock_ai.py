@@ -137,12 +137,12 @@ def print_comparison_table(results):
     """複数銘柄の診断結果をランキング一覧表として出力する"""
     sorted_res = sorted(results, key=lambda x: x['prob'], reverse=True)
     
-    print("\n" + "=" * 98)
+    print("\n" + "=" * 108)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
-    print("=" * 98)
-    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'AI投資シグナル':<18}"
+    print("=" * 108)
+    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}"
     print(header)
-    print("-" * 98)
+    print("-" * 108)
     
     for i, r in enumerate(sorted_res):
         t = r['ticker']
@@ -151,11 +151,13 @@ def print_comparison_table(results):
         rsi_str = f"{r['rsi14']:.1f}" if r['rsi14'] else "N/A"
         ma_str = f"{r['ma20_ratio']*100:+.1f}%" if r['ma20_ratio'] is not None else "N/A"
         prob_str = f"{r['prob']*100:.1f}%"
+        auc_val = r.get('metrics', {}).get('roc_auc')
+        auc_str = f"{auc_val:.3f}" if auc_val is not None else "N/A"
         decision = r.get('decision_label', '★【 買い (BUY) 】' if r.get('is_buy') else '◇【 様子見 (HOLD) 】')
         
-        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {decision:<18}"
+        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}"
         print(row)
-    print("=" * 98 + "\n")
+    print("=" * 108 + "\n")
 
 def main():
     parser = argparse.ArgumentParser(description="日米株AI投資判断パイプライン (日本語金融BERT/FinBERT + LightGBM)")
