@@ -159,6 +159,9 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
     rsi14 = float(df_latest[rsi_col].iloc[-1]) if rsi_col in df_latest.columns else None
     sentiment = float(df_latest['News_Sentiment_Score'].iloc[-1]) if 'News_Sentiment_Score' in df_latest.columns else None
     
+    # 実戦トレード価格ガイドの算出
+    price_guide = calculate_trade_price_guide(df_stock, latest_close, decision, prob, t_prefix, df_latest)
+    
     return {
         'ticker': ticker,
         'date': latest_date.strftime('%Y-%m-%d'),
@@ -175,8 +178,97 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
         'decision': decision,
         'decision_label': decision_label,
         'action_desc': action_desc,
+        'price_guide': price_guide,
         'is_buy': (decision == "BUY"),
         'is_sell': (decision == "SELL"),
         'is_hold': (decision == "HOLD")
     }
+
+def calculate_trade_price_guide(df_stock, latest_close, decision, prob, t_prefix, df_latest):
+    """
+    クオンツモデルの予測とボラティリティ・テクニカル水準から、
+    実戦トレード向けの価格ガイド（エントリー目安、目標株価、損切りライン）を算出する。
+    """
+    sub_stock = df_stock.tail(20)
+    high20 = float(sub_stock['High'].max()) if 'High' in sub_stock.columns else latest_close * 1.05
+    low20 = float(sub_stock['Low'].min()) if 'Low' in sub_stock.columns else latest_close * 0.95
+    close20_mean = float(sub_stock['Close'].mean())
+    close20_std = float(sub_stock['Close'].std()) if len(sub_stock) > 1 else latest_close * 0.03
+
+    vol_col = f'{t_prefix}_Volatility_20d'
+    ann_vol = float(df_latest[vol_col].iloc[-1]) if (vol_col in df_latest.columns and not np.isnan(df_latest[vol_col].iloc[-1])) else (close20_std / latest_close * np.sqrt(252))
+    
+    # 1ヶ月（20営業日）の想定期待変動率 (1 sigma: 年率換算ボラティリティの月次変換)
+    sigma_1m = max(0.04, min(0.25, ann_vol * np.sqrt(20.0 / 252.0)))
+    
+    guide = {}
+    
+    if decision == "BUY":
+        # 推奨エントリーゾーン（押し目買い）
+        buy_low = min(latest_close, max(latest_close * (1.0 - sigma_1m * 0.5), close20_mean - close20_std * 0.5))
+        buy_high = latest_close
+        
+        # 目標株価（利益確定ターゲット）: 確率の強さに応じた上値期待値
+        exp_mult = 1.2 + max(0.0, (prob - 0.50) * 2.0)
+        target_price = max(latest_close * (1.0 + sigma_1m * exp_mult), high20 * 1.01)
+        target_return = (target_price - latest_close) / latest_close
+        
+        # 防衛ライン（損切り目安）: 下値サポート割れ
+        stop_loss = min(latest_close * (1.0 - sigma_1m * 0.8), low20 * 0.99)
+        stop_loss = max(stop_loss, latest_close * 0.92)  # 最大損失を-8%以内に抑制
+        loss_pct = (stop_loss - latest_close) / latest_close
+        
+        rr_ratio = abs(target_return / loss_pct) if abs(loss_pct) > 1e-4 else 1.5
+        
+        guide = {
+            'type': 'BUY',
+            'entry_range': (buy_low, buy_high),
+            'target_price': target_price,
+            'target_return': target_return,
+            'stop_loss': stop_loss,
+            'loss_pct': loss_pct,
+            'rr_ratio': rr_ratio
+        }
+        
+    elif decision == "SELL":
+        # 戻り売りゾーン（利益確定・空売り）
+        sell_low = latest_close
+        sell_high = max(latest_close, min(latest_close * (1.0 + sigma_1m * 0.5), close20_mean + close20_std * 0.5))
+        
+        # 下値ターゲット（空売り利確・買戻し目標）
+        target_price = min(latest_close * (1.0 - sigma_1m * 1.2), low20 * 0.99)
+        target_return = (target_price - latest_close) / latest_close
+        
+        # 踏み上げ防衛ライン（損切り目安）
+        stop_loss = max(latest_close * (1.0 + sigma_1m * 0.8), high20 * 1.01)
+        stop_loss = min(stop_loss, latest_close * 1.08)  # 最大でも+8%で損切り
+        loss_pct = (stop_loss - latest_close) / latest_close
+        
+        rr_ratio = abs(target_return / loss_pct) if abs(loss_pct) > 1e-4 else 1.5
+        
+        guide = {
+            'type': 'SELL',
+            'entry_range': (sell_low, sell_high),
+            'target_price': target_price,
+            'target_return': target_return,
+            'stop_loss': stop_loss,
+            'loss_pct': loss_pct,
+            'rr_ratio': rr_ratio
+        }
+        
+    else:  # HOLD（様子見）
+        # 押し目買い転換ライン（指値待ち）: サポート到達で売られすぎ反発圏
+        dip_buy = min(latest_close * (1.0 - sigma_1m * 0.7), low20 * 0.99)
+        # 上値ブレイクライン（順張り買い転換）: レジスタンス上抜け
+        breakout = max(latest_close * (1.0 + sigma_1m * 0.5), high20 * 1.01, close20_mean * 1.02)
+        
+        guide = {
+            'type': 'HOLD',
+            'dip_buy_price': dip_buy,
+            'dip_return': (dip_buy - latest_close) / latest_close,
+            'breakout_price': breakout,
+            'breakout_return': (breakout - latest_close) / latest_close
+        }
+        
+    return guide
 

@@ -129,6 +129,37 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         print(f"    (判定基準: 上昇 {latest_res['threshold']*100:.1f}% 以上で買い、下落 {(1.0-latest_res['sell_threshold'])*100:.1f}% 以上で売り)")
         print("  " + "-" * 56)
         print(f"  {latest_res['decision_label']} {latest_res['action_desc']}")
+        
+        # 実戦トレード価格ガイドの表示
+        pg = latest_res.get('price_guide', {})
+        if pg:
+            print("  " + "-" * 56)
+            if pg.get('type') == 'BUY':
+                e_low = format_price(ticker, pg['entry_range'][0])
+                e_high = format_price(ticker, pg['entry_range'][1])
+                target = format_price(ticker, pg['target_price'])
+                sl = format_price(ticker, pg['stop_loss'])
+                print("  【AI実戦トレード価格ガイド（エントリー・利確・損切り）】")
+                print(f"    ・推奨買いゾーン (押し目指値)  : {e_low} 〜 {e_high} （指値〜現在値で分割買い）")
+                print(f"    ・1ヶ月目標株価  (利益確定)    : {target} ({pg['target_return']*100:+.1f}%)")
+                print(f"    ・防衛ライン    (損切り目安)    : {sl} ({pg['loss_pct']*100:+.1f}%)")
+                print(f"    ・リスクリワード比             : 1 : {pg['rr_ratio']:.1f} （期待値プラス）")
+            elif pg.get('type') == 'SELL':
+                e_low = format_price(ticker, pg['entry_range'][0])
+                e_high = format_price(ticker, pg['entry_range'][1])
+                target = format_price(ticker, pg['target_price'])
+                sl = format_price(ticker, pg['stop_loss'])
+                print("  【AI実戦トレード価格ガイド（利確・空売り・損切り）】")
+                print(f"    ・戻り売りゾーン (利確・空売り) : {e_low} 〜 {e_high}")
+                print(f"    ・下値ターゲット (買戻し目標)   : {target} ({pg['target_return']*100:+.1f}%)")
+                print(f"    ・踏み上げ防衛  (損切り目安)    : {sl} ({pg['loss_pct']*100:+.1f}%)")
+                print(f"    ・リスクリワード比             : 1 : {pg['rr_ratio']:.1f}")
+            elif pg.get('type') == 'HOLD':
+                dip = format_price(ticker, pg['dip_buy_price'])
+                bo = format_price(ticker, pg['breakout_price'])
+                print("  【AI監視プライスガイド（買い転換・ブレイクアウト）】")
+                print(f"    ・押し目買い転換ライン (指値待ち) : {dip} 以下 ({pg['dip_return']*100:+.1f}%) （反発期待圏）")
+                print(f"    ・上値ブレイクライン   (順張り買い): {bo} 超え ({pg['breakout_return']*100:+.1f}%) （節目上抜け）")
         print("=" * 60 + "\n")
         
     return latest_res
@@ -137,12 +168,12 @@ def print_comparison_table(results):
     """複数銘柄の診断結果をランキング一覧表として出力する"""
     sorted_res = sorted(results, key=lambda x: x['prob'], reverse=True)
     
-    print("\n" + "=" * 108)
+    print("\n" + "=" * 128)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
-    print("=" * 108)
-    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}"
+    print("=" * 128)
+    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
     print(header)
-    print("-" * 108)
+    print("-" * 128)
     
     for i, r in enumerate(sorted_res):
         t = r['ticker']
@@ -155,9 +186,19 @@ def print_comparison_table(results):
         auc_str = f"{auc_val:.3f}" if auc_val is not None else "N/A"
         decision = r.get('decision_label', '★【 買い (BUY) 】' if r.get('is_buy') else '◇【 様子見 (HOLD) 】')
         
-        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}"
+        pg = r.get('price_guide', {})
+        target_str = "N/A"
+        if pg:
+            if pg.get('type') == 'BUY':
+                target_str = f"{format_price(t, pg['target_price'])} ({pg['target_return']*100:+.1f}%)"
+            elif pg.get('type') == 'SELL':
+                target_str = f"{format_price(t, pg['target_price'])} (下値目標)"
+            elif pg.get('type') == 'HOLD':
+                target_str = f"{format_price(t, pg['dip_buy_price'])} (押し目待ち)"
+        
+        row = f"{i+1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
         print(row)
-    print("=" * 108 + "\n")
+    print("=" * 128 + "\n")
 
 def main():
     parser = argparse.ArgumentParser(description="日米株AI投資判断パイプライン (日本語金融BERT/FinBERT + LightGBM)")
