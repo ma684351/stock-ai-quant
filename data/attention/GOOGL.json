@@ -1,0 +1,7112 @@
+[
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3675
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4212
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4281
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4367
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4469
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4012
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3695
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3436
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4530
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4622
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4506
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4108
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4336
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3970
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3837
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4274
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5594
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7605
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6419
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4820
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3842
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3557
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5585
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4589
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4042
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4120
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3717
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3648
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5570
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6828
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4939
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4579
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4346
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5094
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4955
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5255
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6455
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6347
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5299
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4425
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4067
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4667
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5204
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5353
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4958
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4560
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4130
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4088
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4722
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4693
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4973
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5372
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4378
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3864
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3960
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3998
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4421
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4559
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4632
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4549
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3670
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024090900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5142
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5662
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5400
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5197
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4369
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4361
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4792
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4839
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4830
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024091900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5187
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4630
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4043
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4886
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4907
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5089
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4856
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4460
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3890
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024092900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4028
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024093000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4932
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4900
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4851
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4742
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4100
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3984
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4632
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4729
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024100900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6502
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5053
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4320
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4433
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4978
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5312
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5886
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5363
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4720
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024101900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4008
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4736
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5223
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5352
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4865
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4642
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4008
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3985
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5186
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024102900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6406
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024103000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7509
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024103100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6758
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5938
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4765
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4310
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4996
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4928
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5126
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5034
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5083
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024110900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4349
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4333
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4912
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5121
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5407
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5276
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5009
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4144
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4001
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024111900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5579
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5523
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6635
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5760
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4463
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4374
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5178
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5099
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4840
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4493
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024112900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4229
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024113000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3926
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3976
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4845
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5025
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5036
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4823
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4382
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3750
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3656
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024120900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4536
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5335
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5832
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5576
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4938
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4126
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4074
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4785
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4813
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4758
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024121900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4480
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4479
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3936
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3886
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4279
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3793
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3716
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4242
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4346
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4201
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024122900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3875
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024123000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4011
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024123100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3995
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3968
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4487
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4307
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4136
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4283
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4706
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5211
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5547
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025010900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5084
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4866
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4604
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4714
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5288
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5351
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5372
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5911
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5998
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5244
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025011900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6775
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 12737
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 15639
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10573
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9341
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7007
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5732
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5722
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6407
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8627
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025012900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7188
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025013000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6420
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025013100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6088
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4879
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4840
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5476
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6499
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8025
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6791
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5754
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4563
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025020900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4413
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5282
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8391
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7348
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6612
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5626
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4434
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4333
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4694
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4927
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025021900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4851
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4802
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4676
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3973
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3941
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4639
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4772
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4960
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5087
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025022800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4866
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4333
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4447
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4834
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5077
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5654
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4689
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4737
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3891
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025030900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3912
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4943
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5488
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5053
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5193
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4645
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4006
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3893
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4907
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6275
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025031900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5788
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5129
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4546
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3900
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4183
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4826
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4789
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5415
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4540
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4127
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025032900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3966
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025033000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3750
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025033100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4377
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4491
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5224
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5251
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5445
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4959
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4781
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5718
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5867
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025040900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5904
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5739
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4363
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3600
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3712
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4514
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5142
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5057
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5242
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4904
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025041900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4100
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6135
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10645
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 10240
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6272
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4463
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4453
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5355
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025042900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5494
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025043000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4859
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4096
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4083
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3570
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3731
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3977
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4453
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4708
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4372
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025050900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3982
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3714
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3846
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4107
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4426
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4828
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4474
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4283
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3580
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3539
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025051900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4034
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4427
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4987
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4780
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4116
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3804
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3850
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3862
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4197
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4278
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025052900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4195
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025053000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4178
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025053100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3861
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3639
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4378
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4302
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4144
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4424
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4029
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3626
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3790
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025060900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5185
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4872
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4708
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4332
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3941
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3592
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3559
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4199
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3976
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3860
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025061900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3644
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3692
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2972
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3126
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3701
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3883
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3694
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3911
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3834
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3595
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025062900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3480
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025063000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3790
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3873
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4148
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3993
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3431
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3049
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3081
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3658
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3858
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4377
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4505
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4278
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3341
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3288
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3562
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3773
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3665
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3696
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3405
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2928
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3311
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3987
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4115
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4558
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5481
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5622
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4503
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3929
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4006
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4347
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4607
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4702
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4192
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3764
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3651
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4747
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4237
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4119
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4157
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4465
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3600
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3462
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3954
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4388
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4787
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4444
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4323
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3378
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3340
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3924
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4252
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4119
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4286
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4201
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3595
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3401
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3605
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4310
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4465
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4816
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4004
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3244
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3306
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3627
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4059
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5583
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5253
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5491
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5020
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4208
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4598
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025090900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4463
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4808
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4849
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4372
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3682
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4034
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5722
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6954
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5559
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5908
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025091900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5245
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4702
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5093
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5154
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5156
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5148
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4886
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4829
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 9695
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4341
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025092900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4672
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025093000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5320
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5039
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6234
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4599
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4313
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3955
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4390
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4592
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4619
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025100900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4508
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4238
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3527
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3556
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4196
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4582
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4685
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4744
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4258
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3649
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025101900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3612
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4456
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5159
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4998
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5238
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4501
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3910
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3847
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4522
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4828
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025102900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6439
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025103000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7116
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025103100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5389
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4319
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4371
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4965
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5183
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5130
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4969
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4604
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3552
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025110900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3526
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3948
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3997
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4082
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4419
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4089
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4577
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4198
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5289
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 7308
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025111900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6375
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5875
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4808
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4244
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4055
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5444
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6765
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5784
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4840
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4314
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025112900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3757
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025113000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3815
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4101
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4324
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4700
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4685
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4418
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3857
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3632
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4758
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025120900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5151
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4848
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4797
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4061
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3427
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3402
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3927
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4072
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4302
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4580
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025121900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3924
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3199
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3401
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4041
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3889
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8042
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4314
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3448
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3378
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3591
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025122900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3606
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025123000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3714
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2025123100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3387
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3387
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3848
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3315
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3247
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3709
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3894
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4014
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4725
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026010900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4413
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3648
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3644
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4801
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5781
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6135
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4736
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3904
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3531
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3606
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026011900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3979
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4145
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4083
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4158
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3793
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3198
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3291
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4178
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4445
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026012900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4677
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026013000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4569
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026013100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3604
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3610
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4284
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4398
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5642
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 8207
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6614
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5341
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5033
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026020900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5986
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6034
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5091
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5387
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4425
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3663
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3638
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4175
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4636
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5504
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026021900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5577
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5508
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4726
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5417
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5012
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4861
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4684
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4657
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4276
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026022800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3319
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3323
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3858
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4208
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4122
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3899
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3698
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3675
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3798
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026030900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4163
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3997
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4382
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4466
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3823
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3451
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3272
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3533
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3705
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3654
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026031900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4260
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3688
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2862
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3145
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3829
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3577
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4834
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4668
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3955
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3443
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026032900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3460
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026033000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3853
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026033100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3625
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3778
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3355
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3456
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2714
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2724
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3226
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3319
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3204
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026040900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3627
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3268
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3462
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3628
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3958
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3920
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3639
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3649
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3663
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2965
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026041900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2901
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3492
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4270
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3938
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3736
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3673
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3122
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3269
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3812
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4250
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026042900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4742
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026043000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5374
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4779
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4425
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3464
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3516
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4179
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4147
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3785
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3717
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026050900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3102
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3147
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4078
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4070
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3998
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3912
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4085
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3597
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3285
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3990
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026051900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4052
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4278
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4866
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4131
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3556
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3237
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3480
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4178
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3953
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4114
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026052900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4052
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026053000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3186
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026053100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3527
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3978
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5195
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4567
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4266
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4008
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3227
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3249
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4143
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026060900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4032
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3915
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3893
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4823
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4644
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4282
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6169
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 6444
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5831
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4961
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026061900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4520
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4757
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4124
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4833
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4956
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5075
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4472
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3673
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3644
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3403
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026062900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3762
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026063000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4745
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4781
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3925
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3506
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3005
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2939
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3637
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3871
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3867
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026070900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3678
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3417
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3052
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2965
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3342
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3315
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3729
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3466
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3275
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2863
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026071900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2726
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3170
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3548
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4049
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5545
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4116
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3436
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3130
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4162
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4006
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026072900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3999
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026073000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4025
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026073100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3084
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3045
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3558
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3631
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3768
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3690
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3404
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2959
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026080900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2972
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3480
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3196
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3561
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3234
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3251
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2962
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2874
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3246
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3412
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026081900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3504
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3561
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3529
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 2988
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3095
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3350
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3325
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4000
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3906
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3838
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026082900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3391
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026083000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5110
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026083100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 5087
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026090100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4339
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026090200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4292
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026090300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 4323
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Alphabet_Inc.",
+    "granularity": "daily",
+    "timestamp": "2026090400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 3999
+  }
+]

@@ -63,6 +63,13 @@ def dummy_market_data():
         }
     )
 
+    # 検索ボリューム (Attention Volume)
+    attention_volume = pd.Series(
+        np.random.randint(500, 10000, n_days).astype(float),
+        index=dates,
+        name="Attention_Volume",
+    )
+
     return {
         "df_stock": df_stock,
         "df_sp500": df_sp500,
@@ -70,4 +77,5 @@ def dummy_market_data():
         "df_nikkei": df_nikkei,
         "df_daily_sentiment": df_sentiment,
         "df_fund": df_fund,
+        "df_attention": attention_volume,
     }

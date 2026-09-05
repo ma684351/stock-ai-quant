@@ -1,0 +1,569 @@
+[
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25080
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23533
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22233
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21453
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23092
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23493
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22475
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023110900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22807
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22233
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21973
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20364
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21230
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21993
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20949
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22802
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22061
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22372
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023111900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21435
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24013
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22964
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24394
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24895
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 28826
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21543
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20747
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24859
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22960
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023112900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21747
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023113000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21685
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20175
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20465
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21111
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21529
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24355
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 27618
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25667
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23905
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023120900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22477
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23134
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 27254
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 26315
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24878
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24885
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 23228
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21872
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22231
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 26494
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023121900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25613
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24193
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24365
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22296
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 21219
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122400",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20686
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122500",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22592
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122600",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25218
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122700",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 25181
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122800",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24614
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023122900",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22660
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023123000",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 22000
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2023123100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 19439
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024010100",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 20176
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024010200",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24939
+  },
+  {
+    "project": "en.wikipedia",
+    "article": "Apple_Inc.",
+    "granularity": "daily",
+    "timestamp": "2024010300",
+    "access": "all-access",
+    "agent": "all-agents",
+    "views": 24847
+  }
+]
