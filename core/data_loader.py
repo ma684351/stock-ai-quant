@@ -7,8 +7,6 @@ import re
 from datetime import datetime
 from typing import Tuple
 
-FUNDAMENTALS_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "fundamentals")
-
 def is_japanese_ticker(ticker: str) -> bool:
     """銘柄コードが日本株（4桁数字、または .T / .JP 等）かを判定する"""
     t = ticker.strip().upper()
@@ -55,36 +53,8 @@ def fetch_macro_data(period: str = "2y") -> Tuple[pd.DataFrame, pd.DataFrame, pd
 def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
     """
     指定銘柄のファンダメンタルズ財務データを取得する。
-    1. data/fundamentals/{ticker}.json があれば高精度ヒストリカルデータをロード
-    2. なければ yfinance から最新指標および四半期決算データを自動解析して動的構築
+    yfinance から最新指標および四半期・年次決算データを自動解析して動的構築する。
     """
-    clean_t = clean_ticker_name(ticker)
-    candidates = [
-        os.path.join(FUNDAMENTALS_DIR, f"{ticker.upper()}.json"),
-        os.path.join(FUNDAMENTALS_DIR, f"{clean_t}.json"),
-        os.path.join(FUNDAMENTALS_DIR, f"{ticker.split('.')[0].upper()}.json")
-    ]
-    fund_path = None
-    for p in candidates:
-        if os.path.exists(p):
-            fund_path = p
-            break
-
-    if fund_path:
-        try:
-            with open(fund_path, "r", encoding="utf-8") as f:
-                records = json.load(f)
-            df_fund = pd.DataFrame(
-                records,
-                columns=['Date', 'TTM_EPS', 'Fund_Rev_Growth_YoY', 'Fund_Net_Margin', 'Fund_Operating_Margin', 'Fund_Earnings_Surprise']
-            )
-            df_fund['Date'] = pd.to_datetime(df_fund['Date']).dt.normalize()
-            print(f"[{ticker}] キャッシュから {len(df_fund)} 四半期分の確定財務データをロード")
-            return df_fund
-        except Exception as e:
-            print(f"[{ticker}] 財務キャッシュ読み込みエラー: {e}")
-
-
     print(f"[{ticker}] yfinance から四半期・年次財務データを自動解析中...")
     try:
         yf_ticker = yf.Ticker(ticker)

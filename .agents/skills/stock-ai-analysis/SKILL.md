@@ -98,5 +98,5 @@ cd /Users/masami/project/fin-sentiment-lgbm-pipeline
 - **確定カタリスト**: `data/catalysts/{TICKER}.json`
   - 日本株は `7203_T.json`、米国株は `AAPL.json` の形式で保存。
   - `--deep-research` 実行時に自動更新されます。
-- **四半期財務データ**: `data/fundamentals/{TICKER}.json`
-  - yfinance から取得した年次・四半期財務諸表を自動補間して保存。
+- **四半期財務データ**:
+  - `yfinance` から最新の四半期・年次決算（売上高、純利益、EPS、営業利益率など）を完全自動取得・動的補間してモデルに供給します（手動ファイル管理は不要）。

@@ -21,8 +21,8 @@ fin-sentiment-lgbm-pipeline/
 │   └── model.py                # LightGBM個別学習、最適閾値探索、本日の投資判断推論
 │
 ├── data/                       # データのキャッシュ・蓄積
-│   ├── catalysts/              # 各銘柄の過去2年カタリスト (AAPL.json, 7203_T.json, NVDA.json...)
-│   └── fundamentals/           # 四半期財務データ (AAPL.json, 7203_T.json, GOOGL.json...)
+│   └── catalysts/              # 各銘柄の過去2年カタリスト (AAPL.json, 7203_T.json, NVDA.json...)
+│                               # ※ 財務データは yfinance から最新決算を完全自動取得・動的補間します
 │
 ├── notebooks/                  # Google Colab用個別ノートブック
 │   ├── apple_stock_ai_pipeline.ipynb       # Apple (AAPL) 専用ノートブック
