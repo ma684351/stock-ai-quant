@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from typing import List, Tuple
 
 from core.data_loader import clean_ticker_name
@@ -49,6 +49,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
     """
     print(f"  [Financial Engine] yfinance から '{ticker}' の確定決算・企業イベントを自動抽出中...")
     catalysts = []
+    cutoff_date = (datetime.now() - timedelta(days=730)).strftime("%Y-%m-%d")
     try:
         import pandas as pd
         import yfinance as yf
@@ -61,7 +62,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
             if ed is not None and not ed.empty:
                 for idx, row in ed.iterrows():
                     dt_str = idx.strftime("%Y-%m-%d")
-                    if dt_str < "2024-01-01":
+                    if dt_str < cutoff_date:
                         continue
                     reported = row.get("Reported EPS")
                     est = row.get("EPS Estimate")
@@ -81,7 +82,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
             if splits is not None and not splits.empty:
                 for dt, ratio in splits.items():
                     dt_str = dt.strftime("%Y-%m-%d")
-                    if dt_str >= "2024-01-01":
+                    if dt_str >= cutoff_date:
                         catalysts.append((dt_str, f"{ticker} completes stock split with ratio {ratio}:1."))
         except Exception:
             pass
@@ -94,7 +95,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
                     ts = n.get("providerPublishTime")
                     title = n.get("title")
                     if ts and title:
-                        dt_str = datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d")
+                        dt_str = datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d")
                         catalysts.append((dt_str, f"{ticker}: {title}"))
         except Exception:
             pass

@@ -134,10 +134,36 @@ def get_job_openings_series(
         except Exception:
             cached_data = None
 
+    today_str = datetime.today().strftime("%Y-%m-%d")
+
+    # キャッシュのTTLチェック（日付が変わっていれば最新求人数を再取得してhistoryに追記）
+    if cached_data is not None and cached_data.get("last_updated") != today_str:
+        new_count, new_plat = fetch_company_job_openings(ticker, mapping_file=mapping_file)
+        if new_count is not None:
+            cached_data["count"] = new_count
+            cached_data["platform"] = new_plat or cached_data.get("platform")
+            cached_data["last_updated"] = today_str
+            history = cached_data.get("history", [])
+            dates_in_hist = [h.get("date") for h in history]
+            if today_str in dates_in_hist:
+                for h in history:
+                    if h.get("date") == today_str:
+                        h["count"] = new_count
+            else:
+                history.append({"date": today_str, "count": new_count})
+            cached_data["history"] = history
+            try:
+                os.makedirs(cache_dir, exist_ok=True)
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump(cached_data, f, ensure_ascii=False, indent=2)
+                if verbose:
+                    print(f"  ・[{ticker}] 求人数キャッシュを本日の最新値 ({new_count} 件 / {new_plat}) に更新しました")
+            except Exception:
+                pass
+
     if cached_data is None:
         count, platform_name = fetch_company_job_openings(ticker, mapping_file=mapping_file)
         if count is not None:
-            today_str = datetime.today().strftime("%Y-%m-%d")
             cached_data = {
                 "ticker": clean_t,
                 "count": count,
@@ -151,11 +177,31 @@ def get_job_openings_series(
             if verbose:
                 print(f"  ・[{ticker}] ATS公開APIから求人数 {count} 件 ({platform_name}) を取得・保存しました")
 
-    if cached_data and "count" in cached_data:
-        val = float(cached_data["count"])
+    if cached_data and ("history" in cached_data or "count" in cached_data):
         if not df_stock.empty:
-            return pd.Series(val, index=df_stock.index, name="Job_Openings")
-        return pd.Series([val], name="Job_Openings")
+            s_jobs = pd.Series(0.0, index=df_stock.index, name="Job_Openings")
+            history = cached_data.get("history", [])
+            if history:
+                for h in history:
+                    h_dt = pd.to_datetime(h.get("date")).normalize()
+                    if h_dt in s_jobs.index:
+                        s_jobs.loc[h_dt] = float(h.get("count", 0))
+                    elif h_dt >= s_jobs.index[0]:
+                        # 最も近い直後の営業日にマッピング
+                        later_days = s_jobs.index[s_jobs.index >= h_dt]
+                        if len(later_days) > 0:
+                            s_jobs.loc[later_days[0]] = float(h.get("count", 0))
+                # 最初の観測日以降のみ前方補完 (ffill) し、過去への逆流 (bfill) は絶対に行わない
+                first_obs = pd.to_datetime(history[0].get("date")).normalize()
+                obs_mask = s_jobs.index >= first_obs
+                s_jobs[obs_mask] = s_jobs[obs_mask].replace(0.0, None).ffill().fillna(0.0)
+                # 最終営業日の最新値確認
+                s_jobs.iloc[-1] = float(cached_data.get("count", 0))
+            else:
+                # 履歴がない場合は最新営業日にのみ求人数を配置
+                s_jobs.iloc[-1] = float(cached_data.get("count", 0))
+            return s_jobs
+        return pd.Series([float(cached_data.get("count", 0))], name="Job_Openings")
 
     if verbose:
         print(f"  ・[{ticker}] 求人データ未設定/取得不可のため、中立値(0)で安全にフォールバックします")

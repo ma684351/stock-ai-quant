@@ -1,6 +1,16 @@
+import os
+import shutil
+
 import numpy as np
 import pandas as pd
 import pytest
+
+
+@pytest.fixture(scope="session", autouse=True)
+def ensure_data_dir():
+    """テスト実行時に data ディレクトリが存在しない場合、data.example から安全に準備する"""
+    if not os.path.exists("data") and os.path.exists("data.example"):
+        shutil.copytree("data.example", "data")
 
 
 @pytest.fixture

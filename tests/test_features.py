@@ -46,6 +46,7 @@ def test_build_features_and_target(dummy_market_data):
     # [採用・求人 (Hiring)]
     assert "Job_Openings_Count" in clean_df.columns
     assert "Job_to_Volume_Ratio" in clean_df.columns
+    assert "Job_to_Employee_Ratio" in clean_df.columns
     # [感情]
     assert "News_Sentiment_Score" in clean_df.columns
     assert "News_Sentiment_Surprise" in clean_df.columns
@@ -76,3 +77,33 @@ def test_build_features_without_attention(dummy_market_data):
     )
     assert "Attention_Surprise_20d" in clean_df.columns
     assert not clean_df.isna().any().any()
+
+
+def test_dynamic_job_feature_pruning_with_insufficient_history(dummy_market_data):
+    """求人数履歴が不足している場合、モデル特徴量から安全に除外され、latest_dfには保持されること"""
+    import pandas as pd
+
+    df_stock = dummy_market_data["df_stock"]
+    # 直近1日のみ求人数があり、過去は0のSeries
+    s_jobs = pd.Series(0.0, index=df_stock.index)
+    s_jobs.iloc[-1] = 5.0
+
+    clean_df, latest_df, feature_cols = build_features_and_target(
+        df_stock=df_stock,
+        df_sp500=dummy_market_data["df_sp500"],
+        df_usdjpy=dummy_market_data["df_usdjpy"],
+        df_nikkei=dummy_market_data["df_nikkei"],
+        df_daily_sentiment=dummy_market_data["df_daily_sentiment"],
+        df_fund=dummy_market_data["df_fund"],
+        ticker="TEST",
+        target_horizon=20,
+        df_jobs=s_jobs,
+    )
+
+    # 1. 過去の非ゼロ観測日が少ないため、疑似相関を防ぐべくモデル特徴量からは除外される
+    assert "Job_to_Volume_Ratio" not in feature_cols
+    assert "Job_Openings_Count" not in feature_cols
+
+    # 2. ただし latest_df には求人数・比率が保持されている
+    assert "Job_Openings_Count" in latest_df.columns
+    assert latest_df["Job_Openings_Count"].iloc[0] == 5.0
