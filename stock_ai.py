@@ -48,6 +48,7 @@ from core.data_loader import (
 from core.features import build_features_and_target
 from core.model import predict_latest_signal, train_stock_model
 from core.research_agent import get_ticker_catalysts
+from core.search_volume import get_search_volume_series
 from core.sentiment import analyze_sentiment, generate_news_dataset
 
 
@@ -81,14 +82,25 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
     df_news = generate_news_dataset(df_stock, ticker, catalysts=catalysts, n_supplementary=120)
     df_sentiment = analyze_sentiment(df_news, ticker=ticker, batch_size=16)
 
-    # 5. 特徴量エンジニアリング & ターゲット定義 (20営業日後 / 約1ヶ月後)
+    # 5. 検索・アクセスボリューム (Investor Attention) の取得 (Wikimedia公式API)
+    df_attention = get_search_volume_series(ticker, df_stock, verbose=verbose)
+
+    # 6. 特徴量エンジニアリング & ターゲット定義 (20営業日後 / 約1ヶ月後)
     if verbose:
-        print(f"[{ticker}] 4大カテゴリ（テクニカル×マクロ×感情×財務）の特徴量を構築中...")
+        print(f"[{ticker}] 5大カテゴリ（テクニカル×マクロ×感情×関心×財務）の特徴量を構築中...")
     df_features, df_latest, feature_cols = build_features_and_target(
-        df_stock, df_sp500, df_usdjpy, df_nikkei, df_sentiment, df_fund, ticker=ticker, target_horizon=20
+        df_stock,
+        df_sp500,
+        df_usdjpy,
+        df_nikkei,
+        df_sentiment,
+        df_fund,
+        ticker=ticker,
+        target_horizon=20,
+        df_attention=df_attention,
     )
 
-    # 6. LightGBMモデル学習 & 閾値探索
+    # 7. LightGBMモデル学習 & 閾値探索
     if verbose:
         print(f"[{ticker}] LightGBMモデルを個別最適化して学習中...")
     model, metrics, best_thresh, df_imp = train_stock_model(df_features, feature_cols, ticker=ticker, train_ratio=0.8)
@@ -131,6 +143,10 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         if latest_res["sentiment"] is not None:
             sentiment_model_name = "日本語金融BERT" if is_japanese_ticker(ticker) else "FinBERT"
             print(f"  ・ニュース感情スコア({sentiment_model_name}): {latest_res['sentiment']:+.3f}")
+        if latest_res.get("attention_surprise") is not None:
+            att_val = latest_res["attention_surprise"]
+            att_label = "注目度急上昇" if att_val > 0.20 else ("関心低下" if att_val < -0.20 else "平常")
+            print(f"  ・検索関心度サプライズ(20日平均比): {att_val * 100:+.1f}% ({att_label})")
         print("  " + "-" * 56)
         print(
             f"  ・今後20営業日(約1ヶ月)予測確率: 上昇 {latest_res['prob'] * 100:.2f}% / 下落 {latest_res['down_prob'] * 100:.2f}%"

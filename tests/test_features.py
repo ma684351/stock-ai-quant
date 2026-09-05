@@ -14,6 +14,7 @@ def test_build_features_and_target(dummy_market_data):
         df_fund=dummy_market_data["df_fund"],
         ticker=ticker,
         target_horizon=target_horizon,
+        df_attention=dummy_market_data["df_attention"],
     )
 
     # 1. 出力行数と特徴量カラムリストの検証
@@ -31,7 +32,7 @@ def test_build_features_and_target(dummy_market_data):
     assert not clean_df.isna().any().any()
     assert not latest_df.isna().any().any()
 
-    # 4. 4大カテゴリの特徴量が揃っていること
+    # 4. 5大カテゴリの特徴量が揃っていること
     # [テクニカル]
     assert f"{ticker}_Return_1d" in clean_df.columns
     assert f"{ticker}_MA20_Ratio" in clean_df.columns
@@ -44,7 +45,29 @@ def test_build_features_and_target(dummy_market_data):
     assert "News_Sentiment_Score" in clean_df.columns
     assert "News_Sentiment_Surprise" in clean_df.columns
     assert "News_Sentiment_x_RSI" in clean_df.columns
+    # [検索・アクセスボリューム (Attention)]
+    assert "Attention_Surprise_20d" in clean_df.columns
+    assert "Attention_ZScore_60d" in clean_df.columns
+    assert "Attention_x_Sentiment" in clean_df.columns
+    assert "Attention_x_RSI" in clean_df.columns
     # [ファンダメンタルズ]
     assert "Fund_Dynamic_PE" in clean_df.columns
     assert "Fund_PE_Ratio_to_MA200" in clean_df.columns
     assert "Fund_PE_ZScore" in clean_df.columns
+
+
+def test_build_features_without_attention(dummy_market_data):
+    """df_attention=None の場合でもデフォルト補完で正常に特徴量が構築できること"""
+    clean_df, latest_df, feature_cols = build_features_and_target(
+        df_stock=dummy_market_data["df_stock"],
+        df_sp500=dummy_market_data["df_sp500"],
+        df_usdjpy=dummy_market_data["df_usdjpy"],
+        df_nikkei=dummy_market_data["df_nikkei"],
+        df_daily_sentiment=dummy_market_data["df_daily_sentiment"],
+        df_fund=dummy_market_data["df_fund"],
+        ticker="TEST",
+        target_horizon=20,
+        df_attention=None,
+    )
+    assert "Attention_Surprise_20d" in clean_df.columns
+    assert not clean_df.isna().any().any()

@@ -52,7 +52,7 @@ cd fin-sentiment-lgbm-pipeline
 .venv/bin/python stock_ai.py 7203
 
 # 複数銘柄の一括比較・ランキング出力
-.venv/bin/python stock_ai.py --compare 7203 2122 AAPL 7974
+.venv/bin/python stock_ai.py --compare 7203 6758 AAPL 7974
 ```
 
 ---
