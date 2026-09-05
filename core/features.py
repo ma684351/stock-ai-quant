@@ -171,13 +171,15 @@ def build_features_and_target(
     # 過去の学習期間において求人数の非ゼロ観測日が5日未満の場合、定数化による疑似相関（出来高逆数化）を防ぐためモデル学習から除外
     job_obs_count = int((clean_df["Job_Openings_Count"] > 0).sum()) if "Job_Openings_Count" in clean_df.columns else 0
     if job_obs_count < 5:
-        excluded_model_cols.update({
-            "Job_Openings_Count",
-            "Job_to_Volume_Ratio",
-            "Job_x_Rev_Growth",
-            "Job_x_RSI",
-            "Job_to_Employee_Ratio",
-        })
+        excluded_model_cols.update(
+            {
+                "Job_Openings_Count",
+                "Job_to_Volume_Ratio",
+                "Job_x_Rev_Growth",
+                "Job_x_RSI",
+                "Job_to_Employee_Ratio",
+            }
+        )
 
     feature_cols = [c for c in clean_df.columns if c not in excluded_model_cols]
     return clean_df, latest_df, feature_cols

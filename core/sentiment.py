@@ -162,9 +162,7 @@ def generate_news_dataset(
     for d in sampled_dates:
         ret = lagged_returns.loc[d] if d in lagged_returns.index else 0.0
         if rng.random() < 0.80:
-            headline = rng.choice(
-                pos_templates if ret > 0.005 else (neg_templates if ret < -0.005 else neu_templates)
-            )
+            headline = rng.choice(pos_templates if ret > 0.005 else (neg_templates if ret < -0.005 else neu_templates))
         else:
             headline = rng.choice(pos_templates if ret < 0 else neg_templates)
 
