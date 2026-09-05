@@ -45,6 +45,10 @@ description: >-
    - `data/wikipedia_mapping.json` を開き、対象銘柄（ティッカーコード）が登録されているか確認。
    - 未登録の場合、Web検索等で正式な Wikipedia 記事名（例: 日本株なら `["ja", "メルカリ_(企業)"]`、米国株なら `["en", "Corning_Inc."]`) を特定し、`data/wikipedia_mapping.json` に追記する。
    - ※ Pythonコード側に企業名をハードコードせず、スキル（エージェント）がこのJSONを自律管理します。
+5. **採用求人ATSの確認と登録（Hiring Data 連携）**:
+   - `data/jobs_mapping.json` を開き、対象銘柄の求人ATS設定（Greenhouse / Lever / Workday）があるか確認。
+   - 未登録の場合、企業の採用ページURL（例: `boards.greenhouse.io/{token}`, `jobs.lever.co/{token}`, `{tenant}.myworkdayjobs.com/...`）を特定し、`data/jobs_mapping.json` に追記する。
+   - ※ ATS非対応または独自採用サイトの企業は未登録のままで問題ありません（自動で中立値 0 件に安全フォールバック）。
 
 ### Step 2: AIクオンツ診断スクリプトの実行
 リサーチが完了したら（または既存キャッシュを使用する場合）、仮想環境 Python で実行します。
@@ -95,6 +99,8 @@ cd fin-sentiment-lgbm-pipeline
 ## 4. ファイル管理
 
 - **確定カタリスト**: `data/catalysts/{TICKER}.json`（エージェントが自律調査・生成）
-- **Wikipedia記事名マッピング**: `data/wikipedia_mapping.json`（エージェントが自律追加・管理。コード側は特定銘柄に依存しない）
+- **Wikipedia記事名マッピング**: `data/wikipedia_mapping.json`（エージェントが自律追加・管理）
+- **求人ATSマッピング**: `data/jobs_mapping.json`（エージェントが自律追加・管理）
 - **投資家関心（PV）キャッシュ**: `data/attention/{TICKER}.json`（Wikimedia APIから自動保存）
+- **求人数（Hiring）キャッシュ**: `data/jobs/{TICKER}.json`（ATS公開APIから自動保存）
 - **四半期財務データ**: `yfinance` から最新決算（売上高、純利益、EPS、利益率）を完全自動取得・動的補間

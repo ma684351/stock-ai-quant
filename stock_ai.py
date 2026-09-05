@@ -46,6 +46,7 @@ from core.data_loader import (
     normalize_ticker,
 )
 from core.features import build_features_and_target
+from core.job_openings import get_job_openings_series
 from core.model import predict_latest_signal, train_stock_model
 from core.research_agent import get_ticker_catalysts
 from core.search_volume import get_search_volume_series
@@ -85,9 +86,12 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
     # 5. 検索・アクセスボリューム (Investor Attention) の取得 (Wikimedia公式API)
     df_attention = get_search_volume_series(ticker, df_stock, verbose=verbose)
 
-    # 6. 特徴量エンジニアリング & ターゲット定義 (20営業日後 / 約1ヶ月後)
+    # 6. 求人数 (Hiring / ATS API) の取得 (Greenhouse / Lever / Workday)
+    df_jobs = get_job_openings_series(ticker, df_stock, verbose=verbose)
+
+    # 7. 特徴量エンジニアリング & ターゲット定義 (20営業日後 / 約1ヶ月後)
     if verbose:
-        print(f"[{ticker}] 5大カテゴリ（テクニカル×マクロ×感情×関心×財務）の特徴量を構築中...")
+        print(f"[{ticker}] 6大カテゴリ（テクニカル×マクロ×感情×関心×採用×財務）の特徴量を構築中...")
     df_features, df_latest, feature_cols = build_features_and_target(
         df_stock,
         df_sp500,
@@ -98,6 +102,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         ticker=ticker,
         target_horizon=20,
         df_attention=df_attention,
+        df_jobs=df_jobs,
     )
 
     # 7. LightGBMモデル学習 & 閾値探索
@@ -147,6 +152,8 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
             att_val = latest_res["attention_surprise"]
             att_label = "注目度急上昇" if att_val > 0.20 else ("関心低下" if att_val < -0.20 else "平常")
             print(f"  ・検索関心度サプライズ(20日平均比): {att_val * 100:+.1f}% ({att_label})")
+        if latest_res.get("job_openings") is not None and latest_res["job_openings"] > 0:
+            print(f"  ・公開求人数 (ATSリアルタイム)  : {int(latest_res['job_openings'])} 件")
         print("  " + "-" * 56)
         print(
             f"  ・今後20営業日(約1ヶ月)予測確率: 上昇 {latest_res['prob'] * 100:.2f}% / 下落 {latest_res['down_prob'] * 100:.2f}%"

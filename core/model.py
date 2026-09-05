@@ -159,6 +159,9 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
     att_surprise = (
         float(df_latest["Attention_Surprise_20d"].iloc[-1]) if "Attention_Surprise_20d" in df_latest.columns else None
     )
+    job_openings = (
+        float(df_latest["Job_Openings_Count"].iloc[-1]) if "Job_Openings_Count" in df_latest.columns else None
+    )
 
     # 実戦トレード価格ガイドの算出
     price_guide = calculate_trade_price_guide(df_stock, latest_close, decision, prob, t_prefix, df_latest)
@@ -173,6 +176,7 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
         "rsi14": rsi14,
         "sentiment": sentiment,
         "attention_surprise": att_surprise,
+        "job_openings": job_openings,
         "prob": prob,
         "down_prob": down_prob,
         "threshold": buy_threshold,

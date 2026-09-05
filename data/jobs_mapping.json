@@ -1,0 +1,26 @@
+{
+  "4385": {
+    "platform": "greenhouse",
+    "token": "mercari"
+  },
+  "PGNY": {
+    "platform": "workday",
+    "url": "https://progyny.wd5.myworkdayjobs.com/wday/cxs/progyny/progyny/jobs"
+  },
+  "SPOT": {
+    "platform": "lever",
+    "token": "spotify"
+  },
+  "PLTR": {
+    "platform": "lever",
+    "token": "palantir"
+  },
+  "PINS": {
+    "platform": "greenhouse",
+    "token": "pinterest"
+  },
+  "GTLB": {
+    "platform": "greenhouse",
+    "token": "gitlab"
+  }
+}
