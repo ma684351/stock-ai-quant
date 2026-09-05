@@ -72,6 +72,10 @@ def build_features_and_target(
     base_df["Fund_Net_Margin"] = base_df["Fund_Net_Margin"].ffill().bfill()
     base_df["Fund_Operating_Margin"] = base_df["Fund_Operating_Margin"].ffill().bfill()
     base_df["Fund_Earnings_Surprise"] = base_df["Fund_Earnings_Surprise"].ffill().bfill()
+    if "Fund_Employees" in base_df.columns:
+        base_df["Fund_Employees"] = base_df["Fund_Employees"].ffill().bfill().fillna(1000.0)
+    else:
+        base_df["Fund_Employees"] = 1000.0
 
     feats = pd.DataFrame(index=base_df.index)
 
@@ -131,6 +135,10 @@ def build_features_and_target(
     feats["Job_x_RSI"] = (job_cnt / (job_cnt.rolling(60, min_periods=5).mean() + 1.0)) * (
         (feats[f"{t_prefix}_RSI_14"] - 50.0) / 25.0
     )
+    # 従業員数に対する求人比率（組織拡大ペース %）
+    emp_cnt = base_df["Fund_Employees"].clip(lower=10.0)
+    feats["Job_to_Employee_Ratio"] = ((job_cnt / emp_cnt) * 100.0).clip(0.0, 50.0).fillna(0.0)
+    feats["Fund_Employees"] = base_df["Fund_Employees"]
 
     # [7] ファンダメンタルズ財務
     feats["Fund_Dynamic_PE"] = base_df["Close"] / (base_df["TTM_EPS"] + 1e-9)
@@ -152,7 +160,7 @@ def build_features_and_target(
     # 学習・評価用データ（未来のターゲットが確定している期間）
     clean_df = feats.iloc[:-target_horizon].dropna()
 
-    # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/益回りは表示用に保持し、モデル学習は定常化指標を使用
-    excluded_model_cols = {"Target", "Fund_Dynamic_PE", "Fund_Earnings_Yield"}
+    # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/益回り/従業員数は表示用に保持し、モデル学習は定常化指標を使用
+    excluded_model_cols = {"Target", "Fund_Dynamic_PE", "Fund_Earnings_Yield", "Fund_Employees"}
     feature_cols = [c for c in clean_df.columns if c not in excluded_model_cols]
     return clean_df, latest_df, feature_cols

@@ -69,6 +69,9 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
         rev_growth_cur = info.get("revenueGrowth", 0.05)
         net_margin_cur = info.get("profitMargins", 0.20)
         op_margin_cur = info.get("operatingMargins", 0.25)
+        employees = info.get("fullTimeEmployees")
+        if employees is None or employees <= 0:
+            employees = 2000 if is_japanese_ticker(ticker) else 1000
 
         q_income = yf_ticker.quarterly_income_stmt
         ann_income = yf_ticker.income_stmt
@@ -105,6 +108,7 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
                         "Fund_Net_Margin": margin,
                         "Fund_Operating_Margin": op_margin,
                         "Fund_Earnings_Surprise": surprise,
+                        "Fund_Employees": float(employees),
                     }
                 )
 
@@ -165,6 +169,7 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
                         "Fund_Net_Margin": margin,
                         "Fund_Operating_Margin": op_margin,
                         "Fund_Earnings_Surprise": 0.02,
+                        "Fund_Employees": float(employees),
                     }
                 )
 
@@ -187,6 +192,7 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
             "Fund_Net_Margin": 0.15,
             "Fund_Operating_Margin": 0.20,
             "Fund_Earnings_Surprise": 0.02,
+            "Fund_Employees": 1000.0,
         }
         for d in dates
     ]

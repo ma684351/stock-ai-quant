@@ -46,6 +46,7 @@ def test_build_features_and_target(dummy_market_data):
     # [採用・求人 (Hiring)]
     assert "Job_Openings_Count" in clean_df.columns
     assert "Job_to_Volume_Ratio" in clean_df.columns
+    assert "Job_to_Employee_Ratio" in clean_df.columns
     # [感情]
     assert "News_Sentiment_Score" in clean_df.columns
     assert "News_Sentiment_Surprise" in clean_df.columns

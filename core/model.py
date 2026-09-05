@@ -162,6 +162,10 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
     job_openings = (
         float(df_latest["Job_Openings_Count"].iloc[-1]) if "Job_Openings_Count" in df_latest.columns else None
     )
+    employees = float(df_latest["Fund_Employees"].iloc[-1]) if "Fund_Employees" in df_latest.columns else None
+    job_to_emp_ratio = (
+        float(df_latest["Job_to_Employee_Ratio"].iloc[-1]) if "Job_to_Employee_Ratio" in df_latest.columns else None
+    )
 
     # 実戦トレード価格ガイドの算出
     price_guide = calculate_trade_price_guide(df_stock, latest_close, decision, prob, t_prefix, df_latest)
@@ -177,6 +181,8 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
         "sentiment": sentiment,
         "attention_surprise": att_surprise,
         "job_openings": job_openings,
+        "employees": employees,
+        "job_to_emp_ratio": job_to_emp_ratio,
         "prob": prob,
         "down_prob": down_prob,
         "threshold": buy_threshold,

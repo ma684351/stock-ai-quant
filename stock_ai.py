@@ -158,6 +158,10 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
             print(f"  ・検索関心度サプライズ(20日平均比): {att_val * 100:+.1f}% ({att_label})")
         if latest_res.get("job_openings") is not None and latest_res["job_openings"] > 0:
             print(f"  ・公開求人数 (ATSリアルタイム)  : {int(latest_res['job_openings'])} 件")
+        if latest_res.get("employees") is not None and latest_res["employees"] > 0:
+            print(f"  ・従業員規模 (フルタイム)   : {int(latest_res['employees']):,} 名")
+        if latest_res.get("job_to_emp_ratio") is not None and latest_res.get("job_openings", 0) > 0:
+            print(f"  ・組織拡大ペース (求人/従業員) : +{latest_res['job_to_emp_ratio']:.2f}%")
         print("  " + "-" * 56)
         print(
             f"  ・今後20営業日(約1ヶ月)予測確率: 上昇 {latest_res['prob'] * 100:.2f}% / 下落 {latest_res['down_prob'] * 100:.2f}%"
