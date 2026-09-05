@@ -11,7 +11,7 @@ def is_japanese_ticker(ticker: str) -> bool:
     t = ticker.strip().upper()
     if t.endswith((".T", ".JP", ".TYO")):
         return True
-    if re.match(r"^\d{4}[A-Z]?$", t):
+    if re.match(r"^\d{4}$|^\d{3}[A-Z]$", t):
         return True
     return False
 
