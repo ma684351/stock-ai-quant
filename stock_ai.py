@@ -9,7 +9,7 @@ FinBERT感情分析、マクロ3指標、テクニカル指標、Yahoo!ファイ
 使用方法:
   1. 単一銘柄の分析:
      python stock_ai.py AAPL
-     python stock_ai.py TSLA --deep-research
+     python stock_ai.py 7203
 
   2. 複数銘柄の一括比較・ランキング:
      python stock_ai.py --compare AAPL NVDA GOOGL MSFT TSLA
@@ -255,9 +255,6 @@ def main():
     )
     parser.add_argument(
         "--compare", nargs="+", help="複数銘柄を一括比較・ランキング (例: --compare AAPL 7203.T NVDA 6758.T)"
-    )
-    parser.add_argument(
-        "--deep-research", action="store_true", help="（Antigravityスキル側で自動実行されるため互換性用）"
     )
 
     args = parser.parse_args()
