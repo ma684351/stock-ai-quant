@@ -1,12 +1,12 @@
-import os
 import json
-import re
+import os
 from datetime import datetime
-from typing import List, Tuple, Optional
+from typing import List, Tuple
 
-from core.data_loader import is_japanese_ticker, clean_ticker_name
+from core.data_loader import clean_ticker_name
 
 CATALYST_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "catalysts"))
+
 
 def load_catalysts(ticker: str) -> List[Tuple[str, str]]:
     """既存の確定カタリスト（キャッシュ）をロードする"""
@@ -14,14 +14,14 @@ def load_catalysts(ticker: str) -> List[Tuple[str, str]]:
     candidates = [
         os.path.join(CATALYST_DIR, f"{ticker.upper()}.json"),
         os.path.join(CATALYST_DIR, f"{clean_t}.json"),
-        os.path.join(CATALYST_DIR, f"{ticker.split('.')[0].upper()}.json")
+        os.path.join(CATALYST_DIR, f"{ticker.split('.')[0].upper()}.json"),
     ]
     path = None
     for p in candidates:
         if os.path.exists(p):
             path = p
             break
-            
+
     if path:
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -32,6 +32,7 @@ def load_catalysts(ticker: str) -> List[Tuple[str, str]]:
             print(f"[{ticker}] カタリスト読み込みエラー: {e}")
     return []
 
+
 def save_catalysts(ticker: str, catalysts: List[Tuple[str, str]]):
     """カタリストを data/catalysts/{ticker}.json に自動保存する"""
     os.makedirs(CATALYST_DIR, exist_ok=True)
@@ -41,6 +42,7 @@ def save_catalysts(ticker: str, catalysts: List[Tuple[str, str]]):
         json.dump(catalysts, f, ensure_ascii=False, indent=2)
     print(f"[{ticker}] {len(catalysts)} 件のカタリストを {path} に保存しました")
 
+
 def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
     """
     [フォールバック] yfinance から四半期決算サプライズ、株式分割、最新ニュースを自動抽出する
@@ -48,10 +50,11 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
     print(f"  [Financial Engine] yfinance から '{ticker}' の確定決算・企業イベントを自動抽出中...")
     catalysts = []
     try:
-        import yfinance as yf
         import pandas as pd
+        import yfinance as yf
+
         t = yf.Ticker(ticker)
-        
+
         # 1. 四半期決算日・サプライズ実績
         try:
             ed = t.get_earnings_dates(limit=16)
@@ -65,7 +68,9 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
                     surp = row.get("Surprise(%)")
                     if pd.notna(reported) and pd.notna(est):
                         surp_text = f" ({surp:+.1f}% surprise)" if pd.notna(surp) else ""
-                        headline = f"{ticker} Q earnings: Reported EPS {reported:.2f} vs consensus {est:.2f}{surp_text}."
+                        headline = (
+                            f"{ticker} Q earnings: Reported EPS {reported:.2f} vs consensus {est:.2f}{surp_text}."
+                        )
                         catalysts.append((dt_str, headline))
         except Exception:
             pass
@@ -103,11 +108,12 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
         if d not in unique_catalysts:
             unique_catalysts[d] = c
     sorted_catalysts = sorted(unique_catalysts.items(), key=lambda x: x[0])
-    
+
     if sorted_catalysts:
         print(f"  ✔ yfinance より {len(sorted_catalysts)} 件の決算・適時開示イベントを抽出しました")
         save_catalysts(ticker, sorted_catalysts)
     return sorted_catalysts
+
 
 def get_ticker_catalysts(ticker: str) -> List[Tuple[str, str]]:
     """
@@ -119,6 +125,8 @@ def get_ticker_catalysts(ticker: str) -> List[Tuple[str, str]]:
     existing = load_catalysts(ticker)
     if existing:
         return existing
-    
-    print(f"[{ticker}] カタリストキャッシュがありません。yfinance自動抽出を実行します（※Antigravityスキルでリサーチすると最高精度のカタリストが生成されます）")
+
+    print(
+        f"[{ticker}] カタリストキャッシュがありません。yfinance自動抽出を実行します（※Antigravityスキルでリサーチすると最高精度のカタリストが生成されます）"
+    )
     return fetch_financial_catalysts_yfinance(ticker)

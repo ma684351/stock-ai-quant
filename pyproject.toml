@@ -1,0 +1,34 @@
+[tool.ruff]
+# Target Python version
+target-version = "py311"
+
+# Same as Black, or 120 for financial/data science pipelines
+line-length = 120
+
+# Exclude common directories
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "notebooks",
+]
+
+[tool.ruff.lint]
+# Select rules: E (pycodestyle errors), F (Pyflakes), W (pycodestyle warnings), I (isort)
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+]
+
+# Common ignores for data analysis scripts
+ignore = [
+    "E501", # Line length handled by formatter or relaxed for long financial strings
+    "E402", # Module level import not at top of file (needed for pre-import env vars)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["core"]
