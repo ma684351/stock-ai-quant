@@ -48,7 +48,7 @@ def format_price(ticker: str, price: float) -> str:
         return f"¥{price:,.1f}"
     return f"${price:,.2f}"
 
-def analyze_single_stock(ticker: str, enable_deep_research: bool = False, verbose: bool = True):
+def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
     """単一銘柄（日本株・米国株）のエンドツーエンド分析を実行し、診断結果を返す"""
     ticker = normalize_ticker(ticker)
     if verbose:
@@ -57,8 +57,8 @@ def analyze_single_stock(ticker: str, enable_deep_research: bool = False, verbos
         print(f"【AI投資診断パイプライン実行開始: {ticker} ({market_label})】")
         print("=" * 70)
         
-    # 1. カタリスト取得（キャッシュまたは問答無用ディープリサーチ）
-    catalysts = get_ticker_catalysts(ticker, enable_deep_research=enable_deep_research)
+    # 1. カタリスト取得（Antigravityスキル生成キャッシュ または yfinance自動抽出）
+    catalysts = get_ticker_catalysts(ticker)
     
     # 2. 市場データ・マクロ指標の取得
     df_stock = fetch_market_data(ticker, period="2y")
@@ -163,7 +163,7 @@ def main():
     parser = argparse.ArgumentParser(description="日米株AI投資判断パイプライン (日本語金融BERT/FinBERT + LightGBM)")
     parser.add_argument("ticker", nargs="?", default=None, help="分析したいティッカーシンボル (例: AAPL, NVDA, TSLA, 7203.T, 6758.T)")
     parser.add_argument("--compare", nargs="+", help="複数銘柄を一括比較・ランキング (例: --compare AAPL 7203.T NVDA 6758.T)")
-    parser.add_argument("--deep-research", action="store_true", help="Antigravity を使用して重要カタリストを問答無用で自律調査（最新情報で上書き）")
+    parser.add_argument("--deep-research", action="store_true", help="（Antigravityスキル側で自動実行されるため互換性用）")
     
     args = parser.parse_args()
     
@@ -174,7 +174,7 @@ def main():
         results = []
         for t in tickers:
             try:
-                res = analyze_single_stock(t, enable_deep_research=args.deep_research, verbose=False)
+                res = analyze_single_stock(t, verbose=False)
                 results.append(res)
                 print(f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob']*100:.1f}%, 判定: {res['decision_label']})")
             except Exception as e:
@@ -186,7 +186,7 @@ def main():
 
     # 2. 単一銘柄指定モード
     if args.ticker:
-        analyze_single_stock(args.ticker, enable_deep_research=args.deep_research, verbose=True)
+        analyze_single_stock(args.ticker, verbose=True)
         return
 
     # 3. 対話型モード
