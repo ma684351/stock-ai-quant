@@ -13,12 +13,25 @@ try:
 except ImportError:
     pass
 
+from core.data_loader import is_japanese_ticker, clean_ticker_name
+
 CATALYST_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "catalysts"))
 
 def load_catalysts(ticker: str) -> List[Tuple[str, str]]:
     """既存の確定カタリスト（キャッシュ）をロードする"""
-    path = os.path.join(CATALYST_DIR, f"{ticker.upper()}.json")
-    if os.path.exists(path):
+    clean_t = clean_ticker_name(ticker)
+    candidates = [
+        os.path.join(CATALYST_DIR, f"{ticker.upper()}.json"),
+        os.path.join(CATALYST_DIR, f"{clean_t}.json"),
+        os.path.join(CATALYST_DIR, f"{ticker.split('.')[0].upper()}.json")
+    ]
+    path = None
+    for p in candidates:
+        if os.path.exists(p):
+            path = p
+            break
+            
+    if path:
         try:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
@@ -31,7 +44,8 @@ def load_catalysts(ticker: str) -> List[Tuple[str, str]]:
 def save_catalysts(ticker: str, catalysts: List[Tuple[str, str]]):
     """カタリストを data/catalysts/{ticker}.json に自動保存する"""
     os.makedirs(CATALYST_DIR, exist_ok=True)
-    path = os.path.join(CATALYST_DIR, f"{ticker.upper()}.json")
+    clean_t = clean_ticker_name(ticker)
+    path = os.path.join(CATALYST_DIR, f"{clean_t}.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(catalysts, f, ensure_ascii=False, indent=2)
     print(f"[{ticker}] {len(catalysts)} 件のカタリストを {path} に保存しました")
@@ -63,8 +77,27 @@ def _parse_catalysts_json(text: str) -> Optional[List[Tuple[str, str]]]:
     return None
 
 def _build_catalyst_prompt(ticker: str) -> str:
-    """ディープリサーチ用の共通プロンプトを構築する"""
-    return f"""You are a top-tier quantitative financial research analyst.
+    """ディープリサーチ用の共通プロンプトを構築する（日本株・米国株に自動適応）"""
+    if is_japanese_ticker(ticker):
+        base_code = ticker.split('.')[0]
+        return f"""あなたは金融・クオンツ分析のトップアナリストです。
+日本株銘柄コード '{ticker}' (証券コード: {base_code}) について、2024年1月から2026年9月までの株価に重大な影響を与えた主要な確定カタリストを調査・抽出してください。
+調査対象:
+- 四半期決算発表（市場予想比の業績、営業利益、通期上方修正・下方修正、増配、自社株買い）
+- 新製品・新技術開発、大型受注、主要設備投資計画
+- 代表取締役・経営陣の刷新、事業再編
+- リコール、品質問題、金融庁や公取委などの調査・行政処分
+- 大型M&A、戦略的資本業務提携
+- 為替変動（円高/円安）や地政学リスクに伴う業績への重要開示
+
+出力フォーマット要件:
+マークダウンのコードブロックや解説は一切含めず、純粋なJSON配列のみを出力してください:
+[
+  ["YYYY-MM-DD", "簡潔な日本語の確定事実見出し (30〜60文字程度)"]
+]
+時系列（古い日付から新しい日付）で 15〜25 件抽出してください。"""
+    else:
+        return f"""You are a top-tier quantitative financial research analyst.
 For US stock ticker '{ticker.upper()}', research and compile major historical catalysts from January 2024 to September 2026 that materially impacted the stock's price action.
 Include:
 - Quarterly earnings results (EPS beat/miss, revenue, guidance)
