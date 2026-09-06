@@ -8,7 +8,12 @@ import pandas as pd
 
 from core.data_loader import clean_ticker_name, normalize_ticker
 
-DEFAULT_JOBS_MAPPING_FILE = "data/jobs_mapping.json"
+BASE_DATA_DIR = os.environ.get(
+    "STOCK_AI_DATA_DIR",
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data")),
+)
+DEFAULT_JOBS_MAPPING_FILE = os.path.join(BASE_DATA_DIR, "jobs_mapping.json")
+DEFAULT_CACHE_DIR = os.path.join(BASE_DATA_DIR, "jobs")
 DEFAULT_USER_AGENT = "FinQuantPipeline/1.0 (https://github.com/ma684351/stock-ai-quant; contact@example.com)"
 
 
@@ -110,7 +115,7 @@ def fetch_company_job_openings(
 def get_job_openings_series(
     ticker: str,
     df_stock: pd.DataFrame,
-    cache_dir: str = "data/jobs",
+    cache_dir: str = DEFAULT_CACHE_DIR,
     mapping_file: str = DEFAULT_JOBS_MAPPING_FILE,
     verbose: bool = True,
 ) -> pd.Series:

@@ -11,7 +11,12 @@ import yfinance as yf
 
 from core.data_loader import clean_ticker_name, is_japanese_ticker, normalize_ticker
 
-DEFAULT_MAPPING_FILE = "data/wikipedia_mapping.json"
+BASE_DATA_DIR = os.environ.get(
+    "STOCK_AI_DATA_DIR",
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data")),
+)
+DEFAULT_MAPPING_FILE = os.path.join(BASE_DATA_DIR, "wikipedia_mapping.json")
+DEFAULT_CACHE_DIR = os.path.join(BASE_DATA_DIR, "attention")
 
 
 def load_wikipedia_mappings(mapping_file: str = DEFAULT_MAPPING_FILE) -> dict:
@@ -98,7 +103,7 @@ def fetch_wikimedia_pageviews(
 def get_search_volume_series(
     ticker: str,
     df_stock: pd.DataFrame,
-    cache_dir: str = "data/attention",
+    cache_dir: str = DEFAULT_CACHE_DIR,
     mapping_file: str = DEFAULT_MAPPING_FILE,
     verbose: bool = True,
 ) -> pd.Series:
