@@ -5,7 +5,11 @@ from typing import List, Tuple
 
 from core.data_loader import clean_ticker_name
 
-CATALYST_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "catalysts"))
+BASE_DATA_DIR = os.environ.get(
+    "STOCK_AI_DATA_DIR",
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data")),
+)
+CATALYST_DIR = os.path.join(BASE_DATA_DIR, "catalysts")
 
 
 def load_catalysts(ticker: str) -> List[Tuple[str, str]]:

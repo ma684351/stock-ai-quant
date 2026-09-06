@@ -9,8 +9,18 @@
 ## 📁 ディレクトリ構成 (Pattern A: モジュール設計)
 
 ```text
-fin-sentiment-lgbm-pipeline/
+stock-ai-quant/
 ├── stock_ai.py                 # 【メインCLI】日米全銘柄対応の分析・比較スクリプト
+│
+├── .claude-plugin/             # 【Claude Code プラグイン定義】
+│   ├── marketplace.json        # マーケットプレイスカタログ
+│   └── plugin.json             # プラグインマニフェスト
+├── skills/                     # 【Agent Skills オープン規格】npx skills add 用
+│   └── stock-ai-analysis/
+│       └── SKILL.md
+├── .agents/skills/             # 【Antigravity / Cursor 用スキル】
+│   └── stock-ai-analysis/
+│       └── SKILL.md
 │
 ├── core/                       # コアロジック・パッケージ
 │   ├── __init__.py
@@ -25,14 +35,52 @@ fin-sentiment-lgbm-pipeline/
 │                               # ※ 財務データは yfinance から最新決算を完全自動取得・動的補間します
 │
 ├── notebooks/                  # Google Colab用個別ノートブック
-│   ├── apple_stock_ai_pipeline.ipynb       # Apple (AAPL) 専用ノートブック
-│   ├── nvidia_stock_ai_pipeline.ipynb      # NVIDIA (NVDA) 専用ノートブック
-│   └── alphabet_stock_ai_pipeline.ipynb    # Alphabet (GOOGL) 専用ノートブック
-│
 ├── .venv/                      # 独立仮想環境 (Python 3)
 ├── requirements.txt            # 依存パッケージ一覧
 ├── .gitignore                  # 除外設定
 └── README.md                   # 本ドキュメント
+```
+
+---
+
+## 🧩 AIエージェントへのインストール（Agent Skills / Claude Code プラグイン）
+
+本リポジトリのAI投資診断スキルは、Claude Code、Antigravity、Cursor など様々なAIエージェントに簡単に追加できます。
+
+### ① `npx skills add` でインストール（おすすめ）
+Agent Skills オープン規格に対応したツール（Claude Code, Cursor 等）であれば、ワンコマンドでインストール可能です：
+
+```bash
+# プロジェクトローカルにインストール
+npx skills add ma684351/stock-ai-quant --skill stock-ai-analysis
+
+# Claude Code 向けにインストール
+npx skills add ma684351/stock-ai-quant --agent claude-code
+
+# 全プロジェクトで使えるようにグローバルインストール
+npx skills add ma684351/stock-ai-quant -g --agent claude-code
+```
+
+### ② Claude Code のプラグインとしてインストール
+公式マーケットプレイスへの申請・公開なしで、本リポジトリから直接インストール可能です：
+
+```bash
+# 1. リポジトリをマーケットプレイスとして登録（初回のみ）
+/plugin marketplace add ma684351/stock-ai-quant
+
+# 2. プラグインをインストール
+/plugin install stock-ai-analysis@stock-ai-quant
+
+# 3. 反映
+/reload-plugins
+```
+
+### ③ 手元PCの全プロジェクトで即座に使う場合（コマンド不要）
+シンボリックリンクを作成するだけで、PC上のどのプロジェクトを開いても Claude Code が自動認識します：
+
+```bash
+mkdir -p ~/.claude/skills
+ln -s "$(pwd)/skills/stock-ai-analysis" ~/.claude/skills/stock-ai-analysis
 ```
 
 ---

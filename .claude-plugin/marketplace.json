@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "stock-ai-quant",
+  "owner": {
+    "name": "ma684351"
+  },
+  "plugins": [
+    {
+      "name": "stock-ai-analysis",
+      "description": "日米株式（東証・米国株）のAI投資診断・今後1ヶ月の株価トレンド予測・3段階投資シグナル（★買い / ◇様子見 / ▼売り）判定スキル",
+      "source": "./"
+    }
+  ]
+}

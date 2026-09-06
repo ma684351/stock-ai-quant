@@ -8,14 +8,14 @@ description: >-
 
 # 日米株AI投資診断スキル (Stock AI Analysis)
 
-このスキルは、Antigravityエージェント自身の強力な調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
+このスキルは、AIエージェント自身の強力な調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
 
 ---
 
 ## 1. 全体アーキテクチャ（役割分担）
 
-1. **Antigravity エージェント（スキル）の役割**:
-   - Web検索（`search_web`）やIR適時開示の調査を行い、最新の確定カタリスト（決算サプライズ、業績修正、大型新製品、自社株買い等）を自律抽出して `data/catalysts/{TICKER}.json` に直接書き込みます。
+1. **AIエージェント（スキル）の役割**:
+   - Web検索（`search_web`）やIR適時開示の調査を行い、最新の確定カタリスト（決算サプライズ、業績修正、大型新製品、自社株買い等）を自律抽出して `$DATA_DIR/catalysts/{TICKER}.json` に直接書き込みます。
 2. **Python スクリプト (`stock_ai.py`) の役割**:
    - 生成されたカタリスト、リアルタイム株価・マクロ4指標（S&P 500/ドル円/日経平均/米10年債利回り TNX）、yfinance四半期財務データを統合し、金融BERT感情分析とLightGBM学習・閾値最適化・投資シグナル推論を高速実行します。
 
@@ -133,5 +133,3 @@ description: >-
 - **投資家関心（PV）キャッシュ**: `$DATA_DIR/attention/{TICKER}.json`（Wikimedia APIから自動保存）
 - **求人数（Hiring）キャッシュ**: `$DATA_DIR/jobs/{TICKER}.json`（ATS公開APIから自動保存）
 - **四半期財務データ**: `yfinance` から最新決算（売上高、純利益、EPS、利益率）を完全自動取得・動的補間
-
-
