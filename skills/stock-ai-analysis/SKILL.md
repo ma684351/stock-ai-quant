@@ -35,11 +35,15 @@ description: >-
 2. **外部プロジェクトから呼び出された場合**:
    既存のローカルリポジトリパスを自動参照し、環境を一切汚さずに実行します：
    ```bash
-   # リポジトリパスの解決（環境変数優先、なければ手元の既知パス）
+   # リポジトリパスの解決（環境変数優先、または近隣ディレクトリ・Gitルートの自動検出）
    if [ -n "$STOCK_AI_DIR" ] && [ -d "$STOCK_AI_DIR" ]; then
      REPO_DIR="$STOCK_AI_DIR"
-   elif [ -f "/Users/masami/project/fin-sentiment-lgbm-pipeline/stock_ai.py" ]; then
-     REPO_DIR="/Users/masami/project/fin-sentiment-lgbm-pipeline"
+   elif [ -f "$(git rev-parse --show-toplevel 2>/dev/null)/stock_ai.py" ]; then
+     REPO_DIR="$(git rev-parse --show-toplevel)"
+   elif [ -f "../stock-ai-quant/stock_ai.py" ]; then
+     REPO_DIR="../stock-ai-quant"
+   elif [ -f "../fin-sentiment-lgbm-pipeline/stock_ai.py" ]; then
+     REPO_DIR="../fin-sentiment-lgbm-pipeline"
    else
      # 手元にリポジトリがない新規マシン等の場合のみ、プロジェクトローカル配下に配置（グローバルは汚さない）
      REPO_DIR="./.stock-ai-quant"
