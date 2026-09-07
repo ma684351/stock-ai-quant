@@ -14,12 +14,11 @@ def build_features_and_target(
     ticker="AAPL",
     target_horizon=20,
     df_attention=None,
-    df_jobs=None,
     df_tnx=None,
 ):
     """
     個別株テクニカル、マクロ指標（S&P500/為替/日経/米10年債利回り）、ニュース感情スコア、ファンダメンタルズ財務、
-    検索・アクセスボリューム(Investor Attention)、および求人数(Hiring Data)からなる
+    検索・アクセスボリューム(Investor Attention)からなる
     特徴量を構築し、20営業日後（約1ヶ月後）の正解ラベルを生成する
     """
     t_prefix = clean_ticker_name(ticker)
@@ -58,12 +57,6 @@ def build_features_and_target(
         base_df["Attention_Volume"] = df_attention.reindex(base_df.index).ffill().bfill().fillna(0.0)
     else:
         base_df["Attention_Volume"] = 0.0
-
-    # 求人数（Hiring Data）のマージ
-    if df_jobs is not None and not df_jobs.empty:
-        base_df["Job_Openings"] = df_jobs.reindex(base_df.index).ffill().bfill().fillna(0.0)
-    else:
-        base_df["Job_Openings"] = 0.0
 
     # ファンダメンタルズ財務データの前方補完 (ffill)
     base_df = base_df.merge(df_fund.set_index("Date"), left_index=True, right_index=True, how="left")
@@ -211,21 +204,9 @@ def build_features_and_target(
     feats["Attention_x_Sentiment"] = feats["Attention_Surprise_20d"] * base_df["Sentiment_Score"]
     feats["Attention_x_RSI"] = feats["Attention_ZScore_60d"] * ((feats[f"{t_prefix}_RSI_14"] - 50.0) / 25.0)
 
-    # [6] 求人数・採用モメンタム (Hiring / Alternative Data)
-    job_cnt = base_df["Job_Openings"]
-    feats["Job_Openings_Count"] = job_cnt
-    vol_ma20 = base_df["Volume"].rolling(20, min_periods=5).mean() + 1.0
-    feats["Job_to_Volume_Ratio"] = (job_cnt / (vol_ma20 / 10000.0 + 1.0)).fillna(0.0)
-    feats["Job_x_Rev_Growth"] = job_cnt * base_df["Fund_Rev_Growth_YoY"]
-    feats["Job_x_RSI"] = (job_cnt / (job_cnt.rolling(60, min_periods=5).mean() + 1.0)) * (
-        (feats[f"{t_prefix}_RSI_14"] - 50.0) / 25.0
-    )
-    # 従業員数に対する求人比率（組織拡大ペース %）
-    emp_cnt = base_df["Fund_Employees"].clip(lower=10.0)
-    feats["Job_to_Employee_Ratio"] = ((job_cnt / emp_cnt) * 100.0).clip(0.0, 50.0).fillna(0.0)
     feats["Fund_Employees"] = base_df["Fund_Employees"]
 
-    # [7] ファンダメンタルズ財務
+    # [6] ファンダメンタルズ財務
     feats["Fund_Dynamic_PE"] = base_df["Close"] / (base_df["TTM_EPS"] + 1e-9)
     feats["Fund_Earnings_Yield"] = (base_df["TTM_EPS"] + 1e-9) / base_df["Close"]
     pe_ma200 = feats["Fund_Dynamic_PE"].rolling(200, min_periods=20).mean()
@@ -255,20 +236,6 @@ def build_features_and_target(
     if "High" in df_stock.columns and "Low" in df_stock.columns:
         # High/Low関連の非定常変数（レベル変数）もモデル学習から除外
         excluded_model_cols.update({f"{t_prefix}_High20", f"{t_prefix}_Low20", f"{t_prefix}_Range20"})
-
-    # 求人データの履歴十分性チェック:
-    # 過去の学習期間において求人数の非ゼロ観測日が5日未満の場合、定数化による疑似相関（出来高逆数化）を防ぐためモデル学習から除外
-    job_obs_count = int((clean_df["Job_Openings_Count"] > 0).sum()) if "Job_Openings_Count" in clean_df.columns else 0
-    if job_obs_count < 5:
-        excluded_model_cols.update(
-            {
-                "Job_Openings_Count",
-                "Job_to_Volume_Ratio",
-                "Job_x_Rev_Growth",
-                "Job_x_RSI",
-                "Job_to_Employee_Ratio",
-            }
-        )
 
     feature_cols = [c for c in clean_df.columns if c not in excluded_model_cols]
     return clean_df, latest_df, feature_cols
