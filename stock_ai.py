@@ -46,7 +46,7 @@ from core.data_loader import (
     normalize_ticker,
 )
 from core.features import build_features_and_target
-from core.model import predict_latest_signal, train_stock_model
+from core.model import optimize_training_period, predict_latest_signal, train_stock_model
 from core.research_agent import get_ticker_catalysts
 from core.search_volume import get_search_volume_series
 from core.sentiment import analyze_sentiment, generate_news_dataset
@@ -59,7 +59,7 @@ def format_price(ticker: str, price: float) -> str:
     return f"${price:,.2f}"
 
 
-def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
+def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto", **kwargs):
     """単一銘柄（日本株・米国株）のエンドツーエンド分析を実行し、診断結果を返す"""
     ticker = normalize_ticker(ticker)
     if verbose:
@@ -68,12 +68,13 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         print(f"【AI投資診断パイプライン実行開始: {ticker} ({market_label})】")
         print("=" * 70)
 
-    # 1. カタリスト取得（Antigravityスキル生成キャッシュ または yfinance自動抽出）
+    # 1. カタリスト取得（AIエージェントスキル生成キャッシュ または yfinance自動抽出）
     catalysts = get_ticker_catalysts(ticker)
 
-    # 2. 市場データ・マクロ指標の取得
-    df_stock = fetch_market_data(ticker, period="2y")
-    df_sp500, df_usdjpy, df_nikkei, df_tnx = fetch_macro_data(period="2y")
+    # 2. 市場データ・マクロ指標の取得 (auto の場合は最大期間 3y を取得しスライスで比較)
+    fetch_period = "3y" if period == "auto" else period
+    df_stock = fetch_market_data(ticker, period=fetch_period)
+    df_sp500, df_usdjpy, df_nikkei, df_tnx = fetch_macro_data(period=fetch_period)
 
     # 3. ファンダメンタルズ財務データの取得
     df_fund = fetch_fundamentals_data(ticker)
@@ -101,19 +102,28 @@ def analyze_single_stock(ticker: str, verbose: bool = True, **kwargs):
         df_tnx=df_tnx,
     )
 
-    # 7. LightGBMモデル学習 & 閾値探索
-    if verbose:
-        print(f"[{ticker}] LightGBMモデルを個別最適化して学習中...")
-    model, metrics, best_thresh, df_imp = train_stock_model(df_features, feature_cols, ticker=ticker, train_ratio=0.8)
+    # 7. LightGBMモデル学習 & 学習期間の最適化
+    if period == "auto":
+        optimal_p, model, metrics, best_thresh, df_imp, _ = optimize_training_period(
+            df_features, feature_cols, ticker=ticker, candidate_periods=("1.5y", "2y", "3y"), verbose=verbose
+        )
+    else:
+        optimal_p = period
+        if verbose:
+            print(f"[{ticker}] 指定期間 ({period}) で LightGBMモデルを個別最適化して学習中...")
+        model, metrics, best_thresh, df_imp = train_stock_model(
+            df_features, feature_cols, ticker=ticker, train_ratio=0.8
+        )
 
-    # 7. 直近営業日の売買シグナル判定
+    # 8. 直近営業日の売買シグナル判定
     latest_res = predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, threshold=best_thresh)
     latest_res["metrics"] = metrics
+    latest_res["optimal_period"] = optimal_p
     latest_res["tnx_close"] = float(df_tnx["Close"].iloc[-1]) if not df_tnx.empty else None
 
     if verbose:
         print("\n" + "=" * 60)
-        print(f"【過去テストデータ評価結果（{ticker} / 1ヶ月後株価予測）】")
+        print(f"【過去テストデータ評価結果（{ticker} / 1ヶ月後株価予測 / 採用期間: {optimal_p}）】")
         print(
             f"  判定閾値 (Threshold)    : {metrics['threshold']:.4f} (>= {metrics['threshold'] * 100:.1f}% で上昇予測)"
         )
@@ -206,16 +216,17 @@ def print_comparison_table(results):
     """複数銘柄の診断結果をランキング一覧表として出力する"""
     sorted_res = sorted(results, key=lambda x: x["prob"], reverse=True)
 
-    print("\n" + "=" * 128)
+    print("\n" + "=" * 136)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
-    print("=" * 128)
-    header = f"{'順位':<4} {'銘柄':<10} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
+    print("=" * 136)
+    header = f"{'順位':<4} {'銘柄':<10} {'最適期間':<8} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
     print(header)
-    print("-" * 128)
+    print("-" * 136)
 
     for i, r in enumerate(sorted_res):
         t = r["ticker"]
         price_str = format_price(t, r["close"])
+        period_str = r.get("optimal_period", "2y")
         pe_str = f"{r['dynamic_pe']:.1f}倍" if r["dynamic_pe"] else "N/A"
         rsi_str = f"{r['rsi14']:.1f}" if r["rsi14"] else "N/A"
         ma_str = f"{r['ma20_ratio'] * 100:+.1f}%" if r["ma20_ratio"] is not None else "N/A"
@@ -234,9 +245,9 @@ def print_comparison_table(results):
             elif pg.get("type") == "HOLD":
                 target_str = f"{format_price(t, pg['dip_buy_price'])} (押し目待ち)"
 
-        row = f"{i + 1:2d}位  {t:<10} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
+        row = f"{i + 1:2d}位  {t:<10} {period_str:<8} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
         print(row)
-    print("=" * 128 + "\n")
+    print("=" * 136 + "\n")
 
 
 def main():
@@ -246,6 +257,12 @@ def main():
     )
     parser.add_argument(
         "--compare", nargs="+", help="複数銘柄を一括比較・ランキング (例: --compare AAPL 7203.T NVDA 6758.T)"
+    )
+    parser.add_argument(
+        "--period",
+        default="auto",
+        choices=["auto", "1.5y", "2y", "3y"],
+        help="学習データ期間 (デフォルト: auto で 1.5y/2y/3y から最適期間を自動選定。手動指定も可能)",
     )
 
     args = parser.parse_args()
@@ -257,10 +274,10 @@ def main():
         results = []
         for t in tickers:
             try:
-                res = analyze_single_stock(t, verbose=False)
+                res = analyze_single_stock(t, verbose=False, period=args.period)
                 results.append(res)
                 print(
-                    f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
+                    f"  ✔ {t:<8} 完了 (最適期間: {res.get('optimal_period', 'auto')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
                 )
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー発生: {e}")
@@ -271,7 +288,7 @@ def main():
 
     # 2. 単一銘柄指定モード
     if args.ticker:
-        analyze_single_stock(args.ticker, verbose=True)
+        analyze_single_stock(args.ticker, verbose=True, period=args.period)
         return
 
     # 3. 対話型モード
@@ -292,17 +309,17 @@ def main():
         print(f"\n以下の {len(tickers)} 銘柄を順番に診断します: {', '.join(tickers)}")
         for t in tickers:
             try:
-                res = analyze_single_stock(t, verbose=False)
+                res = analyze_single_stock(t, verbose=False, period=args.period)
                 results.append(res)
                 print(
-                    f"  ✔ {t:<8} 完了 (現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
+                    f"  ✔ {t:<8} 完了 (最適期間: {res.get('optimal_period', 'auto')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
                 )
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー: {e}")
         if results:
             print_comparison_table(results)
     else:
-        analyze_single_stock(user_input, verbose=True)
+        analyze_single_stock(user_input, verbose=True, period=args.period)
 
 
 if __name__ == "__main__":

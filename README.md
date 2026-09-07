@@ -18,13 +18,13 @@ stock-ai-quant/
 ├── skills/                     # 【Agent Skills オープン規格】npx skills add 用
 │   └── stock-ai-analysis/
 │       └── SKILL.md
-├── .agents/skills/             # 【Antigravity / Cursor 用スキル】
+├── .agents/skills/             # 【標準Agent Skills規格】Cursor / Windsurf / Antigravity 用スキル
 │   └── stock-ai-analysis/
 │       └── SKILL.md
 │
 ├── core/                       # コアロジック・パッケージ
 │   ├── __init__.py
-│   ├── research_agent.py       # 【Antigravity CLI/SDK】日米銘柄のカタリスト自律リサーチ
+│   ├── research_agent.py       # カタリスト取得 & 企業IRイベント自動抽出エンジン
 │   ├── data_loader.py          # yfinance (株価・マクロ3指標・四半期財務) の自動取得 & ティッカー正規化
 │   ├── sentiment.py            # 日米ニュースRSS収集 & 金融BERT感情分析 (バイリンガルルーティング)
 │   ├── features.py             # 4大カテゴリ（テクニカル×マクロ×感情×財務）の特徴量生成
@@ -137,13 +137,13 @@ python stock_ai.py --compare 7203.T AAPL 6758.T NVDA TSLA
 ================================================================================================================================
 ```
 
-#### ③ Antigravity スキルによる自律ディープリサーチ
-新銘柄の診断や最新の決算サプライズ・東証適時開示・適時カタリストを取り込みたい場合、**Antigravity スキル（`stock-ai-analysis`）** が自律ディープリサーチを実行します：
+#### ③ AIエージェントスキルによる自律ディープリサーチ
+新銘柄の診断や最新の決算サプライズ・東証適時開示・適時カタリストを取り込みたい場合、**AIエージェントスキル（`stock-ai-analysis`）** が自律ディープリサーチを実行します：
 ```bash
 # チャット上でエージェントに指示するだけで自律リサーチ＆診断が完結
 /stock-ai-analysis ソニーグループの最新開示をリサーチして診断して
 ```
-* **エージェントネイティブ調査**: Antigravity エージェント自身が Web 検索や公式IR・適時開示を直接精査し、高品質な確定カタリストを `data/catalysts/{TICKER}.json` に直接保存します。
+* **エージェントネイティブ調査**: 各AIエージェント自身が Web 検索や公式IR・適時開示を直接精査し、高品質な確定カタリストを `data/catalysts/{TICKER}.json` に直接保存します。
 * **高可用性フォールバック**: キャッシュがない場合でも、Pythonスクリプト側の yfinance 確定決算エンジン（Earnings Surprise / 株式分割 / リアルニュース）が自動抽出し、単体実行でもエラーなく学習を完走させます。
 
 #### ④ 引数なしの対話型モード

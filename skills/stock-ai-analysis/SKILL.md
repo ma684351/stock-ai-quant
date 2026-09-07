@@ -8,14 +8,14 @@ description: >-
 
 # 日米株AI投資診断スキル (Stock AI Analysis)
 
-このスキルは、AIエージェント自身の強力な調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
+このスキルは、AIエージェント（Claude Code、Cursor、Windsurf、Cline、Codex、Antigravity 等）自身の調査能力（Web検索・IR適時開示リサーチ）と、[`stock_ai.py`](stock_ai.py) のクオンツ機械学習エンジン（金融BERT×マクロ×テクニカル×財務LightGBM）を連携させ、日米株式の投資判断・1ヶ月株価予測・3段階シグナルを出力するための統合ワークフローです。
 
 ---
 
 ## 1. 全体アーキテクチャ（役割分担）
 
-1. **AIエージェント（スキル）の役割**:
-   - Web検索（`search_web`）やIR適時開示の調査を行い、最新の確定カタリスト（決算サプライズ、業績修正、大型新製品、自社株買い等）を自律抽出して `$DATA_DIR/catalysts/{TICKER}.json` に直接書き込みます。
+1. **AIエージェント（スキル実行者）の役割**:
+   - Web検索（`search_web` や各種ブラウジングツール）やIR適時開示の調査を行い、最新の確定カタリスト（決算サプライズ、業績修正、大型新製品、自社株買い等）を自律抽出して `data/catalysts/{TICKER}.json` に書き込みます。
 2. **Python スクリプト (`stock_ai.py`) の役割**:
    - 生成されたカタリスト、リアルタイム株価・マクロ4指標（S&P 500/ドル円/日経平均/米10年債利回り TNX）、yfinance四半期財務データを統合し、金融BERT感情分析とLightGBM学習・閾値最適化・投資シグナル推論を高速実行します。
 
@@ -84,11 +84,14 @@ description: >-
 
 ### Step 2: AIクオンツ診断スクリプトの実行
 リサーチが完了したら（または既存キャッシュを使用する場合）、仮想環境 Python で実行します。
+デフォルトで **Auto-Period Optimization（学習期間の自動最適化）** が作動し、銘柄ごとに 1.5年/2年/3年 の中から最も過学習せずバックテスト精度（ROC-AUC・適合率）が高い期間を自動採用します。
 
 ```bash
 # 【A. 本リポジトリ内で実行する場合 (カレントに stock_ai.py がある場合)】
 .venv/bin/python stock_ai.py 7203
 .venv/bin/python stock_ai.py --compare 7203 6758 AAPL 7974
+# 特定の学習期間を手動固定したい場合 (--period auto / 1.5y / 2y / 3y)
+.venv/bin/python stock_ai.py AAPL --period 2y
 
 # 【B. 外部プロジェクトから実行する場合 (REPO_DIR を参照)】
 # ※ カレントディレクトリを変更せずに外部プロジェクトからそのまま実行可能
@@ -116,6 +119,7 @@ description: >-
 
 ### ③ 📊 参考情報: AIモデルの過去バックテスト精度評価（★必須）
 過去テストデータ（時系列分割で未来データとして評価）に対するモデルの汎化性能を明示します。
+- **採用された最適学習期間 (Optimal Period)**: Auto-Period で自動選定された期間（または指定期間）
 - **判定閾値 (Threshold)**
 - **正解率 (Accuracy)**
 - **適合率 (Precision)**: 「買い」と予測した局面が実際に上昇的中した割合
@@ -137,3 +141,5 @@ description: >-
 - **投資家関心（PV）キャッシュ**: `$DATA_DIR/attention/{TICKER}.json`（Wikimedia APIから自動保存）
 - **求人数（Hiring）キャッシュ**: `$DATA_DIR/jobs/{TICKER}.json`（ATS公開APIから自動保存）
 - **四半期財務データ**: `yfinance` から最新決算（売上高、純利益、EPS、利益率）を完全自動取得・動的補間
+
+
