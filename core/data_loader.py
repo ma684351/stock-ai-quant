@@ -94,6 +94,32 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
         if employees is None or employees <= 0:
             employees = 2000 if is_japanese_ticker(ticker) else 1000
 
+        # 新規追加: PBR用BPS, ROE, ROA, PEG, 配当利回り, D/Eレシオ
+        book_val = info.get("bookValue")
+        if book_val is None or book_val <= 0:
+            pbr_cur = info.get("priceToBook")
+            current_price = info.get("currentPrice") or info.get("regularMarketPrice") or 100.0
+            book_val = (
+                float(current_price / pbr_cur)
+                if (pbr_cur and pbr_cur > 0)
+                else (1000.0 if is_japanese_ticker(ticker) else 10.0)
+            )
+
+        roe = info.get("returnOnEquity")
+        roe_val = float(roe) if roe is not None else 0.10
+
+        roa = info.get("returnOnAssets")
+        roa_val = float(roa) if roa is not None else 0.04
+
+        peg = info.get("pegRatio")
+        peg_val = float(peg) if peg is not None and peg > 0 else 1.5
+
+        div_yield = info.get("dividendYield")
+        div_val = float(div_yield) / 100.0 if div_yield is not None else 0.0
+
+        debt_to_equity = info.get("debtToEquity")
+        debt_val = float(debt_to_equity) / 100.0 if debt_to_equity is not None else 0.8
+
         q_income = yf_ticker.quarterly_income_stmt
         ann_income = yf_ticker.income_stmt
 
@@ -130,6 +156,12 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
                         "Fund_Operating_Margin": op_margin,
                         "Fund_Earnings_Surprise": surprise,
                         "Fund_Employees": float(employees),
+                        "Fund_Book_Value": float(book_val),
+                        "Fund_ROE": roe_val,
+                        "Fund_ROA": roa_val,
+                        "Fund_PEG_Ratio": peg_val,
+                        "Fund_Dividend_Yield": div_val,
+                        "Fund_Debt_to_Equity": debt_val,
                     }
                 )
 
@@ -191,6 +223,12 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
                         "Fund_Operating_Margin": op_margin,
                         "Fund_Earnings_Surprise": 0.02,
                         "Fund_Employees": float(employees),
+                        "Fund_Book_Value": float(book_val),
+                        "Fund_ROE": roe_val,
+                        "Fund_ROA": roa_val,
+                        "Fund_PEG_Ratio": peg_val,
+                        "Fund_Dividend_Yield": div_val,
+                        "Fund_Debt_to_Equity": debt_val,
                     }
                 )
 
@@ -205,6 +243,7 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
     # 万が一財務データが取れない場合のベースラインフォールバック
     now = datetime.now()
     dates = pd.date_range(end=now, periods=8, freq="QE").normalize()
+    default_book = 1000.0 if is_japanese_ticker(ticker) else 10.0
     records = [
         {
             "Date": d,
@@ -214,6 +253,12 @@ def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
             "Fund_Operating_Margin": 0.20,
             "Fund_Earnings_Surprise": 0.02,
             "Fund_Employees": 1000.0,
+            "Fund_Book_Value": default_book,
+            "Fund_ROE": 0.10,
+            "Fund_ROA": 0.04,
+            "Fund_PEG_Ratio": 1.5,
+            "Fund_Dividend_Yield": 0.015,
+            "Fund_Debt_to_Equity": 0.8,
         }
         for d in dates
     ]

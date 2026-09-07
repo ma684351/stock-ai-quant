@@ -200,11 +200,22 @@ def build_features_and_target(
 
     # ファンダメンタルズ財務データの前方補完 (ffill)
     base_df = base_df.merge(df_fund.set_index("Date"), left_index=True, right_index=True, how="left")
-    base_df["TTM_EPS"] = base_df["TTM_EPS"].ffill().bfill()
-    base_df["Fund_Rev_Growth_YoY"] = base_df["Fund_Rev_Growth_YoY"].ffill().bfill()
-    base_df["Fund_Net_Margin"] = base_df["Fund_Net_Margin"].ffill().bfill()
-    base_df["Fund_Operating_Margin"] = base_df["Fund_Operating_Margin"].ffill().bfill()
-    base_df["Fund_Earnings_Surprise"] = base_df["Fund_Earnings_Surprise"].ffill().bfill()
+    fund_cols_to_fill = [
+        "TTM_EPS",
+        "Fund_Rev_Growth_YoY",
+        "Fund_Net_Margin",
+        "Fund_Operating_Margin",
+        "Fund_Earnings_Surprise",
+        "Fund_Book_Value",
+        "Fund_ROE",
+        "Fund_ROA",
+        "Fund_PEG_Ratio",
+        "Fund_Dividend_Yield",
+        "Fund_Debt_to_Equity",
+    ]
+    for fc in fund_cols_to_fill:
+        if fc in base_df.columns:
+            base_df[fc] = base_df[fc].ffill().bfill()
     if "Fund_Employees" in base_df.columns:
         base_df["Fund_Employees"] = base_df["Fund_Employees"].ffill().bfill().fillna(1000.0)
     else:
@@ -386,16 +397,44 @@ def build_features_and_target(
 
     feats["Fund_Employees"] = base_df["Fund_Employees"]
 
-    # [6] ファンダメンタルズ財務
+    # [6] ファンダメンタルズ財務 & バリュエーション
+    # 1. PER 関連
     feats["Fund_Dynamic_PE"] = base_df["Close"] / (base_df["TTM_EPS"] + 1e-9)
     feats["Fund_Earnings_Yield"] = (base_df["TTM_EPS"] + 1e-9) / base_df["Close"]
     pe_ma200 = feats["Fund_Dynamic_PE"].rolling(200, min_periods=20).mean()
     pe_std200 = feats["Fund_Dynamic_PE"].rolling(200, min_periods=20).std() + 1e-9
     feats["Fund_PE_Ratio_to_MA200"] = ((feats["Fund_Dynamic_PE"] - pe_ma200) / (pe_ma200 + 1e-9)).fillna(0.0)
     feats["Fund_PE_ZScore"] = ((feats["Fund_Dynamic_PE"] - pe_ma200) / pe_std200).fillna(0.0)
+
+    # 2. PBR 関連 (動的PBR、200日平均比乖離率、Zスコア)
+    book_val = base_df["Fund_Book_Value"].fillna(10.0) if "Fund_Book_Value" in base_df.columns else 10.0
+    feats["Fund_Dynamic_PBR"] = base_df["Close"] / (book_val + 1e-9)
+    pbr_ma200 = feats["Fund_Dynamic_PBR"].rolling(200, min_periods=20).mean()
+    pbr_std200 = feats["Fund_Dynamic_PBR"].rolling(200, min_periods=20).std() + 1e-9
+    feats["Fund_PBR_Ratio_to_MA200"] = ((feats["Fund_Dynamic_PBR"] - pbr_ma200) / (pbr_ma200 + 1e-9)).fillna(0.0)
+    feats["Fund_PBR_ZScore"] = ((feats["Fund_Dynamic_PBR"] - pbr_ma200) / pbr_std200).fillna(0.0)
+
+    # 3. 収益性・成長性・クオリティ
     feats["Fund_Rev_Growth_YoY"] = base_df["Fund_Rev_Growth_YoY"].clip(-0.5, 1.0)
     feats["Fund_Net_Margin"] = base_df["Fund_Net_Margin"].clip(-0.5, 0.8)
+    feats["Fund_Operating_Margin"] = base_df["Fund_Operating_Margin"].clip(-0.5, 0.8)
     feats["Fund_Earnings_Surprise"] = base_df["Fund_Earnings_Surprise"].clip(-0.5, 0.5)
+
+    if "Fund_ROE" in base_df.columns:
+        feats["Fund_ROE"] = base_df["Fund_ROE"].clip(-0.5, 1.5).fillna(0.10)
+    if "Fund_ROA" in base_df.columns:
+        feats["Fund_ROA"] = base_df["Fund_ROA"].clip(-0.3, 0.5).fillna(0.04)
+    if "Fund_PEG_Ratio" in base_df.columns:
+        feats["Fund_PEG_Ratio"] = base_df["Fund_PEG_Ratio"].clip(0.0, 10.0).fillna(1.5)
+    if "Fund_Debt_to_Equity" in base_df.columns:
+        feats["Fund_Debt_to_Equity"] = base_df["Fund_Debt_to_Equity"].clip(0.0, 5.0).fillna(0.8)
+    if "Fund_Dividend_Yield" in base_df.columns:
+        feats["Fund_Dividend_Yield"] = base_df["Fund_Dividend_Yield"].clip(0.0, 0.15).fillna(0.0)
+
+    # 4. イールドスプレッド (株式益回り - 米10年債利回り)
+    if "TNX_Close" in base_df.columns:
+        tnx_yield = (base_df["TNX_Close"] / 100.0).fillna(0.04)
+        feats["Fund_Yield_Spread"] = (feats["Fund_Earnings_Yield"] - tnx_yield).clip(-0.10, 0.20)
 
     # [7] 正解ラベル (20営業日後 / 約1ヶ月後の終値 > 当日終値 なら 1, それ以外 0)
     feats["Target"] = (base_df["Close"].shift(-target_horizon) > base_df["Close"]).astype(int)
@@ -410,8 +449,15 @@ def build_features_and_target(
     # 学習・評価用データ（未来のターゲットが確定している期間）
     clean_df = feats.iloc[:-target_horizon].dropna()
 
-    # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/益回り/従業員数は表示用に保持し、モデル学習は定常化指標を使用
-    excluded_model_cols = {"Target", "Fund_Dynamic_PE", "Fund_Earnings_Yield", "Fund_Employees"}
+    # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/PBR/益回り/従業員数は表示用に保持し、モデル学習は定常化指標を使用
+    excluded_model_cols = {
+        "Target",
+        "Fund_Dynamic_PE",
+        "Fund_Earnings_Yield",
+        "Fund_Employees",
+        "Fund_Dynamic_PBR",
+        "Fund_Book_Value",
+    }
 
     if "High" in df_stock.columns and "Low" in df_stock.columns:
         # High/Low関連の非定常変数（レベル変数）もモデル学習から除外

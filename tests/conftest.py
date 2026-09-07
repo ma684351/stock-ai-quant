@@ -70,6 +70,12 @@ def dummy_market_data():
             "Fund_Net_Margin": [0.22, 0.23, 0.21, 0.24][: len(q_dates)],
             "Fund_Operating_Margin": [0.28, 0.30, 0.29, 0.31][: len(q_dates)],
             "Fund_Earnings_Surprise": [0.03, 0.05, -0.01, 0.04][: len(q_dates)],
+            "Fund_Book_Value": [25.0, 26.0, 27.5, 29.0][: len(q_dates)],
+            "Fund_ROE": [0.20, 0.22, 0.21, 0.24][: len(q_dates)],
+            "Fund_ROA": [0.08, 0.09, 0.085, 0.095][: len(q_dates)],
+            "Fund_PEG_Ratio": [1.5, 1.4, 1.6, 1.3][: len(q_dates)],
+            "Fund_Dividend_Yield": [0.015, 0.016, 0.015, 0.017][: len(q_dates)],
+            "Fund_Debt_to_Equity": [0.75, 0.70, 0.68, 0.65][: len(q_dates)],
         }
     )
 

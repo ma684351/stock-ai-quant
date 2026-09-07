@@ -67,6 +67,22 @@ def test_build_features_and_target(dummy_market_data):
     assert "Fund_Dynamic_PE" in clean_df.columns
     assert "Fund_PE_Ratio_to_MA200" in clean_df.columns
     assert "Fund_PE_ZScore" in clean_df.columns
+    assert "Fund_Dynamic_PBR" in clean_df.columns
+    assert "Fund_PBR_Ratio_to_MA200" in clean_df.columns
+    assert "Fund_PBR_ZScore" in clean_df.columns
+    assert "Fund_ROE" in clean_df.columns
+    assert "Fund_ROA" in clean_df.columns
+    assert "Fund_PEG_Ratio" in clean_df.columns
+    assert "Fund_Dividend_Yield" in clean_df.columns
+    assert "Fund_Debt_to_Equity" in clean_df.columns
+    assert "Fund_Yield_Spread" in clean_df.columns
+
+    # 非定常指標（水準データ）が学習用 feature_cols から安全に除外されていること
+    assert "Fund_Dynamic_PE" not in feature_cols
+    assert "Fund_Dynamic_PBR" not in feature_cols
+    assert "Fund_Book_Value" not in feature_cols
+    assert "Fund_PBR_Ratio_to_MA200" in feature_cols
+    assert "Fund_Yield_Spread" in feature_cols
 
 
 def test_build_features_without_attention(dummy_market_data):

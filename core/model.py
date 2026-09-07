@@ -148,9 +148,20 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
 
     latest_close = float(df_stock.loc[latest_date, "Close"]) if latest_date in df_stock.index else 0.0
     dynamic_pe = float(df_latest["Fund_Dynamic_PE"].iloc[-1]) if "Fund_Dynamic_PE" in df_latest.columns else None
+    dynamic_pbr = float(df_latest["Fund_Dynamic_PBR"].iloc[-1]) if "Fund_Dynamic_PBR" in df_latest.columns else None
     rev_growth = (
         float(df_latest["Fund_Rev_Growth_YoY"].iloc[-1]) if "Fund_Rev_Growth_YoY" in df_latest.columns else None
     )
+    roe = float(df_latest["Fund_ROE"].iloc[-1]) if "Fund_ROE" in df_latest.columns else None
+    roa = float(df_latest["Fund_ROA"].iloc[-1]) if "Fund_ROA" in df_latest.columns else None
+    peg_ratio = float(df_latest["Fund_PEG_Ratio"].iloc[-1]) if "Fund_PEG_Ratio" in df_latest.columns else None
+    dividend_yield = (
+        float(df_latest["Fund_Dividend_Yield"].iloc[-1]) if "Fund_Dividend_Yield" in df_latest.columns else None
+    )
+    debt_to_equity = (
+        float(df_latest["Fund_Debt_to_Equity"].iloc[-1]) if "Fund_Debt_to_Equity" in df_latest.columns else None
+    )
+    yield_spread = float(df_latest["Fund_Yield_Spread"].iloc[-1]) if "Fund_Yield_Spread" in df_latest.columns else None
 
     t_prefix = clean_ticker_name(ticker)
     ma20_col = f"{t_prefix}_MA20_Ratio"
@@ -179,7 +190,14 @@ def predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, thre
         "date": latest_date.strftime("%Y-%m-%d"),
         "close": latest_close,
         "dynamic_pe": dynamic_pe,
+        "dynamic_pbr": dynamic_pbr,
         "rev_growth": rev_growth,
+        "roe": roe,
+        "roa": roa,
+        "peg_ratio": peg_ratio,
+        "dividend_yield": dividend_yield,
+        "debt_to_equity": debt_to_equity,
+        "yield_spread": yield_spread,
         "ma20_ratio": ma20_ratio,
         "rsi14": rsi14,
         "sentiment": sentiment,
