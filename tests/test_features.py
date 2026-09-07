@@ -73,5 +73,3 @@ def test_build_features_without_attention(dummy_market_data):
     )
     assert "Attention_Surprise_20d" in clean_df.columns
     assert not clean_df.isna().any().any()
-
-
