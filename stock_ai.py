@@ -74,7 +74,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto"
     # 2. 市場データ・マクロ指標の取得 (auto の場合は最大期間 3y を取得しスライスで比較)
     fetch_period = "3y" if period == "auto" else period
     df_stock = fetch_market_data(ticker, period=fetch_period)
-    df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil = fetch_macro_data(period=fetch_period)
+    df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil, df_gold = fetch_macro_data(period=fetch_period)
 
     # 3. ファンダメンタルズ財務データの取得
     df_fund = fetch_fundamentals_data(ticker)
@@ -103,6 +103,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto"
         df_vix=df_vix,
         df_sox=df_sox,
         df_oil=df_oil,
+        df_gold=df_gold,
     )
 
     # 7. LightGBMモデル学習 & 学習期間の最適化
@@ -125,6 +126,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto"
     latest_res["tnx_close"] = float(df_tnx["Close"].iloc[-1]) if not df_tnx.empty else None
     latest_res["vix_close"] = float(df_vix["Close"].iloc[-1]) if not df_vix.empty else None
     latest_res["oil_close"] = float(df_oil["Close"].iloc[-1]) if not df_oil.empty else None
+    latest_res["gold_close"] = float(df_gold["Close"].iloc[-1]) if not df_gold.empty else None
 
     if verbose:
         print("\n" + "=" * 60)
@@ -156,6 +158,8 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto"
             print(f"  ・市場恐怖指数 (VIX)        : {latest_res['vix_close']:.2f} ({vix_stat})")
         if latest_res.get("oil_close") is not None:
             print(f"  ・WTI原油先物 (エネルギー)  : ${latest_res['oil_close']:.2f}")
+        if latest_res.get("gold_close") is not None:
+            print(f"  ・金先物 (安全資産/有事指標) : ${latest_res['gold_close']:,.2f}")
         if latest_res["dynamic_pe"]:
             print(f"  ・動的 PER (バリュエーション) : {latest_res['dynamic_pe']:.1f} 倍")
         if latest_res["rev_growth"] is not None:

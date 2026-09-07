@@ -122,9 +122,10 @@ def build_features_and_target(
     df_vix=None,
     df_sox=None,
     df_oil=None,
+    df_gold=None,
 ):
     """
-    個別株テクニカル、マクロ指標（S&P500/為替/日経/米10年債/VIX/SOX/原油）、ニュース感情スコア、ファンダメンタルズ財務、
+    個別株テクニカル、マクロ指標（S&P500/為替/日経/米10年債/VIX/SOX/原油/金）、ニュース感情スコア、ファンダメンタルズ財務、
     検索・アクセスボリューム(Investor Attention)からなる
     特徴量を構築し、20営業日後（約1ヶ月後）の正解ラベルを生成する
     """
@@ -174,6 +175,14 @@ def build_features_and_target(
         base_df["Oil_Close"] = base_df["Oil_Close"].ffill().bfill().fillna(0.0)
     else:
         base_df["Oil_Close"] = 0.0
+
+    if df_gold is not None and not df_gold.empty:
+        base_df = base_df.merge(
+            df_gold[["Close"]].rename(columns={"Close": "Gold_Close"}), left_index=True, right_index=True, how="left"
+        )
+        base_df["Gold_Close"] = base_df["Gold_Close"].ffill().bfill().fillna(0.0)
+    else:
+        base_df["Gold_Close"] = 0.0
 
     base_df["SP500_Close"] = base_df["SP500_Close"].ffill()
     base_df["USDJPY_Close"] = base_df["USDJPY_Close"].ffill()
@@ -342,6 +351,17 @@ def build_features_and_target(
     feats["Oil_Return_1d"] = base_df["Oil_Close"].pct_change(1).fillna(0.0)
     feats["Oil_Return_5d"] = base_df["Oil_Close"].pct_change(5).fillna(0.0)
     feats["Oil_MA20_Ratio"] = ((base_df["Oil_Close"] - oil_ma20) / oil_ma20).fillna(0.0)
+
+    # 金先物 (安全資産・世界情勢・通貨信認)
+    gold_ma20 = base_df["Gold_Close"].rolling(20, min_periods=5).mean() + 1e-6
+    feats["Gold_Return_1d"] = base_df["Gold_Close"].pct_change(1).fillna(0.0)
+    feats["Gold_Return_5d"] = base_df["Gold_Close"].pct_change(5).fillna(0.0)
+    feats["Gold_MA20_Ratio"] = ((base_df["Gold_Close"] - gold_ma20) / gold_ma20).fillna(0.0)
+
+    # 金/原油レシオ (Gold-to-Oil Ratio: 地政学危機 & リセッション先行指標)
+    gold_oil_ratio = base_df["Gold_Close"] / (base_df["Oil_Close"] + 1e-6)
+    go_ma20 = gold_oil_ratio.rolling(20, min_periods=5).mean() + 1e-6
+    feats["Gold_Oil_Ratio_MA20_Ratio"] = ((gold_oil_ratio - go_ma20) / go_ma20).fillna(0.0)
 
     # [3] ニュース感情スコア
     feats["News_Sentiment_Score"] = base_df["Sentiment_Score"]

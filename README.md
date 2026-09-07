@@ -25,7 +25,7 @@ stock-ai-quant/
 ├── core/                       # コアロジック・パッケージ
 │   ├── __init__.py
 │   ├── research_agent.py       # カタリスト取得 & 企業IRイベント自動抽出エンジン
-│   ├── data_loader.py          # yfinance (株価・7大マクロ指標・四半期財務) の自動取得 & ティッカー正規化
+│   ├── data_loader.py          # yfinance (株価・8大マクロ指標・四半期財務) の自動取得 & ティッカー正規化
 │   ├── sentiment.py            # 日米ニュースRSS収集 & 金融BERT感情分析 (バイリンガルルーティング)
 │   ├── features.py             # 4大カテゴリ（テクニカル×マクロ×感情×財務）の特徴量生成
 │   └── model.py                # LightGBM個別学習、最適閾値探索、本日の投資判断推論

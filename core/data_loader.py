@@ -49,13 +49,22 @@ _MACRO_CACHE = {}
 
 def fetch_macro_data(
     period: str = "2y",
-) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """7大マクロ経済指標（S&P 500, ドル円為替, 日経平均, 米10年債利回り TNX, VIX恐怖指数, SOX半導体指数, WTI原油先物）を取得する（プロセス内キャッシュ対応）"""
+) -> Tuple[
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+    pd.DataFrame,
+]:
+    """8大マクロ経済指標（S&P 500, ドル円為替, 日経平均, 米10年債 TNX, VIX恐怖指数, SOX半導体, WTI原油先物, 金先物 GC=F）を取得する（プロセス内キャッシュ対応）"""
     global _MACRO_CACHE
     if period in _MACRO_CACHE:
         return _MACRO_CACHE[period]
 
-    print("  ・マクロ経済指標を取得中 (S&P 500, USD/JPY, 日経225, 米10年債, VIX, SOX, 原油WTI)...")
+    print("  ・マクロ経済指標を取得中 (S&P 500, USD/JPY, 日経225, 米10年債, VIX, SOX, 原油WTI, 金先物)...")
     df_sp500 = fetch_market_data("^GSPC", period=period)
     df_usdjpy = fetch_market_data("JPY=X", period=period)
     df_nikkei = fetch_market_data("^N225", period=period)
@@ -63,8 +72,9 @@ def fetch_macro_data(
     df_vix = fetch_market_data("^VIX", period=period)
     df_sox = fetch_market_data("^SOX", period=period)
     df_oil = fetch_market_data("CL=F", period=period)
-    _MACRO_CACHE[period] = (df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil)
-    return df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil
+    df_gold = fetch_market_data("GC=F", period=period)
+    _MACRO_CACHE[period] = (df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil, df_gold)
+    return df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil, df_gold
 
 
 def fetch_fundamentals_data(ticker: str) -> pd.DataFrame:
