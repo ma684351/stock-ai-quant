@@ -93,6 +93,90 @@ def build_features_and_target(
     rs = gain / (loss + 1e-9)
     feats[f"{t_prefix}_RSI_14"] = 100 - (100 / (1 + rs))
 
+    # --- 新規追加: High/Low を活用したテクニカル指標群 ---
+    if "High" in df_stock.columns and "Low" in df_stock.columns:
+        high = df_stock["High"]
+        low = df_stock["Low"]
+        close = df_stock["Close"]
+
+        # 1. ATR (Average True Range)
+        tr1 = high - low
+        tr2 = (high - close.shift(1)).abs()
+        tr3 = (low - close.shift(1)).abs()
+        tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+        atr_14 = tr.rolling(14).mean()
+        feats[f"{t_prefix}_ATR_14"] = atr_14.ffill().fillna(0.0)
+        feats[f"{t_prefix}_ATR_14_Ratio"] = (feats[f"{t_prefix}_ATR_14"] / (close + 1e-9)).ffill().fillna(0.0)
+
+        # 2. ボラティリティ圧縮度
+        hl_range = (high - low) / (close + 1e-9)
+        feats[f"{t_prefix}_HL_Range"] = hl_range.ffill().fillna(0.0)
+        feats[f"{t_prefix}_HL_Range_MA20"] = hl_range.rolling(20).mean().ffill().fillna(0.0)
+        feats[f"{t_prefix}_HL_Range_Compression"] = (
+            feats[f"{t_prefix}_HL_Range"] / (feats[f"{t_prefix}_HL_Range_MA20"] + 1e-9)
+        ).ffill().fillna(0.0)
+
+        # 3. サポート・レジスタンス
+        feats[f"{t_prefix}_High20"] = high.rolling(20).max().ffill().fillna(0.0)
+        feats[f"{t_prefix}_Low20"] = low.rolling(20).min().ffill().fillna(0.0)
+        feats[f"{t_prefix}_Range20"] = (feats[f"{t_prefix}_High20"] - feats[f"{t_prefix}_Low20"]).ffill().fillna(0.0)
+
+        # 4. Price Position (価格位置)
+        # 過去20日の高値安値に対する現在値の位置 (0〜1)
+        feats[f"{t_prefix}_Price_Position_20d"] = (
+            (close - feats[f"{t_prefix}_Low20"]) / (feats[f"{t_prefix}_Range20"] + 1e-9)
+        ).clip(0, 1).ffill().fillna(0.5)
+
+        # 単日の高値安値に対する終値の位置 (0〜1)
+        day_range = high - low
+        feats[f"{t_prefix}_Close_Position_in_Range"] = (
+            (close - low) / (day_range + 1e-9)
+        ).clip(0, 1).ffill().fillna(0.5)
+
+        # 高値への接近度
+        feats[f"{t_prefix}_Close_to_High_Ratio"] = (
+            (high - close) / (day_range + 1e-9)
+        ).clip(0, 1).ffill().fillna(0.5)
+
+        # 5. Directional Movement (上昇日の比率)
+        up_day = (close > close.shift(1)).astype(float)
+        feats[f"{t_prefix}_Up_Down_Ratio_14d"] = up_day.rolling(14).mean().ffill().fillna(0.5)
+
+        # 6. Stochastics (%K / %D)
+        stoch_k = (close - low.rolling(14).min()) / (high.rolling(14).max() - low.rolling(14).min() + 1e-9) * 100
+        feats[f"{t_prefix}_Stoch_K"] = stoch_k.ffill().fillna(50.0)
+        feats[f"{t_prefix}_Stoch_D"] = stoch_k.rolling(3).mean().ffill().fillna(50.0)
+
+        # 7. ADX (Average Directional Index)
+        up_move = high - high.shift(1)
+        down_move = low.shift(1) - low
+
+        pos_dm = np.where((up_move > down_move) & (up_move > 0), up_move, 0.0)
+        neg_dm = np.where((down_move > up_move) & (down_move > 0), down_move, 0.0)
+
+        pos_dm_ser = pd.Series(pos_dm, index=close.index)
+        neg_dm_ser = pd.Series(neg_dm, index=close.index)
+
+        # Smoothed True Range and Directional Movement (using Wilder's smoothing approx with exponential moving average)
+        # Using 14-day exponential moving average as standard ADX calculation
+        atr_ema = tr.ewm(alpha=1/14, adjust=False).mean()
+        pos_dm_ema = pos_dm_ser.ewm(alpha=1/14, adjust=False).mean()
+        neg_dm_ema = neg_dm_ser.ewm(alpha=1/14, adjust=False).mean()
+
+        pos_di = 100 * (pos_dm_ema / (atr_ema + 1e-9))
+        neg_di = 100 * (neg_dm_ema / (atr_ema + 1e-9))
+
+        dx = 100 * (abs(pos_di - neg_di) / (pos_di + neg_di + 1e-9))
+        adx = dx.ewm(alpha=1/14, adjust=False).mean()
+
+        feats[f"{t_prefix}_ADX_14"] = adx.ffill().fillna(0.0)
+
+        # 8. Keltner Channel Bandwidth
+        ema_20 = close.ewm(span=20, adjust=False).mean()
+        keltner_upper = ema_20 + 2 * atr_14
+        keltner_lower = ema_20 - 2 * atr_14
+        feats[f"{t_prefix}_Keltner_Bandwidth"] = ((keltner_upper - keltner_lower) / (ema_20 + 1e-9)).ffill().fillna(0.0)
+
     # [2] マクロ指標
     feats["SP500_Return_1d"] = base_df["SP500_Close"].pct_change(1)
     feats["SP500_Return_5d"] = base_df["SP500_Close"].pct_change(5)
@@ -166,6 +250,14 @@ def build_features_and_target(
 
     # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/益回り/従業員数は表示用に保持し、モデル学習は定常化指標を使用
     excluded_model_cols = {"Target", "Fund_Dynamic_PE", "Fund_Earnings_Yield", "Fund_Employees"}
+
+    if "High" in df_stock.columns and "Low" in df_stock.columns:
+        # High/Low関連の非定常変数（レベル変数）もモデル学習から除外
+        excluded_model_cols.update({
+            f"{t_prefix}_High20",
+            f"{t_prefix}_Low20",
+            f"{t_prefix}_Range20"
+        })
 
     # 求人データの履歴十分性チェック:
     # 過去の学習期間において求人数の非ゼロ観測日が5日未満の場合、定数化による疑似相関（出来高逆数化）を防ぐためモデル学習から除外
