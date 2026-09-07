@@ -4,6 +4,110 @@ import pandas as pd
 from core.data_loader import clean_ticker_name
 
 
+def calc_obv_features(df, t_prefix):
+    """OBV (On-Balance Volume) - 出来高ベースのモメンタム"""
+    close = df["Close"]
+    volume = df["Volume"] if "Volume" in df.columns else pd.Series(0, index=df.index)
+
+    # Calculate daily OBV changes
+    obv_change = np.where(close > close.shift(1), volume, np.where(close < close.shift(1), -volume, 0))
+    obv_change = pd.Series(obv_change, index=df.index)
+
+    # OBV is cumulative by definition, but we also want to extract 5d and 20d sums for the features
+    obv = obv_change.cumsum()
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_OBV_5d"] = obv_change.rolling(5, min_periods=1).sum().fillna(0.0)
+    feats[f"{t_prefix}_OBV_20d"] = obv_change.rolling(20, min_periods=1).sum().fillna(0.0)
+    feats[f"{t_prefix}_OBV_Signal_9d"] = obv.rolling(9, min_periods=1).mean().fillna(0.0)
+
+    # Divergence: Correlation between Close and OBV over 20 days
+    # (If correlation is negative, divergence is occurring)
+    corr_20d = close.rolling(20).corr(obv).fillna(0.0)
+    feats[f"{t_prefix}_OBV_Divergence"] = corr_20d
+
+    return feats
+
+
+def calc_vroc_features(df, t_prefix):
+    """VROC (Volume Rate of Change) - 出来高の変化率"""
+    volume = df["Volume"] if "Volume" in df.columns else pd.Series(0, index=df.index)
+
+    feats = pd.DataFrame(index=df.index)
+
+    # VROC_t = ((Volume_t - Volume_{t-n}) / Volume_{t-n}) * 100
+    # Avoid division by zero
+    vroc_5d = ((volume - volume.shift(5)) / (volume.shift(5) + 1e-9)) * 100
+    vroc_20d = ((volume - volume.shift(20)) / (volume.shift(20) + 1e-9)) * 100
+
+    feats[f"{t_prefix}_VROC_5d"] = vroc_5d.fillna(0.0).round(3)
+    feats[f"{t_prefix}_VROC_20d"] = vroc_20d.fillna(0.0).round(3)
+    feats[f"{t_prefix}_VROC_MA3d"] = vroc_5d.rolling(3, min_periods=1).mean().fillna(0.0).round(3)
+
+    return feats
+
+
+def calc_bb_features(df, t_prefix, window=20, num_std=2.0):
+    """Bollinger Bands (BB) - ボラティリティと過熱度"""
+    close = df["Close"]
+
+    ma = close.rolling(window, min_periods=1).mean()
+    std = close.rolling(window, min_periods=1).std()
+
+    # On the first day, std is NaN. Fill with 0
+    std = std.fillna(0.0)
+
+    upper_band = ma + (std * num_std)
+    lower_band = ma - (std * num_std)
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_BB_Upper"] = upper_band.fillna(0.0)
+    feats[f"{t_prefix}_BB_Lower"] = lower_band.fillna(0.0)
+
+    # Width Pct = (UB - LB) / MA * 100
+    width_pct = (upper_band - lower_band) / (ma + 1e-9) * 100
+    feats[f"{t_prefix}_BB_Width_Pct"] = width_pct.fillna(0.0)
+
+    # Position = (Close - LB) / (UB - LB) * 100
+    # If UB == LB, position is 50
+    band_diff = upper_band - lower_band
+    position = np.where(band_diff > 1e-9, (close - lower_band) / band_diff * 100, 50.0)
+    feats[f"{t_prefix}_BB_Position"] = pd.Series(position, index=df.index).fillna(50.0)
+
+    return feats
+
+
+def calc_macd_features(df, t_prefix, fast_period=12, slow_period=26, signal_period=9):
+    """MACD (Moving Average Convergence Divergence)"""
+    close = df["Close"]
+
+    # EMA calculation using pandas ewm
+    fast_ema = close.ewm(span=fast_period, adjust=False).mean()
+    slow_ema = close.ewm(span=slow_period, adjust=False).mean()
+
+    macd_line = fast_ema - slow_ema
+    signal_line = macd_line.ewm(span=signal_period, adjust=False).mean()
+    macd_histogram = macd_line - signal_line
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_MACD"] = macd_line.fillna(0.0)
+    feats[f"{t_prefix}_MACD_Signal"] = signal_line.fillna(0.0)
+    feats[f"{t_prefix}_MACD_Histogram"] = macd_histogram.fillna(0.0)
+
+    # Histogram Cross: sign change of histogram (1 if changed to positive, -1 if changed to negative, 0 otherwise)
+    # Actually, the requirement says "ヒストグラムの符号変化（ゼロクロス：売買シグナル）"
+    # We can represent this as 1 (cross above 0), -1 (cross below 0), 0 (no cross)
+    prev_hist = macd_histogram.shift(1)
+
+    cross = np.zeros(len(df))
+    cross[(macd_histogram > 0) & (prev_hist <= 0)] = 1.0
+    cross[(macd_histogram < 0) & (prev_hist >= 0)] = -1.0
+
+    feats[f"{t_prefix}_MACD_Histogram_Cross"] = pd.Series(cross, index=df.index).fillna(0.0)
+
+    return feats
+
+
 def build_features_and_target(
     df_stock,
     df_sp500,
@@ -86,6 +190,101 @@ def build_features_and_target(
     rs = gain / (loss + 1e-9)
     feats[f"{t_prefix}_RSI_14"] = 100 - (100 / (1 + rs))
 
+    # --- 新規追加: High/Low を活用したテクニカル指標群 ---
+    if "High" in df_stock.columns and "Low" in df_stock.columns:
+        high = df_stock["High"]
+        low = df_stock["Low"]
+        close = df_stock["Close"]
+
+        # 1. ATR (Average True Range)
+        tr1 = high - low
+        tr2 = (high - close.shift(1)).abs()
+        tr3 = (low - close.shift(1)).abs()
+        tr = pd.concat([tr1, tr2, tr3], axis=1).max(axis=1)
+        atr_14 = tr.rolling(14).mean()
+        feats[f"{t_prefix}_ATR_14"] = atr_14.ffill().fillna(0.0)
+        feats[f"{t_prefix}_ATR_14_Ratio"] = (feats[f"{t_prefix}_ATR_14"] / (close + 1e-9)).ffill().fillna(0.0)
+
+        # 2. ボラティリティ圧縮度
+        hl_range = (high - low) / (close + 1e-9)
+        feats[f"{t_prefix}_HL_Range"] = hl_range.ffill().fillna(0.0)
+        feats[f"{t_prefix}_HL_Range_MA20"] = hl_range.rolling(20).mean().ffill().fillna(0.0)
+        feats[f"{t_prefix}_HL_Range_Compression"] = (
+            (feats[f"{t_prefix}_HL_Range"] / (feats[f"{t_prefix}_HL_Range_MA20"] + 1e-9)).ffill().fillna(0.0)
+        )
+
+        # 3. サポート・レジスタンス
+        feats[f"{t_prefix}_High20"] = high.rolling(20).max().ffill().fillna(0.0)
+        feats[f"{t_prefix}_Low20"] = low.rolling(20).min().ffill().fillna(0.0)
+        feats[f"{t_prefix}_Range20"] = (feats[f"{t_prefix}_High20"] - feats[f"{t_prefix}_Low20"]).ffill().fillna(0.0)
+
+        # 4. Price Position (価格位置)
+        # 過去20日の高値安値に対する現在値の位置 (0〜1)
+        feats[f"{t_prefix}_Price_Position_20d"] = (
+            ((close - feats[f"{t_prefix}_Low20"]) / (feats[f"{t_prefix}_Range20"] + 1e-9))
+            .clip(0, 1)
+            .ffill()
+            .fillna(0.5)
+        )
+
+        # 単日の高値安値に対する終値の位置 (0〜1)
+        day_range = high - low
+        feats[f"{t_prefix}_Close_Position_in_Range"] = (
+            ((close - low) / (day_range + 1e-9)).clip(0, 1).ffill().fillna(0.5)
+        )
+
+        # 高値への接近度
+        feats[f"{t_prefix}_Close_to_High_Ratio"] = ((high - close) / (day_range + 1e-9)).clip(0, 1).ffill().fillna(0.5)
+
+        # 5. Directional Movement (上昇日の比率)
+        up_day = (close > close.shift(1)).astype(float)
+        feats[f"{t_prefix}_Up_Down_Ratio_14d"] = up_day.rolling(14).mean().ffill().fillna(0.5)
+
+        # 6. Stochastics (%K / %D)
+        stoch_k = (close - low.rolling(14).min()) / (high.rolling(14).max() - low.rolling(14).min() + 1e-9) * 100
+        feats[f"{t_prefix}_Stoch_K"] = stoch_k.ffill().fillna(50.0)
+        feats[f"{t_prefix}_Stoch_D"] = stoch_k.rolling(3).mean().ffill().fillna(50.0)
+
+        # 7. ADX (Average Directional Index)
+        up_move = high - high.shift(1)
+        down_move = low.shift(1) - low
+
+        pos_dm = np.where((up_move > down_move) & (up_move > 0), up_move, 0.0)
+        neg_dm = np.where((down_move > up_move) & (down_move > 0), down_move, 0.0)
+
+        pos_dm_ser = pd.Series(pos_dm, index=close.index)
+        neg_dm_ser = pd.Series(neg_dm, index=close.index)
+
+        # Smoothed True Range and Directional Movement (using Wilder's smoothing approx with exponential moving average)
+        # Using 14-day exponential moving average as standard ADX calculation
+        atr_ema = tr.ewm(alpha=1 / 14, adjust=False).mean()
+        pos_dm_ema = pos_dm_ser.ewm(alpha=1 / 14, adjust=False).mean()
+        neg_dm_ema = neg_dm_ser.ewm(alpha=1 / 14, adjust=False).mean()
+
+        pos_di = 100 * (pos_dm_ema / (atr_ema + 1e-9))
+        neg_di = 100 * (neg_dm_ema / (atr_ema + 1e-9))
+
+        dx = 100 * (abs(pos_di - neg_di) / (pos_di + neg_di + 1e-9))
+        adx = dx.ewm(alpha=1 / 14, adjust=False).mean()
+
+        feats[f"{t_prefix}_ADX_14"] = adx.ffill().fillna(0.0)
+
+        # 8. Keltner Channel Bandwidth
+        ema_20 = close.ewm(span=20, adjust=False).mean()
+        keltner_upper = ema_20 + 2 * atr_14
+        keltner_lower = ema_20 - 2 * atr_14
+        feats[f"{t_prefix}_Keltner_Bandwidth"] = ((keltner_upper - keltner_lower) / (ema_20 + 1e-9)).ffill().fillna(0.0)
+
+    # Add new technical indicators (OBV, VROC, BB, MACD)
+    df_technical = base_df[["Close", "Volume"]]
+
+    obv_feats = calc_obv_features(df_technical, t_prefix)
+    vroc_feats = calc_vroc_features(df_technical, t_prefix)
+    bb_feats = calc_bb_features(df_technical, t_prefix)
+    macd_feats = calc_macd_features(df_technical, t_prefix)
+
+    feats = pd.concat([feats, obv_feats, vroc_feats, bb_feats, macd_feats], axis=1)
+
     # [2] マクロ指標
     feats["SP500_Return_1d"] = base_df["SP500_Close"].pct_change(1)
     feats["SP500_Return_5d"] = base_df["SP500_Close"].pct_change(5)
@@ -147,6 +346,10 @@ def build_features_and_target(
 
     # 株価水準（非定常）の直接リークを防ぐため、絶対値PE/益回り/従業員数は表示用に保持し、モデル学習は定常化指標を使用
     excluded_model_cols = {"Target", "Fund_Dynamic_PE", "Fund_Earnings_Yield", "Fund_Employees"}
+
+    if "High" in df_stock.columns and "Low" in df_stock.columns:
+        # High/Low関連の非定常変数（レベル変数）もモデル学習から除外
+        excluded_model_cols.update({f"{t_prefix}_High20", f"{t_prefix}_Low20", f"{t_prefix}_Range20"})
 
     feature_cols = [c for c in clean_df.columns if c not in excluded_model_cols]
     return clean_df, latest_df, feature_cols
