@@ -4,6 +4,108 @@ import pandas as pd
 from core.data_loader import clean_ticker_name
 
 
+def calc_obv_features(df, t_prefix):
+    """OBV (On-Balance Volume) - 出来高ベースのモメンタム"""
+    close = df["Close"]
+    volume = df["Volume"] if "Volume" in df.columns else pd.Series(0, index=df.index)
+
+    # Calculate daily OBV changes
+    obv_change = np.where(close > close.shift(1), volume,
+                 np.where(close < close.shift(1), -volume, 0))
+    obv_change = pd.Series(obv_change, index=df.index)
+
+    # OBV is cumulative by definition, but we also want to extract 5d and 20d sums for the features
+    obv = obv_change.cumsum()
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_OBV_5d"] = obv_change.rolling(5, min_periods=1).sum().fillna(0.0)
+    feats[f"{t_prefix}_OBV_20d"] = obv_change.rolling(20, min_periods=1).sum().fillna(0.0)
+    feats[f"{t_prefix}_OBV_Signal_9d"] = obv.rolling(9, min_periods=1).mean().fillna(0.0)
+
+    # Divergence: Correlation between Close and OBV over 20 days
+    # (If correlation is negative, divergence is occurring)
+    corr_20d = close.rolling(20).corr(obv).fillna(0.0)
+    feats[f"{t_prefix}_OBV_Divergence"] = corr_20d
+
+    return feats
+
+def calc_vroc_features(df, t_prefix):
+    """VROC (Volume Rate of Change) - 出来高の変化率"""
+    volume = df["Volume"] if "Volume" in df.columns else pd.Series(0, index=df.index)
+
+    feats = pd.DataFrame(index=df.index)
+
+    # VROC_t = ((Volume_t - Volume_{t-n}) / Volume_{t-n}) * 100
+    # Avoid division by zero
+    vroc_5d = ((volume - volume.shift(5)) / (volume.shift(5) + 1e-9)) * 100
+    vroc_20d = ((volume - volume.shift(20)) / (volume.shift(20) + 1e-9)) * 100
+
+    feats[f"{t_prefix}_VROC_5d"] = vroc_5d.fillna(0.0).round(3)
+    feats[f"{t_prefix}_VROC_20d"] = vroc_20d.fillna(0.0).round(3)
+    feats[f"{t_prefix}_VROC_MA3d"] = vroc_5d.rolling(3, min_periods=1).mean().fillna(0.0).round(3)
+
+    return feats
+
+def calc_bb_features(df, t_prefix, window=20, num_std=2.0):
+    """Bollinger Bands (BB) - ボラティリティと過熱度"""
+    close = df["Close"]
+
+    ma = close.rolling(window, min_periods=1).mean()
+    std = close.rolling(window, min_periods=1).std()
+
+    # On the first day, std is NaN. Fill with 0
+    std = std.fillna(0.0)
+
+    upper_band = ma + (std * num_std)
+    lower_band = ma - (std * num_std)
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_BB_Upper"] = upper_band.fillna(0.0)
+    feats[f"{t_prefix}_BB_Lower"] = lower_band.fillna(0.0)
+
+    # Width Pct = (UB - LB) / MA * 100
+    width_pct = (upper_band - lower_band) / (ma + 1e-9) * 100
+    feats[f"{t_prefix}_BB_Width_Pct"] = width_pct.fillna(0.0)
+
+    # Position = (Close - LB) / (UB - LB) * 100
+    # If UB == LB, position is 50
+    band_diff = upper_band - lower_band
+    position = np.where(band_diff > 1e-9, (close - lower_band) / band_diff * 100, 50.0)
+    feats[f"{t_prefix}_BB_Position"] = pd.Series(position, index=df.index).fillna(50.0)
+
+    return feats
+
+def calc_macd_features(df, t_prefix, fast_period=12, slow_period=26, signal_period=9):
+    """MACD (Moving Average Convergence Divergence)"""
+    close = df["Close"]
+
+    # EMA calculation using pandas ewm
+    fast_ema = close.ewm(span=fast_period, adjust=False).mean()
+    slow_ema = close.ewm(span=slow_period, adjust=False).mean()
+
+    macd_line = fast_ema - slow_ema
+    signal_line = macd_line.ewm(span=signal_period, adjust=False).mean()
+    macd_histogram = macd_line - signal_line
+
+    feats = pd.DataFrame(index=df.index)
+    feats[f"{t_prefix}_MACD"] = macd_line.fillna(0.0)
+    feats[f"{t_prefix}_MACD_Signal"] = signal_line.fillna(0.0)
+    feats[f"{t_prefix}_MACD_Histogram"] = macd_histogram.fillna(0.0)
+
+    # Histogram Cross: sign change of histogram (1 if changed to positive, -1 if changed to negative, 0 otherwise)
+    # Actually, the requirement says "ヒストグラムの符号変化（ゼロクロス：売買シグナル）"
+    # We can represent this as 1 (cross above 0), -1 (cross below 0), 0 (no cross)
+    prev_hist = macd_histogram.shift(1)
+
+    cross = np.zeros(len(df))
+    cross[(macd_histogram > 0) & (prev_hist <= 0)] = 1.0
+    cross[(macd_histogram < 0) & (prev_hist >= 0)] = -1.0
+
+    feats[f"{t_prefix}_MACD_Histogram_Cross"] = pd.Series(cross, index=df.index).fillna(0.0)
+
+    return feats
+
+
 def build_features_and_target(
     df_stock,
     df_sp500,
@@ -92,6 +194,16 @@ def build_features_and_target(
     loss = (-delta.where(delta < 0, 0)).rolling(14).mean()
     rs = gain / (loss + 1e-9)
     feats[f"{t_prefix}_RSI_14"] = 100 - (100 / (1 + rs))
+
+    # Add new technical indicators (OBV, VROC, BB, MACD)
+    df_technical = base_df[["Close", "Volume"]]
+
+    obv_feats = calc_obv_features(df_technical, t_prefix)
+    vroc_feats = calc_vroc_features(df_technical, t_prefix)
+    bb_feats = calc_bb_features(df_technical, t_prefix)
+    macd_feats = calc_macd_features(df_technical, t_prefix)
+
+    feats = pd.concat([feats, obv_feats, vroc_feats, bb_feats, macd_feats], axis=1)
 
     # [2] マクロ指標
     feats["SP500_Return_1d"] = base_df["SP500_Close"].pct_change(1)
