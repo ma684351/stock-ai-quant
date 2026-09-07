@@ -1,13 +1,9 @@
-import pytest
-import pandas as pd
 import numpy as np
+import pandas as pd
+import pytest
 
-from core.features import (
-    calc_obv_features,
-    calc_vroc_features,
-    calc_bb_features,
-    calc_macd_features
-)
+from core.features import calc_bb_features, calc_macd_features, calc_obv_features, calc_vroc_features
+
 
 @pytest.fixture
 def mock_stock_data():
