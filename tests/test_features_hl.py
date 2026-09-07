@@ -1,6 +1,7 @@
 import numpy as np
-import pandas as pd
+
 from core.features import build_features_and_target
+
 
 def test_high_low_technical_indicators(dummy_market_data):
     ticker = "TEST"
@@ -75,7 +76,6 @@ def test_high_low_technical_indicators(dummy_market_data):
 
 def test_high_low_indicators_with_nan_handling(dummy_market_data):
     """データにNaNが含まれる場合の補完（ffill, fillna）が正しく機能するかテスト"""
-    import numpy as np
 
     df_stock = dummy_market_data["df_stock"].copy()
     # 意図的にHigh/Lowに欠損値を混入
