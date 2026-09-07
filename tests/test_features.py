@@ -15,6 +15,10 @@ def test_build_features_and_target(dummy_market_data):
         ticker=ticker,
         target_horizon=target_horizon,
         df_attention=dummy_market_data["df_attention"],
+        df_tnx=dummy_market_data["df_tnx"],
+        df_vix=dummy_market_data["df_vix"],
+        df_sox=dummy_market_data["df_sox"],
+        df_oil=dummy_market_data["df_oil"],
     )
 
     # 1. 出力行数と特徴量カラムリストの検証
@@ -43,6 +47,10 @@ def test_build_features_and_target(dummy_market_data):
     assert "Nikkei_Return_1d" in clean_df.columns
     assert "TNX_Return_1d" in clean_df.columns
     assert "TNX_MA20_Ratio" in clean_df.columns
+    assert "VIX_Return_1d" in clean_df.columns
+    assert "VIX_Over_25" in clean_df.columns
+    assert "SOX_Return_1d" in clean_df.columns
+    assert "Oil_Return_1d" in clean_df.columns
     # [感情]
     assert "News_Sentiment_Score" in clean_df.columns
     assert "News_Sentiment_Surprise" in clean_df.columns

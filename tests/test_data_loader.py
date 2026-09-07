@@ -55,12 +55,12 @@ def test_fetch_macro_data_caching(monkeypatch):
     monkeypatch.setattr(data_loader, "fetch_market_data", mock_fetch_market_data)
     data_loader._MACRO_CACHE.clear()
 
-    # 1回目の取得（4回ダウンロードされる）
+    # 1回目の取得（7回ダウンロードされる: SP500, USDJPY, Nikkei, TNX, VIX, SOX, Oil）
     res1 = data_loader.fetch_macro_data(period="2y")
-    assert call_count == 4
-    assert len(res1) == 4
+    assert call_count == 7
+    assert len(res1) == 7
 
     # 2回目の取得（キャッシュが効いてダウンロードは増えない）
     res2 = data_loader.fetch_macro_data(period="2y")
-    assert call_count == 4
+    assert call_count == 7
     assert res1[0] is res2[0]
