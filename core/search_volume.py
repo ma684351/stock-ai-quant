@@ -16,6 +16,8 @@ BASE_DATA_DIR = os.environ.get(
     os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data")),
 )
 DEFAULT_MAPPING_FILE = os.path.join(BASE_DATA_DIR, "wikipedia_mapping.json")
+if not os.path.exists(DEFAULT_MAPPING_FILE):
+    DEFAULT_MAPPING_FILE = os.path.join(os.path.dirname(__file__), "..", "data.example", "wikipedia_mapping.json")
 DEFAULT_CACHE_DIR = os.path.join(BASE_DATA_DIR, "attention")
 
 
