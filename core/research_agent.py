@@ -53,7 +53,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
     """
     print(f"  [Financial Engine] yfinance から '{ticker}' の確定決算・企業イベントを自動抽出中...")
     catalysts = []
-    cutoff_date = (datetime.now() - timedelta(days=730)).strftime("%Y-%m-%d")
+    cutoff_date = (datetime.now() - timedelta(days=1095)).strftime("%Y-%m-%d")
     try:
         import pandas as pd
         import yfinance as yf
@@ -123,7 +123,7 @@ def fetch_financial_catalysts_yfinance(ticker: str) -> List[Tuple[str, str]]:
 def get_ticker_catalysts(ticker: str) -> List[Tuple[str, str]]:
     """
     指定銘柄のカタリストを取得する。
-    1. data/catalysts/{ticker}.json があればロード（Antigravity スキルにより高精度生成）
+    1. data/catalysts/{ticker}.json があればロード（AIエージェントスキルにより高精度生成）
     2. なければ yfinance 確定決算エンジンで自動抽出
     """
     ticker = ticker.upper().strip()
@@ -132,6 +132,6 @@ def get_ticker_catalysts(ticker: str) -> List[Tuple[str, str]]:
         return existing
 
     print(
-        f"[{ticker}] カタリストキャッシュがありません。yfinance自動抽出を実行します（※Antigravityスキルでリサーチすると最高精度のカタリストが生成されます）"
+        f"[{ticker}] カタリストキャッシュがありません。yfinance自動抽出を実行します（※AIエージェントスキル stock-ai-analysis でリサーチすると最高精度のカタリストが生成されます）"
     )
     return fetch_financial_catalysts_yfinance(ticker)

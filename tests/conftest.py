@@ -80,6 +80,26 @@ def dummy_market_data():
         name="Attention_Volume",
     )
 
+    # TNX (米10年債利回り)
+    tnx_close = 4.0 + np.random.normal(0, 0.2, n_days)
+    df_tnx = pd.DataFrame({"Close": tnx_close}, index=dates)
+
+    # VIX (恐怖指数)
+    vix_close = 18.0 + np.random.normal(0, 3.0, n_days)
+    df_vix = pd.DataFrame({"Close": np.clip(vix_close, 10.0, 50.0)}, index=dates)
+
+    # SOX (半導体株指数)
+    sox_close = 4500.0 * np.cumprod(1 + np.random.normal(0.0008, 0.02, n_days))
+    df_sox = pd.DataFrame({"Close": sox_close}, index=dates)
+
+    # Oil (WTI原油先物)
+    oil_close = 75.0 * np.cumprod(1 + np.random.normal(0.0003, 0.015, n_days))
+    df_oil = pd.DataFrame({"Close": oil_close}, index=dates)
+
+    # Gold (金先物)
+    gold_close = 2500.0 * np.cumprod(1 + np.random.normal(0.0004, 0.01, n_days))
+    df_gold = pd.DataFrame({"Close": gold_close}, index=dates)
+
     return {
         "df_stock": df_stock,
         "df_sp500": df_sp500,
@@ -88,4 +108,9 @@ def dummy_market_data():
         "df_daily_sentiment": df_sentiment,
         "df_fund": df_fund,
         "df_attention": attention_volume,
+        "df_tnx": df_tnx,
+        "df_vix": df_vix,
+        "df_sox": df_sox,
+        "df_oil": df_oil,
+        "df_gold": df_gold,
     }

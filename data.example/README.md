@@ -19,7 +19,7 @@ cp -r data.example data
 - **`jobs_mapping.json`**:
   企業の採用求人ATS（Greenhouse / Lever / Workday）の設定辞書。リアルタイム求人数を取得する際に利用されます。
 - **`catalysts/`**:
-  過去の重要カタリスト（決算サプライズ、新製品、大型開示等）のJSONファイル。Antigravityエージェント（スキル）により自動生成・更新されます。
+  過去の重要カタリスト（決算サプライズ、新製品、大型開示等）のJSONファイル。AIエージェント（スキル）により自動生成・更新されます。
 - **`attention/`**:
   Wikipedia日次アクセス数の自動キャッシュ（実行時に自動生成）。
 - **`jobs/`**:
