@@ -151,10 +151,20 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", 
             print(f"  ・WTI原油先物 (エネルギー)  : ${latest_res['oil_close']:.2f}")
         if latest_res.get("gold_close") is not None:
             print(f"  ・金先物 (安全資産/有事指標) : ${latest_res['gold_close']:,.2f}")
-        if latest_res["dynamic_pe"]:
-            print(f"  ・動的 PER (バリュエーション) : {latest_res['dynamic_pe']:.1f} 倍")
-        if latest_res["rev_growth"] is not None:
+        if latest_res.get("dynamic_pe"):
+            print(f"  ・動的 PER (株価収益率)     : {latest_res['dynamic_pe']:.1f} 倍")
+        if latest_res.get("dynamic_pbr"):
+            print(f"  ・動的 PBR (純資産倍率)     : {latest_res['dynamic_pbr']:.2f} 倍")
+        if latest_res.get("roe") is not None:
+            print(f"  ・自己資本利益率 (ROE)      : {latest_res['roe'] * 100:.1f}%")
+        if latest_res.get("rev_growth") is not None:
             print(f"  ・四半期売上高成長率 (YoY)  : {latest_res['rev_growth'] * 100:+.2f}%")
+        if latest_res.get("dividend_yield") is not None and latest_res["dividend_yield"] > 0:
+            print(f"  ・予想配当利回り            : {latest_res['dividend_yield'] * 100:.2f}%")
+        if latest_res.get("yield_spread") is not None:
+            print(f"  ・イールドスプレッド(益回-金利): {latest_res['yield_spread'] * 100:+.2f}%")
+        if latest_res.get("debt_to_equity") is not None:
+            print(f"  ・財務レバレッジ (D/E比率)  : {latest_res['debt_to_equity'] * 100:.1f}%")
         if latest_res["ma20_ratio"] is not None:
             print(f"  ・20日移動平均乖離率        : {latest_res['ma20_ratio'] * 100:+.2f}%")
         if latest_res["rsi14"] is not None:
@@ -198,21 +208,20 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", 
                 target = format_price(ticker, pg["target_price"])
                 sl = format_price(ticker, pg["stop_loss"])
                 print("  【AI実戦トレード価格ガイド（利確・空売り・損切り）】")
-                print(f"    ・戻り売りゾーン (利確・空売り) : {e_low} 〜 {e_high}")
-                print(f"    ・下値ターゲット (買戻し目標)   : {target} ({pg['target_return'] * 100:+.1f}%)")
-                print(f"    ・踏み上げ防衛  (損切り目安)    : {sl} ({pg['loss_pct'] * 100:+.1f}%)")
-                print(f"    ・リスクリワード比             : 1 : {pg['rr_ratio']:.1f}")
+                print(f"    ・戻り売りゾーン (売却目安)    : {e_low} 〜 {e_high}")
+                print(f"    ・下値ターゲット (買戻し目標)  : {target} ({pg['target_return'] * 100:+.1f}%)")
+                print(f"    ・踏み上げ防衛ライン (損切り)  : {sl} ({pg['loss_pct'] * 100:+.1f}%)")
             elif pg.get("type") == "HOLD":
                 dip = format_price(ticker, pg["dip_buy_price"])
-                bo = format_price(ticker, pg["breakout_price"])
-                print("  【AI監視プライスガイド（買い転換・ブレイクアウト）】")
+                brk = format_price(ticker, pg["breakout_price"])
+                print("  【AI実戦トレード価格ガイド（レンジ・指値待ち）】")
                 print(
-                    f"    ・押し目買い転換ライン (指値待ち) : {dip} 以下 ({pg['dip_return'] * 100:+.1f}%) （反発期待圏）"
+                    f"    ・押し目買い転換ライン (指値待ち) : {dip} 付近まで調整を待つ ({pg['dip_return'] * 100:+.1f}%)"
                 )
                 print(
-                    f"    ・上値ブレイクライン   (順張り買い): {bo} 超え ({pg['breakout_return'] * 100:+.1f}%) （節目上抜け）"
+                    f"    ・上値ブレイクライン (順張り買い) : {brk} 超えで買い検討 ({pg['breakout_return'] * 100:+.1f}%)"
                 )
-        print("=" * 60 + "\n")
+            print("  " + "-" * 56)
 
     return latest_res
 
@@ -221,20 +230,22 @@ def print_comparison_table(results):
     """複数銘柄の診断結果をランキング一覧表として出力する"""
     sorted_res = sorted(results, key=lambda x: x["prob"], reverse=True)
 
-    print("\n" + "=" * 136)
+    print("\n" + "=" * 152)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
-    print("=" * 136)
-    header = f"{'順位':<4} {'銘柄':<10} {'期間':<6} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
+    print("=" * 152)
+    header = f"{'順位':<4} {'銘柄':<10} {'期間':<6} {'現在株価':>12} {'動的PER':>8} {'動的PBR':>8} {'ROE':>7} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
     print(header)
-    print("-" * 136)
+    print("-" * 152)
 
     for i, r in enumerate(sorted_res):
         t = r["ticker"]
         price_str = format_price(t, r["close"])
         period_str = r.get("period", "2y")
-        pe_str = f"{r['dynamic_pe']:.1f}倍" if r["dynamic_pe"] else "N/A"
-        rsi_str = f"{r['rsi14']:.1f}" if r["rsi14"] else "N/A"
-        ma_str = f"{r['ma20_ratio'] * 100:+.1f}%" if r["ma20_ratio"] is not None else "N/A"
+        pe_str = f"{r['dynamic_pe']:.1f}倍" if r.get("dynamic_pe") else "N/A"
+        pbr_str = f"{r['dynamic_pbr']:.2f}倍" if r.get("dynamic_pbr") else "N/A"
+        roe_str = f"{r['roe'] * 100:.1f}%" if r.get("roe") is not None else "N/A"
+        rsi_str = f"{r['rsi14']:.1f}" if r.get("rsi14") else "N/A"
+        ma_str = f"{r['ma20_ratio'] * 100:+.1f}%" if r.get("ma20_ratio") is not None else "N/A"
         prob_str = f"{r['prob'] * 100:.1f}%"
         auc_val = r.get("metrics", {}).get("auc")
         auc_str = f"{auc_val:.3f}" if auc_val is not None else "N/A"
@@ -250,9 +261,9 @@ def print_comparison_table(results):
             elif pg.get("type") == "HOLD":
                 target_str = f"{format_price(t, pg['dip_buy_price'])} (押し目待ち)"
 
-        row = f"{i + 1:2d}位  {t:<10} {period_str:<6} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
+        row = f"{i + 1:2d}位  {t:<10} {period_str:<6} {price_str:>12} {pe_str:>8} {pbr_str:>8} {roe_str:>7} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
         print(row)
-    print("=" * 136 + "\n")
+    print("=" * 152 + "\n")
 
 
 def main():
