@@ -84,14 +84,15 @@ description: >-
 
 ### Step 2: AIクオンツ診断スクリプトの実行
 リサーチが完了したら（または既存キャッシュを使用する場合）、仮想環境 Python で実行します。
-デフォルトで **Auto-Period Optimization（学習期間の自動最適化）** が作動し、銘柄ごとに 1.5年/2年/3年 の中から最も過学習せずバックテスト精度（ROC-AUC・適合率）が高い期間を自動採用します。
+デフォルトで **安定した直近2年間（`2y`）** を学習期間として固定採用し、期間選択による分母ブレや後知恵（データ・スヌーピング）を排除した公平なバックテストを実行します（必要に応じて `--period auto` や `--period 3y` の指定も可能）。
 
 ```bash
 # 【A. 本リポジトリ内で実行する場合 (カレントに stock_ai.py がある場合)】
 .venv/bin/python stock_ai.py 7203
 .venv/bin/python stock_ai.py --compare 7203 6758 AAPL 7974
-# 特定の学習期間を手動固定したい場合 (--period auto / 1.5y / 2y / 3y)
-.venv/bin/python stock_ai.py AAPL --period 2y
+# 期間を変更・自動探索したい場合 (--period 2y / 3y / 1.5y / auto)
+.venv/bin/python stock_ai.py AAPL --period 3y
+.venv/bin/python stock_ai.py AAPL --period auto
 
 # 【B. 外部プロジェクトから実行する場合 (REPO_DIR を参照)】
 # ※ カレントディレクトリを変更せずに外部プロジェクトからそのまま実行可能

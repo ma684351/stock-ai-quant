@@ -59,7 +59,7 @@ def format_price(ticker: str, price: float) -> str:
     return f"${price:,.2f}"
 
 
-def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto", **kwargs):
+def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", **kwargs):
     """単一銘柄（日本株・米国株）のエンドツーエンド分析を実行し、診断結果を返す"""
     ticker = normalize_ticker(ticker)
     if verbose:
@@ -114,7 +114,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "auto"
     else:
         optimal_p = period
         if verbose:
-            print(f"[{ticker}] 指定期間 ({period}) で LightGBMモデルを個別最適化して学習中...")
+            print(f"[{ticker}] LightGBMモデルを個別最適化して学習中 (期間: {period})...")
         model, metrics, best_thresh, df_imp = train_stock_model(
             df_features, feature_cols, ticker=ticker, train_ratio=0.8
         )
@@ -274,9 +274,9 @@ def main():
     )
     parser.add_argument(
         "--period",
-        default="auto",
-        choices=["auto", "1.5y", "2y", "3y"],
-        help="学習データ期間 (デフォルト: auto で 1.5y/2y/3y から最適期間を自動選定。手動指定も可能)",
+        default="2y",
+        choices=["2y", "3y", "1.5y", "auto"],
+        help="学習データ期間 (デフォルト: 2y。3y, 1.5y または auto での自動選定も指定可能)",
     )
 
     args = parser.parse_args()
