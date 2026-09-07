@@ -1,5 +1,5 @@
 from core.features import build_features_and_target
-from core.model import optimize_training_period, predict_latest_signal, train_stock_model
+from core.model import predict_latest_signal, train_stock_model
 
 
 def test_train_stock_model_and_signal_prediction(dummy_market_data):
@@ -67,39 +67,3 @@ def test_train_stock_model_with_purging(dummy_market_data):
     )
     assert model is not None
     assert metrics["test_count"] == n_samples - int(n_samples * 0.8)
-
-
-def test_optimize_training_period():
-    import numpy as np
-    import pandas as pd
-
-    # 合成データ（600日分）を用意し、1.5y (375日) と 2y (500日) の比較検証
-    n_samples = 600
-    dates = pd.date_range("2022-01-01", periods=n_samples, freq="B")
-    np.random.seed(42)
-    feature_cols = ["Feat1", "Feat2", "Feat3"]
-    df = pd.DataFrame(
-        {
-            "Feat1": np.random.randn(n_samples),
-            "Feat2": np.random.randn(n_samples),
-            "Feat3": np.random.randn(n_samples),
-            "Target": np.random.choice([0, 1], size=n_samples, p=[0.4, 0.6]),
-        },
-        index=dates,
-    )
-
-    best_period, model, metrics, best_thresh, df_imp, results = optimize_training_period(
-        df,
-        feature_cols,
-        ticker="TEST_AUTO",
-        candidate_periods=("1.5y", "2y", "3y"),
-        train_ratio=0.8,
-        verbose=True,
-    )
-
-    assert best_period in {"1.5y", "2y", "3y"}
-    assert model is not None
-    assert "auc" in metrics
-    assert "precision" in metrics
-    assert len(results) >= 2
-    assert all("score" in r for r in results)

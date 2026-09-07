@@ -46,7 +46,7 @@ from core.data_loader import (
     normalize_ticker,
 )
 from core.features import build_features_and_target
-from core.model import optimize_training_period, predict_latest_signal, train_stock_model
+from core.model import predict_latest_signal, train_stock_model
 from core.research_agent import get_ticker_catalysts
 from core.search_volume import get_search_volume_series
 from core.sentiment import analyze_sentiment, generate_news_dataset
@@ -71,10 +71,9 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", 
     # 1. カタリスト取得（AIエージェントスキル生成キャッシュ または yfinance自動抽出）
     catalysts = get_ticker_catalysts(ticker)
 
-    # 2. 市場データ・マクロ指標の取得 (auto の場合は最大期間 3y を取得しスライスで比較)
-    fetch_period = "3y" if period == "auto" else period
-    df_stock = fetch_market_data(ticker, period=fetch_period)
-    df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil, df_gold = fetch_macro_data(period=fetch_period)
+    # 2. 市場データ・マクロ指標の取得 (デフォルト2年データ)
+    df_stock = fetch_market_data(ticker, period=period)
+    df_sp500, df_usdjpy, df_nikkei, df_tnx, df_vix, df_sox, df_oil, df_gold = fetch_macro_data(period=period)
 
     # 3. ファンダメンタルズ財務データの取得
     df_fund = fetch_fundamentals_data(ticker)
@@ -106,23 +105,15 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", 
         df_gold=df_gold,
     )
 
-    # 7. LightGBMモデル学習 & 学習期間の最適化
-    if period == "auto":
-        optimal_p, model, metrics, best_thresh, df_imp, _ = optimize_training_period(
-            df_features, feature_cols, ticker=ticker, candidate_periods=("1.5y", "2y", "3y"), verbose=verbose
-        )
-    else:
-        optimal_p = period
-        if verbose:
-            print(f"[{ticker}] LightGBMモデルを個別最適化して学習中 (期間: {period})...")
-        model, metrics, best_thresh, df_imp = train_stock_model(
-            df_features, feature_cols, ticker=ticker, train_ratio=0.8
-        )
+    # 7. LightGBMモデル学習
+    if verbose:
+        print(f"[{ticker}] LightGBMモデルを学習中 (期間: {period})...")
+    model, metrics, best_thresh, df_imp = train_stock_model(df_features, feature_cols, ticker=ticker, train_ratio=0.8)
 
     # 8. 直近営業日の売買シグナル判定
     latest_res = predict_latest_signal(model, df_latest, df_stock, ticker, feature_cols, threshold=best_thresh)
     latest_res["metrics"] = metrics
-    latest_res["optimal_period"] = optimal_p
+    latest_res["period"] = period
     latest_res["tnx_close"] = float(df_tnx["Close"].iloc[-1]) if not df_tnx.empty else None
     latest_res["vix_close"] = float(df_vix["Close"].iloc[-1]) if not df_vix.empty else None
     latest_res["oil_close"] = float(df_oil["Close"].iloc[-1]) if not df_oil.empty else None
@@ -130,7 +121,7 @@ def analyze_single_stock(ticker: str, verbose: bool = True, period: str = "2y", 
 
     if verbose:
         print("\n" + "=" * 60)
-        print(f"【過去テストデータ評価結果（{ticker} / 1ヶ月後株価予測 / 採用期間: {optimal_p}）】")
+        print(f"【過去テストデータ評価結果（{ticker} / 1ヶ月後株価予測 / 学習期間: {period}）】")
         print(
             f"  判定閾値 (Threshold)    : {metrics['threshold']:.4f} (>= {metrics['threshold'] * 100:.1f}% で上昇予測)"
         )
@@ -233,14 +224,14 @@ def print_comparison_table(results):
     print("\n" + "=" * 136)
     print("【AI投資判断 複数銘柄比較ランキングサマリー（今後1ヶ月の予測）】")
     print("=" * 136)
-    header = f"{'順位':<4} {'銘柄':<10} {'最適期間':<8} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
+    header = f"{'順位':<4} {'銘柄':<10} {'期間':<6} {'現在株価':>12} {'動的PER':>9} {'14日RSI':>8} {'20日乖離':>9} {'1ヶ月上昇確率':>14}  {'ROC-AUC':>8}  {'AI投資シグナル':<18}  {'実戦目標・節目':<20}"
     print(header)
     print("-" * 136)
 
     for i, r in enumerate(sorted_res):
         t = r["ticker"]
         price_str = format_price(t, r["close"])
-        period_str = r.get("optimal_period", "2y")
+        period_str = r.get("period", "2y")
         pe_str = f"{r['dynamic_pe']:.1f}倍" if r["dynamic_pe"] else "N/A"
         rsi_str = f"{r['rsi14']:.1f}" if r["rsi14"] else "N/A"
         ma_str = f"{r['ma20_ratio'] * 100:+.1f}%" if r["ma20_ratio"] is not None else "N/A"
@@ -259,7 +250,7 @@ def print_comparison_table(results):
             elif pg.get("type") == "HOLD":
                 target_str = f"{format_price(t, pg['dip_buy_price'])} (押し目待ち)"
 
-        row = f"{i + 1:2d}位  {t:<10} {period_str:<8} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
+        row = f"{i + 1:2d}位  {t:<10} {period_str:<6} {price_str:>12} {pe_str:>9} {rsi_str:>8} {ma_str:>9} {prob_str:>14}  {auc_str:>8}  {decision:<18}  {target_str:<20}"
         print(row)
     print("=" * 136 + "\n")
 
@@ -275,8 +266,8 @@ def main():
     parser.add_argument(
         "--period",
         default="2y",
-        choices=["2y", "3y", "1.5y", "auto"],
-        help="学習データ期間 (デフォルト: 2y。3y, 1.5y または auto での自動選定も指定可能)",
+        choices=["2y", "3y", "1.5y", "1y"],
+        help="学習データ期間 (デフォルト: 2y)",
     )
 
     args = parser.parse_args()
@@ -291,7 +282,7 @@ def main():
                 res = analyze_single_stock(t, verbose=False, period=args.period)
                 results.append(res)
                 print(
-                    f"  ✔ {t:<8} 完了 (最適期間: {res.get('optimal_period', 'auto')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
+                    f"  ✔ {t:<8} 完了 (期間: {res.get('period', '2y')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
                 )
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー発生: {e}")
@@ -326,7 +317,7 @@ def main():
                 res = analyze_single_stock(t, verbose=False, period=args.period)
                 results.append(res)
                 print(
-                    f"  ✔ {t:<8} 完了 (最適期間: {res.get('optimal_period', 'auto')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
+                    f"  ✔ {t:<8} 完了 (期間: {res.get('period', '2y')}, 現在値: {format_price(t, res['close'])}, 上昇確率: {res['prob'] * 100:.1f}%, 判定: {res['decision_label']})"
                 )
             except Exception as e:
                 print(f"  ✘ {t:<8} エラー: {e}")
