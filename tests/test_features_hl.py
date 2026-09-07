@@ -35,7 +35,7 @@ def test_high_low_technical_indicators(dummy_market_data):
         f"{t_prefix}_Stoch_K",
         f"{t_prefix}_Stoch_D",
         f"{t_prefix}_ADX_14",
-        f"{t_prefix}_Keltner_Bandwidth"
+        f"{t_prefix}_Keltner_Bandwidth",
     ]
 
     for feat in hl_features:
@@ -43,11 +43,7 @@ def test_high_low_technical_indicators(dummy_market_data):
         assert feat in feature_cols, f"Feature not in model inputs: {feat}"
 
     # 非定常変数がモデル特徴量から除外され、latest_dfには存在することを確認
-    level_features = [
-        f"{t_prefix}_High20",
-        f"{t_prefix}_Low20",
-        f"{t_prefix}_Range20"
-    ]
+    level_features = [f"{t_prefix}_High20", f"{t_prefix}_Low20", f"{t_prefix}_Range20"]
     for feat in level_features:
         assert feat in clean_df.columns
         assert feat not in feature_cols
@@ -73,6 +69,7 @@ def test_high_low_technical_indicators(dummy_market_data):
     # 3. NaN の混入がないこと
     assert not clean_df[hl_features].isna().any().any()
     assert not latest_df[hl_features].isna().any().any()
+
 
 def test_high_low_indicators_with_nan_handling(dummy_market_data):
     """データにNaNが含まれる場合の補完（ffill, fillna）が正しく機能するかテスト"""

@@ -113,8 +113,8 @@ def build_features_and_target(
         feats[f"{t_prefix}_HL_Range"] = hl_range.ffill().fillna(0.0)
         feats[f"{t_prefix}_HL_Range_MA20"] = hl_range.rolling(20).mean().ffill().fillna(0.0)
         feats[f"{t_prefix}_HL_Range_Compression"] = (
-            feats[f"{t_prefix}_HL_Range"] / (feats[f"{t_prefix}_HL_Range_MA20"] + 1e-9)
-        ).ffill().fillna(0.0)
+            (feats[f"{t_prefix}_HL_Range"] / (feats[f"{t_prefix}_HL_Range_MA20"] + 1e-9)).ffill().fillna(0.0)
+        )
 
         # 3. サポート・レジスタンス
         feats[f"{t_prefix}_High20"] = high.rolling(20).max().ffill().fillna(0.0)
@@ -124,19 +124,20 @@ def build_features_and_target(
         # 4. Price Position (価格位置)
         # 過去20日の高値安値に対する現在値の位置 (0〜1)
         feats[f"{t_prefix}_Price_Position_20d"] = (
-            (close - feats[f"{t_prefix}_Low20"]) / (feats[f"{t_prefix}_Range20"] + 1e-9)
-        ).clip(0, 1).ffill().fillna(0.5)
+            ((close - feats[f"{t_prefix}_Low20"]) / (feats[f"{t_prefix}_Range20"] + 1e-9))
+            .clip(0, 1)
+            .ffill()
+            .fillna(0.5)
+        )
 
         # 単日の高値安値に対する終値の位置 (0〜1)
         day_range = high - low
         feats[f"{t_prefix}_Close_Position_in_Range"] = (
-            (close - low) / (day_range + 1e-9)
-        ).clip(0, 1).ffill().fillna(0.5)
+            ((close - low) / (day_range + 1e-9)).clip(0, 1).ffill().fillna(0.5)
+        )
 
         # 高値への接近度
-        feats[f"{t_prefix}_Close_to_High_Ratio"] = (
-            (high - close) / (day_range + 1e-9)
-        ).clip(0, 1).ffill().fillna(0.5)
+        feats[f"{t_prefix}_Close_to_High_Ratio"] = ((high - close) / (day_range + 1e-9)).clip(0, 1).ffill().fillna(0.5)
 
         # 5. Directional Movement (上昇日の比率)
         up_day = (close > close.shift(1)).astype(float)
@@ -159,15 +160,15 @@ def build_features_and_target(
 
         # Smoothed True Range and Directional Movement (using Wilder's smoothing approx with exponential moving average)
         # Using 14-day exponential moving average as standard ADX calculation
-        atr_ema = tr.ewm(alpha=1/14, adjust=False).mean()
-        pos_dm_ema = pos_dm_ser.ewm(alpha=1/14, adjust=False).mean()
-        neg_dm_ema = neg_dm_ser.ewm(alpha=1/14, adjust=False).mean()
+        atr_ema = tr.ewm(alpha=1 / 14, adjust=False).mean()
+        pos_dm_ema = pos_dm_ser.ewm(alpha=1 / 14, adjust=False).mean()
+        neg_dm_ema = neg_dm_ser.ewm(alpha=1 / 14, adjust=False).mean()
 
         pos_di = 100 * (pos_dm_ema / (atr_ema + 1e-9))
         neg_di = 100 * (neg_dm_ema / (atr_ema + 1e-9))
 
         dx = 100 * (abs(pos_di - neg_di) / (pos_di + neg_di + 1e-9))
-        adx = dx.ewm(alpha=1/14, adjust=False).mean()
+        adx = dx.ewm(alpha=1 / 14, adjust=False).mean()
 
         feats[f"{t_prefix}_ADX_14"] = adx.ffill().fillna(0.0)
 
@@ -253,11 +254,7 @@ def build_features_and_target(
 
     if "High" in df_stock.columns and "Low" in df_stock.columns:
         # High/Low関連の非定常変数（レベル変数）もモデル学習から除外
-        excluded_model_cols.update({
-            f"{t_prefix}_High20",
-            f"{t_prefix}_Low20",
-            f"{t_prefix}_Range20"
-        })
+        excluded_model_cols.update({f"{t_prefix}_High20", f"{t_prefix}_Low20", f"{t_prefix}_Range20"})
 
     # 求人データの履歴十分性チェック:
     # 過去の学習期間において求人数の非ゼロ観測日が5日未満の場合、定数化による疑似相関（出来高逆数化）を防ぐためモデル学習から除外
