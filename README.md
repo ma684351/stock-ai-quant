@@ -10,33 +10,34 @@
 
 ```text
 stock-ai-quant/
-├── stock_ai.py                 # 【メインCLI】日米全銘柄対応の分析・比較スクリプト
+├── skills/                     # 【Agent Skills オープン規格】npx skills add 用
+│   └── stock-ai-analysis/
+│       ├── stock_ai.py         # 【メインCLI】日米全銘柄対応の分析・比較スクリプト
+│       ├── SKILL.md            # スキル説明書
+│       ├── requirements.txt    # 依存パッケージ一覧
+│       ├── core/               # コアロジック・パッケージ
+│       │   ├── __init__.py
+│       │   ├── data_loader.py  # yfinance (株価・マクロ指標・四半期財務) の自動取得
+│       │   ├── features.py     # テクニカル×マクロ×感情×財務×代替データ 特徴量生成
+│       │   ├── model.py        # LightGBM個別学習、最適閾値探索、本日の投資判断推論
+│       │   ├── research_agent.py # カタリスト取得 & 企業IRイベント自動抽出エンジン
+│       │   ├── search_volume.py  # Wikipedia閲覧数(オルタナティブデータ)取得
+│       │   └── sentiment.py    # 日米ニュースRSS収集 & 金融BERT感情分析
+│       └── data.example/       # データのキャッシュ・蓄積 (サンプル)
+│           ├── catalysts/      # 各銘柄の過去2年カタリスト (AAPL.json, 7203_T.json, NVDA.json...)
+│           └── attention/      # 閲覧数データのキャッシュ
 │
 ├── .claude-plugin/             # 【Claude Code プラグイン定義】
 │   ├── marketplace.json        # マーケットプレイスカタログ
 │   └── plugin.json             # プラグインマニフェスト
-├── skills/                     # 【Agent Skills オープン規格】npx skills add 用
-│   └── stock-ai-analysis/
-│       └── SKILL.md
 ├── .agents/skills/             # 【標準Agent Skills規格】Cursor / Windsurf / Antigravity 用スキル
 │   └── stock-ai-analysis/
 │       └── SKILL.md
 │
-├── core/                       # コアロジック・パッケージ
-│   ├── __init__.py
-│   ├── research_agent.py       # カタリスト取得 & 企業IRイベント自動抽出エンジン
-│   ├── data_loader.py          # yfinance (株価・8大マクロ指標・四半期財務) の自動取得 & ティッカー正規化
-│   ├── sentiment.py            # 日米ニュースRSS収集 & 金融BERT感情分析 (バイリンガルルーティング)
-│   ├── features.py             # 4大カテゴリ（テクニカル×マクロ×感情×財務）の特徴量生成
-│   └── model.py                # LightGBM個別学習、最適閾値探索、本日の投資判断推論
-│
-├── data/                       # データのキャッシュ・蓄積
-│   └── catalysts/              # 各銘柄の過去2年カタリスト (AAPL.json, 7203_T.json, NVDA.json...)
-│                               # ※ 財務データは yfinance から最新決算を完全自動取得・動的補間します
-│
 ├── notebooks/                  # Google Colab用個別ノートブック
-├── .venv/                      # 独立仮想環境 (Python 3)
-├── requirements.txt            # 依存パッケージ一覧
+├── tests/                      # ユニットテスト・統合テスト群
+├── .github/                    # GitHub Actions (CI) 設定等
+├── pyproject.toml              # プロジェクト設定 (Ruff等)
 ├── .gitignore                  # 除外設定
 └── README.md                   # 本ドキュメント
 ```
@@ -93,11 +94,15 @@ ln -s "$(pwd)/skills/stock-ai-analysis" ~/.claude/skills/stock-ai-analysis
 
 ```bash
 # プロジェクトフォルダへ移動
-cd fin-sentiment-lgbm-pipeline
+cd stock-ai-quant
 
 # 仮想環境を有効化 (macOS / Linux)
+python3 -m venv .venv
 source .venv/bin/activate
 # ※ Windows (PowerShell) の場合: .venv\Scripts\Activate.ps1
+
+# 依存関係のインストール
+pip install -r skills/stock-ai-analysis/requirements.txt
 ```
 
 ### 2. コマンドライン実行
@@ -106,21 +111,21 @@ source .venv/bin/activate
 日本株は4桁コード（`7203`）または東証ティッカー（`7203.T`）のどちらでも指定可能です。
 ```bash
 # 【日本株】トヨタ自動車, ソニーグループ, ソフトバンクG
-python stock_ai.py 7203
-python stock_ai.py 6758.T
-python stock_ai.py 9984
+python skills/stock-ai-analysis/stock_ai.py 7203
+python skills/stock-ai-analysis/stock_ai.py 6758.T
+python skills/stock-ai-analysis/stock_ai.py 9984
 
 # 【米国株】Apple, NVIDIA, Alphabet, Tesla など
-python stock_ai.py AAPL
-python stock_ai.py NVDA
-python stock_ai.py TSLA
+python skills/stock-ai-analysis/stock_ai.py AAPL
+python skills/stock-ai-analysis/stock_ai.py NVDA
+python skills/stock-ai-analysis/stock_ai.py TSLA
 ```
 
 #### ② 複数銘柄の一括比較 ＆ ランキング一覧表示（★おすすめ）
 気になる複数銘柄（日米混在も可能）を順番に自動学習・推論し、**「今買うべき株ランキング一覧表」** を出力します。
 ```bash
 # 日米混合ポートフォリオ比較
-python stock_ai.py --compare 7203.T AAPL 6758.T NVDA TSLA
+python skills/stock-ai-analysis/stock_ai.py --compare 7203.T AAPL 6758.T NVDA TSLA
 ```
 
 出力例:
@@ -148,7 +153,7 @@ python stock_ai.py --compare 7203.T AAPL 6758.T NVDA TSLA
 
 #### ④ 引数なしの対話型モード
 ```bash
-python stock_ai.py
+python skills/stock-ai-analysis/stock_ai.py
 # プロンプトが表示されます:
 # 分析したいティッカーシンボルを入力してください (例: AAPL, 7203.T, NVDA, 6758 または複数カンマ区切り):
 ```
@@ -213,6 +218,13 @@ LightGBMモデルは、以下の4大カテゴリ（テクニカル×マクロ×�
 | **`{TICKER}_Stoch_K` / `Stoch_D`** | Stochastics (14,3) | RSIと並ぶ代表的なオシレーター。直近レンジに対する終値の位置づけ。 |
 | **`{TICKER}_ADX_14`** | 14日間 ADX (Average Directional Index) | トレンドの強さ（上昇・下降問わず）。強いトレンド相場かレンジ相場かを判別。 |
 | **`{TICKER}_Keltner_Bandwidth`** | ケルトナーチャネルのバンド幅 / 終値 | ATRを用いたバンド指標。ボラティリティとトレンドの発生を捉える。 |
+| **`{TICKER}_MACD`** | 12日EMA - 26日EMA | トレンドの方向性と転換点を示すMACDライン。 |
+| **`{TICKER}_MACD_Signal`** | MACDの9日EMA | MACDのシグナルライン。MACDとのクロスで売買シグナルを判定。 |
+| **`{TICKER}_MACD_Hist`** | MACD - MACD_Signal | MACDヒストグラム。トレンドの勢いの変化をいち早く検知。 |
+| **`{TICKER}_BB_Upper`** / **`BB_Lower`** | 20日移動平均 ± 2標準偏差 | ボリンジャーバンドの上限・下限。価格の正規分布内での位置づけを把握。 |
+| **`{TICKER}_BB_Position`** | (終値 - BB_Lower) / (BB_Upper - BB_Lower) | ボリンジャーバンド内での価格の位置(0〜1)。過熱感やスクイーズからのブレイク判定。 |
+| **`{TICKER}_OBV`** | On-Balance Volume | 終値の上下に応じて出来高を加減算する指標。価格に先行して資金の流入・流出を捉える。 |
+| **`{TICKER}_VROC_5d` / `20d`** | 出来高の5日/20日変化率 | 出来高の勢い。価格変動を裏付ける出来高の急増（機関投資家の動き）を検知。 |
 
 ### 3. グローバル・マクロ経済指標 (`core/data_loader.py`)
 個別株単体では抗えない市場全体の地合い・為替・時差先行シグナルを捉えます。
@@ -236,6 +248,17 @@ LightGBMモデルは、以下の4大カテゴリ（テクニカル×マクロ×�
 | **`News_Sentiment_Surprise`** | 当日スコア - 3日移動平均 | **感情サプライズ**。平穏な状態から突如好材料/悪材料が出たインパクト。 |
 | **`Fund_PE_Ratio_to_MA200`** | 動的PER / 200日移動平均PER | **定常化バリュエーション**。過去平均に対する割安・過熱度。 |
 | **`Fund_PE_ZScore`** | (動的PER - 過去平均) / 標準偏差 | **PER Zスコア**。歴史的な株価評価の統計的割安・割高水準。 |
+
+### 5. オルタナティブデータ・検索ボリューム (`core/search_volume.py`, `core/features.py`)
+Wikipediaのページビュー（閲覧数）などを活用し、個人投資家の関心度や世間の注目度の急増（バズり）を捉えます。
+
+| 特徴量名 (Feature) | 内容・計算式 | クオンツ的解釈・意義 |
+| :--- | :--- | :--- |
+| **`Attention_Volume`** | 対象企業のWikipedia日次ページビュー数 | 世間・個人投資家からの注目度の絶対量。 |
+| **`Attention_Surprise_20d`**| (当日PV - 20日平均PV) / 20日平均PV | **注目度サプライズ**。普段と比較してどれだけ急激に関心が集まったか（バズり検知）。 |
+| **`Attention_ZScore_60d`**| (当日PV - 60日平均PV) / 60日標準偏差 | **注目度のZスコア**。中長期的な視点での注目度の過熱感。 |
+| **`Attention_x_Sentiment`**| 注目度サプライズ × 当日感情スコア | **注目度×感情の複合**。単なるバズりではなく、それが「良いニュース（好感）」か「悪いニュース（炎上）」かを切り分ける。 |
+| **`Attention_x_RSI`**| 注目度のZスコア × ((RSI - 50) / 25) | **注目度×テクニカル過熱度の複合**。過熱圏（RSI高）での注目急増は「提灯買い・天井打ち」リスク、底値圏での急増は「リバーサル（反発）前兆」の可能性。 |
 
 ---
 
