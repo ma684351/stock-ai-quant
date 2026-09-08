@@ -51,7 +51,7 @@ jobs:
 
       - name: Setup Data Directory from Example
         run: |
-          cp -r data.example data
+          cp -r skills/stock-ai-analysis/data.example data
 
       - name: Run Pytest
         run: |
