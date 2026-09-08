@@ -30,9 +30,8 @@ stock-ai-quant/
 ├── .claude-plugin/             # 【Claude Code プラグイン定義】
 │   ├── marketplace.json        # マーケットプレイスカタログ
 │   └── plugin.json             # プラグインマニフェスト
-├── .agents/skills/             # 【標準Agent Skills規格】Cursor / Windsurf / Antigravity 用スキル
-│   └── stock-ai-analysis/
-│       └── SKILL.md
+├── .claude/skills/             # 【Claude Code用】skills/stock-ai-analysis へのシンボリックリンク
+├── .agents/skills/             # 【Cursor / Windsurf / Antigravity用】skills/stock-ai-analysis へのシンボリックリンク
 │
 ├── notebooks/                  # Google Colab用個別ノートブック
 ├── tests/                      # ユニットテスト・統合テスト群
