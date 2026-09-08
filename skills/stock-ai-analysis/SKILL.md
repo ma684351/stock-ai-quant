@@ -23,37 +23,44 @@ description: >-
 
 ## 2. エージェントの自律実行手順
 
-### Step 0: 実行環境とスクリプトパスの特定 (外部プロジェクト対応)
+### Step 0: 実行環境とスクリプトパスの特定
 
-スキルがどのプロジェクトやディレクトリから呼び出されたかに応じて、実行リポジトリパス（`REPO_DIR`）を自動解決します。
-**※ グローバル領域（$HOME 直下やシステム Python 等）には一切インストール・配置しません。**
+このスキルには `stock_ai.py` などの実行に必要なスクリプト群が直接同梱されています。スキルのインストール先ディレクトリ（例：`.cline/skills/stock-ai-analysis/` や `.claude/skills/stock-ai-analysis/` など）が実行環境のベース（`REPO_DIR`）となります。
+**※ グローバル領域（システム Python 等）には一切インストール・配置しません。**
 
-1. **カレントディレクトリに `stock_ai.py` がある場合（本リポジトリ内での実行）**:
-   - `REPO_DIR="."`
-   - `DATA_DIR="data"`
+```bash
+# スキルのディレクトリを特定
+if [ -f "stock_ai.py" ]; then
+  # すでにスキルディレクトリ内にいる場合
+  REPO_DIR="."
+elif [ -f "$(dirname "$0")/stock_ai.py" ]; then
+  # スクリプト自身の場所から特定
+  REPO_DIR="$(dirname "$0")"
+else
+  # AIエージェントとして実行中、スキルのパスを探す
+  REPO_DIR=$(find . -name "stock_ai.py" -path "*/stock-ai-analysis/*" -type f -print -quit | xargs dirname)
+  if [ -z "$REPO_DIR" ]; then
+    echo "Error: stock_ai.py not found in stock-ai-analysis skill directory."
+    exit 1
+  fi
+fi
 
-2. **外部プロジェクトから呼び出された場合**:
-   既存のローカルリポジトリパスを自動参照し、環境を一切汚さずに実行します：
-   ```bash
-   # リポジトリパスの解決（環境変数優先、または近隣ディレクトリ・Gitルートの自動検出）
-   if [ -n "$STOCK_AI_DIR" ] && [ -d "$STOCK_AI_DIR" ]; then
-     REPO_DIR="$STOCK_AI_DIR"
-   elif [ -f "$(git rev-parse --show-toplevel 2>/dev/null)/stock_ai.py" ]; then
-     REPO_DIR="$(git rev-parse --show-toplevel)"
-   elif [ -f "../stock-ai-quant/stock_ai.py" ]; then
-     REPO_DIR="../stock-ai-quant"
-   elif [ -f "../fin-sentiment-lgbm-pipeline/stock_ai.py" ]; then
-     REPO_DIR="../fin-sentiment-lgbm-pipeline"
-   else
-     # 手元にリポジトリがない新規マシン等の場合のみ、プロジェクトローカル配下に配置（グローバルは汚さない）
-     REPO_DIR="./.stock-ai-quant"
-     if [ ! -d "$REPO_DIR" ]; then
-       git clone https://github.com/ma684351/stock-ai-quant.git "$REPO_DIR"
-       cd "$REPO_DIR" && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt && cd -
-     fi
-   fi
-   DATA_DIR="$REPO_DIR/data"
-   ```
+DATA_DIR="$REPO_DIR/data"
+
+# 仮想環境の準備 (初回のみ)
+if [ ! -d "$REPO_DIR/.venv" ]; then
+  cd "$REPO_DIR"
+  python3 -m venv .venv
+  .venv/bin/pip install -r requirements.txt
+
+  # 初期データの準備 (初回のみ)
+  if [ ! -d "data" ]; then
+    mkdir -p data
+    cp -r data.example/* data/
+  fi
+  cd - > /dev/null
+fi
+```
 
 ### Step 1: ディープリサーチ（カタリスト調査 & JSON生成）
 **実行契機**:
@@ -87,16 +94,12 @@ description: >-
 デフォルトで **安定した直近2年間（`2y`）** を学習期間として固定採用し、期間選択による分母ブレや後知恵（データ・スヌーピング）を排除した公平なバックテストを実行します（必要に応じて `--period 3y` や `--period 1.5y` の指定も可能）。
 
 ```bash
-# 【A. 本リポジトリ内で実行する場合 (カレントに stock_ai.py がある場合)】
-.venv/bin/python stock_ai.py 7203
-.venv/bin/python stock_ai.py --compare 7203 6758 AAPL 7974
-# 期間を変更したい場合 (--period 2y / 3y / 1.5y / 1y)
-.venv/bin/python stock_ai.py AAPL --period 3y
-
-# 【B. 外部プロジェクトから実行する場合 (REPO_DIR を参照)】
-# ※ カレントディレクトリを変更せずに外部プロジェクトからそのまま実行可能
+# 仮想環境のPythonを使って実行します
 "$REPO_DIR/.venv/bin/python" "$REPO_DIR/stock_ai.py" 7203
 "$REPO_DIR/.venv/bin/python" "$REPO_DIR/stock_ai.py" --compare 7203 6758 AAPL 7974
+
+# 期間を変更したい場合 (--period 2y / 3y / 1.5y / 1y)
+"$REPO_DIR/.venv/bin/python" "$REPO_DIR/stock_ai.py" AAPL --period 3y
 ```
 
 ---

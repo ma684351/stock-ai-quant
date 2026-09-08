@@ -1,5 +1,9 @@
 import os
 import shutil
+import sys
+
+# Add skills/stock-ai-analysis to sys.path so tests can import 'core'
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'skills', 'stock-ai-analysis')))
 
 import numpy as np
 import pandas as pd
