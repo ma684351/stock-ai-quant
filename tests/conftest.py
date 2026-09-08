@@ -3,7 +3,7 @@ import shutil
 import sys
 
 # Add skills/stock-ai-analysis to sys.path so tests can import 'core'
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'skills', 'stock-ai-analysis')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "skills", "stock-ai-analysis")))
 
 import numpy as np
 import pandas as pd
@@ -13,8 +13,9 @@ import pytest
 @pytest.fixture(scope="session", autouse=True)
 def ensure_data_dir():
     """テスト実行時に data ディレクトリが存在しない場合、data.example から安全に準備する"""
-    if not os.path.exists("data") and os.path.exists("data.example"):
-        shutil.copytree("data.example", "data")
+    data_example_path = "skills/stock-ai-analysis/data.example"
+    if not os.path.exists("data") and os.path.exists(data_example_path):
+        shutil.copytree(data_example_path, "data")
 
 
 @pytest.fixture
